@@ -10,7 +10,125 @@ html(lang='ja')
     include inc/_gtm
     .wrapper
       include inc/_header
-      section#sectionTop.section
+      section.section
         .inner
+      section#infomation.section.section-infomation
+        .inner
+          .infomation-block
+            h2.title information
+            ul.list 
+              li.item
+                a(href="") 
+                  p.date 2021.04.01
+                  p.text テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              li.item
+                a(href="") 
+                  p.date 2021.04.01
+                  p.text テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              li.item
+                a(href="") 
+                  p.date 2021.04.01
+                  p.text テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+      section#merit.section.section-merit
+        .inner
+          h2.section-heading SMSのメリット
+          .section-lead SMSは「メール・電話はなかなか連絡が取れない」「郵便は反応がわからない」「メールは開封されない」などの
+            br
+            |顧客とのコミュニケーション課題を解決します。
+          a(href="").c-btn SMSのメリットを詳しく見る
+      section#feature.section.section-feature
+        .inner
+          h2.section-heading 空電プッシュの特長
+          .feature-block 
+            .item 
+              h3.title 高いセキュリティで
+                br
+                |お客様情報をしっかり守る
+              .text-box 
+                p.text お客様の情報を守るために、携帯キャリアとの直接送信契約や送信元
+                  br
+                  |番号指定などさまざまなセキュリティ対策を実施。安心してご利用い
+                  br
+                  |ただけます。
+                a(href="").c-btn.pcmt40 セキュリティの詳細はこちら
+            .item 
+              h3.title 高い送信性能と
+                br
+                |圧倒的な到達率
+              .text-box 
+                p.text 国内最大規模の送信性能により大規模案件でも遅延なく送信できます。
+                  br
+                  |また国内キャリア接続で99.9％の到達率（自社調べ）と通信品質に圧
+                  br
+                  |倒的な差があります。
+                a(href="").c-btn.pcmt40 送信性能の詳細はこちら
+            .item 
+              h3.title スピード導入と
+                br
+                |充実のサポート
+              .text-box 
+                p.text 申し込み後、最短3営業日でご利用いただけます。導入前も導入後も
+                  br
+                  |専任担当者がきめ細やかにサポート。24時間365日電話での故障問い
+                  br
+                  |合わせ窓口など、お客様のサービスをしっかり支えます。
+                a(href="").c-btn.pcmt40 セキュリティの詳細はこちら
+      section#function.section.section-function
+        .inner
+          h2.section-heading 豊富な機能
+          .section-lead さまざまなニーズに応える豊富な機能に加えて
+            br
+            |約20年間分の番号履歴を元に誤送信防止する機能 や権限設定など管理機能も充実しています。
+          .function-block
+            .item
+              .img-box
+                img(src="/assets/img/top-function-img01.png", alt="")
+              .text 個別/一斉送信
+            .item
+              .img-box
+                img(src="/assets/img/top-function-img02.png", alt="")
+              .text API連携
+            .item
+              .img-box
+                img(src="/assets/img/top-function-img03.png", alt="")
+              .text IVR連携
+            .item
+              .img-box
+                img(src="/assets/img/top-function-img04.png", alt="")
+              .text 送信元
+                br
+                |番号指定
+            .item
+              .img-box
+                img(src="/assets/img/top-function-img05.png", alt="")
+              .text 長文
+                br
+                |分割機能
+            .item
+              .img-box
+                img(src="/assets/img/top-function-img06.png", alt="")
+              .text 携帯番号
+                br
+                |履歴判定
+            .item
+              .img-box
+                img(src="/assets/img/top-function-img07.png", alt="")
+              .text 短縮URL機能
+            .item
+              .img-box
+                img(src="/assets/img/top-function-img08.png", alt="")
+              .text 双方向SMS
+          a(href="").c-btn.pcmt80 詳細はこちら
+      section#contact.section.section-contact
+        .inner
+          h2.section-heading.font-white お問合せ
+          .section-lead.font-white 空電プッシュは、国内シェアNo.1の法人向けSMS送信サービスです。
+            br
+            |ご不明な点はお気軽にお問い合わせください。
+            br
+            |利用用途や配信数に応じて最適なご提案をいたします。
+          .contact-block
+            a(href="").contact-btn.pcmt70 資料請求・お問合せ
+            a(href="").agency-btn 代理店募集
       include inc/_footer
     

@@ -16,6 +16,9 @@ strong {
 .font-color{
   color: #000000!important;
 }
+.font-white{
+  color: #ffffff!important;
+}
 body{
   width: 100%;
   font-family: $default-font;
@@ -29,7 +32,7 @@ body.open{
   margin: 0 auto;
   text-align: center;
   @include min {
-    max-width: 1200px;
+    max-width: 1160px;
   }
   @include max{
     padding: 0 spvw(40);

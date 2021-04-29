@@ -1,99 +1,19 @@
 .section-text{
-  color: #ffffff;
-  text-align: left;
-  margin: 0 auto;
-  line-height: 2;
-  letter-spacing: -0.1em;
   @include min {
-    font-size: 20px;
-    width: 715px;
   }
   @include min-max{
-    font-size: pcvw(20);
-    width: pcvw(715);
-  }
-  @include max {
-    font-size: spvw(20);
-    padding: 0 spvw(50);
-  }
-}
-.footer-text{
-  line-height: 2;
-  font-weight: 400;
-  @include min {
-    font-size: 24px;
-    margin: 35px auto 0;
-  }
-  @include min-max{
-    font-size: pcvw(24);
-    margin: pcvw(35) auto 0;
   }
   @include max{
-    font-size: spvw(28);
-    margin: spvw(35) auto 0;
   }
 }
-.footer-text--map{
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  background-color: #000000;
-  line-height: 1;
+.section-lead{
   @include min {
-    width: 52px;
-    height: 33px;
-    margin-left: 15px;
-    transition: all .3s;
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 80px;
   }
   @include min-max{
-    width: pcvw(52);
-    height: pcvw(33);
-    margin-left: pcvw(15);
   }
   @include max{
-    padding: spvw(5) spvw(10);
-    margin-left: spvw(15);
-  }
-  &:hover{
-    @include min {
-      transition: all .3s;
-      color: #000000;
-      background-color: transparent;
-      border: 1px solid #000000;
-    }
-  }
-}
-.footer-text--link{
-  position: relative;
-  z-index: 1;
-  @include min {
-    opacity: 1;
-    transition: all .3s;
-  }
-  &::before{
-    width: 100%;
-    height: 1px;
-    content: "";
-    position: absolute;
-    bottom: 2px;
-    z-index: -1;
-    right: 0;
-    background-color: #e6bd16;
-    @include min {
-      transition: all .3s;
-    }
-  }
-  &:hover{
-    @include min {
-      opacity: .6;
-      transition: all .3s;
-    }
-    &::before{
-      @include min {
-        transition: all .3s;
-        width: 0px;
-      }
-    }
   }
 }

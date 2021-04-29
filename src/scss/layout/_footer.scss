@@ -2,16 +2,19 @@
 .footer{
   background-color: #ffffff;
   @include min {
-    padding: 120px 0 78px;
+    padding: 40px 0 40px;
   }
   @include min-max{
-    padding: pcvw(120) 0 pcvw(78);
   }
   @include max{
     padding: spvw(150) 0 spvw(78);
   }
 }
-.footer-logo-karaden{
+.footer-heading-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   @include min {
   }
   @include min-max{
@@ -19,7 +22,29 @@
   @include max{
   }
 }
+.footer-nav{
+  @include min {
+    text-align: left;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-logo-karaden{
+  @include min {
+    width: 211.34px;
+    height: 28px;
+    display: inline-block;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
 .footer-nav-block{
+  display: flex;
+  justify-content: flex-start;
   @include min {
   }
   @include min-max{
@@ -28,7 +53,12 @@
   }
 }
 .footer-nav-list{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   @include min {
+    width: 400px;
+    margin-top: 33px;
   }
   @include min-max{
   }
@@ -36,7 +66,10 @@
   }
 }
 .footer-nav-list-item{
+  text-align: left;
+  height: auto;
   @include min {
+    width: 200px;
   }
   @include min-max{
   }
@@ -44,17 +77,35 @@
   }
 }
 .footer-nav-list-item-link{
-  font-size: 16px;
   font-weight: 500;
+  display: inline-block;
   @include min {
+    font-size: 16px;
+    padding: 10px 0;
+    opacity: 1;
+    transition: all .3s;
+    cursor: pointer;
   }
   @include min-max{
   }
   @include max{
   }
+  &:hover{
+    @include min {
+      opacity: .6;
+      transition: all .3s;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
 }
 .footer-relational-service-block{
   @include min {
+    text-align: left;
+    margin-right: 226px;
+    //margin-top: 71px;
   }
   @include min-max{
   }
@@ -63,6 +114,7 @@
 }
 .footer-relational-service-title {
   color: #838383;
+  line-height: 2;
   @include min {
     font-size: 16px;
   }
@@ -72,7 +124,9 @@
   }
 }
 .footer-relational-service-list{
+  text-align: left;
   @include min {
+    width: 365px;
   }
   @include min-max{
   }
@@ -80,17 +134,117 @@
   }
 }
 .footer-relational-service-list-item{
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  line-height: 2;
   @include min {
+    padding: 0 0 0 1em;
   }
   @include min-max{
   }
   @include max{
+  }
+  &::before{
+    content: "・";
+    position: absolute;
+    color: #000000;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    @include min {
+    }
+    @include min-max{
+    }
+    @include max{
+    }
   }
 }
 .footer-relational-service-item-link{
   color: #000000;
   @include min {
     font-size: 16px;
+    opacity: 1;
+    transition: all .3s;
+    cursor: pointer;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+  &:hover{
+    @include min {
+      opacity: .6;
+      transition: all .3s;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+}
+.footer-btn-block{
+  @include min {
+    width: 200px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-btn-logo{
+  @include min {
+    width: 200px;
+    opacity: 1;
+    transition: all .3s;
+    cursor: pointer;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+  &:hover{
+    @include min {
+      opacity: .6;
+      transition: all .3s;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+}
+.footer-btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #ffffff;
+  @include min {
+    width: 200px;
+    height: 48px;
+    border-radius: 48px;
+    font-size: 16px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-btn--orange{
+  background: #FF7F00;
+  @include min {
+    margin-top: 39px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-btn--green{
+  background: #11C97B;
+  @include min {
+    margin-top: 24px;
   }
   @include min-max{
   }
@@ -100,13 +254,29 @@
 .footer-bottom-block{
   background-color: #214589;
   @include min {
+    padding: 30px 0;
   }
   @include min-max{
   }
   @include max{
   }
+  >.inner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include min {
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
 }
 .footer-bottom-list{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0;
   @include min {
   }
   @include min-max{
@@ -117,15 +287,29 @@
 .footer-bottom-list-item{
   position: relative;
   @include min {
+    padding: 0 14px 0 0;
+    margin: 0 14px 0 0;
+    line-height: 1;
   }
   @include min-max{
   }
   @include max{
   }
+  &:last-child{
+    &::before{
+      content: none;
+    }
+  }
   &::before{
     content: "";
     position: absolute;
+    width: 0.8px;
+    height: 100%;
+    background: #ffffff;
+    line-height: 0;
     @include min {
+      right: 0;
+      top: 1px;
     }
     @include min-max{
     }
@@ -135,16 +319,33 @@
 }
 .footer-bottom-list-item-link{
   color: #FFFFFF;
+  font-weight: 400;
   @include min {
+    line-height: 1;
     font-size: 14px;
+    opacity: 1;
+    transition: all .3s;
+    cursor: pointer;
   }
   @include min-max{
   }
   @include max{
   }
+  &:hover{
+    @include min {
+      opacity: .6;
+      transition: all .3s;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
 }
 .copyright{
   line-height: 1;
+  color: #FFFFFF;
+  font-weight: 400;
   @include min {
     font-size: 16px;
   }

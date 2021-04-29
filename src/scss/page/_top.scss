@@ -1,0 +1,110 @@
+.section-infomation{
+  background: #F5F7FA;
+  width: 100%;
+  @include min {
+    padding: 64px 0;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.section-merit{
+  position: relative;
+  background: #F5F7FA;
+  z-index: 1;
+  @include min {
+    padding: 100px 0 120px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    background: #E6EBF4;
+    @include min {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -80px;
+      z-index: -1;
+      border-radius: 0 8px 0 0;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+}
+
+.section-feature{
+  position: relative;
+  z-index: 1;
+  background: #E6EBF4;
+  @include min {
+    padding: 100px 0 120px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    background: #F5F7FA;
+    @include min {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: -80px;
+      z-index: -1;
+      border-radius: 8px 0 0 0 ;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+}
+.section-function{
+  position: relative;
+  background: #F5F7FA;
+  z-index: 1;
+  @include min {
+    padding: 100px 0 120px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    background: #E6EBF4;
+    @include min {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -80px;
+      z-index: -1;
+      border-radius: 0 8px 0 0;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+}
+.section-contact{
+  background: url(/assets/img/contact-bg.png)no-repeat center center;
+  background-size: cover;
+  @include min {
+    padding: 100px 0 120px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}

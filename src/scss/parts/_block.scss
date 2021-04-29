@@ -1,1 +1,460 @@
-
+.infomation-block{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+  >.title{
+    color: #214589;
+    font-family: $urw-din-font;
+    @include min {
+      font-size: 32px;
+      margin-right: 80px;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+  >.list {
+    @include min {
+      text-align: left;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+  .item{
+    width: 100%;
+    @include min {
+      font-size: 16px;
+      margin-top: 32px;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+    &:first-child{
+      margin: 0;
+    }
+    >a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      opacity: 1;
+      transition: all .3s;
+      cursor: pointer;
+      @include min-max{
+      }
+      @include max{
+      }
+      &:hover{
+        @include min {
+          opacity: .6;
+          transition: all .3s;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    }
+  }
+  .date{
+    font-weight: bold;
+    @include min {
+      margin-right: 1em;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+  .text{
+    @include min {
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+}
+.feature-block {
+  @include min {
+    margin-top: 124px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+  >.item {
+    position: relative;
+    @include min {
+      padding: 25px 40px;
+      margin-top: 100px;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      width: 580px;
+      height: 400px;
+      z-index: -1;
+      @include min {
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+    }
+    &:nth-child(1){
+      position: relative;
+      @include min {
+        padding-right: 520px;
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+      &::before{
+        background: url(/assets/img/top-feature-img01.png)no-repeat center center;
+        background-size: contain;
+        @include min {
+          right: 0;
+          top: 0;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+      .text-box{
+        @include min {
+          border-radius: 48px 8px 48px 48px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    }
+    &:nth-child(2){
+      @include min {
+        padding-left: 520px;
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+      &::before{
+        background: url(/assets/img/top-feature-img02.png)no-repeat center center;
+        background-size: contain;
+        @include min {
+          left: 0;
+          top: 0;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+      .title{
+        @include min {
+          padding-left: 100px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+      .text-box{
+        @include min {
+          border-radius: 8px 48px 48px 48px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    }
+    &:nth-child(3){
+      @include min {
+        padding-right: 520px;
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+      &::before{
+        background: url(/assets/img/top-feature-img03.png)no-repeat center center;
+        background-size: contain;
+        @include min {
+          right: 0;
+          top: 0;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+      .text-box{
+        @include min {
+          border-radius: 48px 8px 48px 48px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    }
+  }
+  .title{
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+    @include min {
+      font-size: 40px;
+      padding-left: 24px;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+  .text-box{
+    background: #fff;
+    @include min {
+      width: 600px;
+      height: 296px;
+      padding: 48px 40px 48px 48px;
+      margin-top: 41px;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+  .text{
+    @include min {
+      font-size: 16px;
+      line-height: 2em;
+      text-align: left;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+}
+.function-block{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  @include min {
+    margin-top: 70px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+  >.item{
+    @include min {
+      height: 154px;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+    /* &:nth-child(1){
+      @include min {
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+      img{
+        @include min {
+          width: 76.67px;
+          height: 87px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    }
+    &:nth-child(2){
+      @include min {
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+      img{
+        @include min {
+          width: 80px;
+          height: 68px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    }
+    &:nth-child(3){
+      @include min {
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+      img{
+        @include min {
+          width: 76px;
+          height: 80px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    }
+    &:nth-child(4){
+      @include min {
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+      img{
+        @include min {
+          width: 86px;
+          height: 76px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    }
+    &:nth-child(5){
+      @include min {
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+      img{
+        @include min {
+          width: 72px;
+          height: 82px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    }
+    &:nth-child(6){
+      @include min {
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+      img{
+        @include min {
+          width: 79.4px;
+          height: 66px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    }
+    &:nth-child(7){
+      @include min {
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+      img{
+        @include min {
+          width: 80px;
+          height: 68px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    }
+    &:nth-child(8){
+      @include min {
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+      img{
+        @include min {
+          width: 76.8px;
+          height: 76.8px;
+        }
+        @include min-max{
+        }
+        @include max{
+        }
+      }
+    } */
+  }
+  .img-box{
+    @include min {
+      height: 87px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+  .text{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include min {
+      font-size: 18px;
+      line-height: 1.5em;
+      height: 55px;
+      margin-top: 17px;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+}
+.contact-block{
+  @include min {
+    width: 480px;
+    margin: 0 auto;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
