@@ -1,0 +1,268 @@
+// ==============================
+//
+//　ブレークポイント
+//
+// ==============================
+
+@mixin min($break-point: $pc_min) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin max($break-point: $sp_max) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-max($break-point-min: $pc_min, $break-point-max: $pc_width) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin max-min($break-point-max: $tab_max, $break-point-min: $pc_min) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+// ==============================
+//
+//　text-crop
+//  参考：https://coliss.com/articles/build-websites/operation/css/remove-top-and-bottom-margin-from-text.html
+// ==============================
+
+@mixin text-crop(
+  $line-height: 1.3,
+  $top-adjustment: 0px,
+  $bottom-adjustment: 0px
+) {
+  $top-crop: 9;
+  $bottom-crop: 8;
+  $crop-font-size: 36;
+  $crop-line-height: 1.2;
+
+  $dynamic-top-crop: max(
+      ($top-crop + ($line-height - $crop-line-height) * ($crop-font-size / 2)),
+      0
+    ) / $crop-font-size;
+  $dynamic-bottom-crop: max(
+      (
+        $bottom-crop + ($line-height - $crop-line-height) *
+          ($crop-font-size / 2)
+      ),
+      0
+    ) / $crop-font-size;
+
+  line-height: $line-height;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
+  &::before {
+    margin-bottom: calc(-#{$dynamic-top-crop}em + #{$top-adjustment});
+  }
+
+  &::after {
+    margin-top: calc(-#{$dynamic-bottom-crop}em + #{$bottom-adjustment});
+  }
+}
+
+// ==============================
+//
+//　テキスト非表示
+//
+// ==============================
+
+@mixin text-hide {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+// ==============================
+//
+//　width height　レスポンシブ用
+//
+// ==============================
+
+@mixin spwh($w, $h) {
+  @include max {
+    width: spvw($w);
+    height: spvw($h);
+  }
+}
+
+@mixin pcwh($w, $h) {
+  @include min {
+    width: #{$w}px;
+    height: #{$h}px;
+  }
+}
+
+// ==============================
+//
+//　レスポンシブ用
+//
+// ==============================
+
+@mixin responsive($property, $pcsize, $spsize) {
+  @include min {
+    #{$property}: $pcsize + px;
+  }
+  @include max {
+    #{$property}: spvw($spsize);
+  }
+}
+
+// ==============================
+//
+// font-size　レスポンシブ
+//
+// ==============================
+
+@mixin font-size($pcsize, $spsize) {
+  @include min {
+    font-size: ($pcsize / 10) + rem;
+  }
+  @include max {
+    font-size: spvw($spsize);
+  }
+}
+
+// ==============================
+//
+// clearfix
+//
+// ==============================
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+// ==============================
+//
+// %で割り出す
+// 参考：https://www.evoworx.co.jp/blog/calc-percent/
+// （内はpx数）
+// ==============================
+
+$parent_width: 1120;
+// margin
+@mixin margin($t, $r, $b, $l) {
+  margin: ($t / $parent_width) * 100% ($r / $parent_width) * 100%
+    ($b / $parent_width) * 100% ($l / $parent_width) * 100%;
+}
+// width
+@mixin width($w) {
+  width: ($w / $parent_width) * 100%;
+}
+
+// ==============================
+//
+// 750px幅のスマートフォン用デザインのpxをvw値に変換
+//
+// ==============================
+
+@function spvw($value) {
+  @return ($value / 7.5) + vw;
+}
+
+@function pcvw($value) {
+  @return ($value / 12) + vw;
+}
+
+// ==============================
+//
+// 角丸ブロック
+//
+// ==============================
+@mixin colored-block($color: #f9f8f6) {
+  background: $color;
+  @include min {
+    border-radius: 8px;
+  }
+  @include max {
+    border-radius: spvw(8);
+  }
+}
+// ==============================
+//
+// フォントサイズ設定
+// インラインで使う場合はクラスをスタイル設定で使う場合は変数を
+//
+// ==============================
+
+$pc-size-1: 40px;
+$pc-size-2: 32px;
+$pc-size-3: 24px;
+$pc-size-4: 20px;
+$pc-size-5: 16px;
+$pc-size-6: 14px;
+$pc-size-7: 12px;
+
+$sp-size-1: spvw(40);
+$sp-size-2: spvw(32);
+$sp-size-3: spvw(28);
+$sp-size-4: spvw(24);
+$sp-size-5: spvw(20);
+$sp-size-6: spvw(18);
+$sp-size-7: spvw(16);
+
+@include min {
+  .pc-size-1 {
+    font-size: $pc-size-1 !important;
+  }
+  .pc-size-2 {
+    font-size: $pc-size-2 !important;
+  }
+  .pc-size-3 {
+    font-size: $pc-size-3 !important;
+  }
+  .pc-size-4 {
+    font-size: $pc-size-4 !important;
+  }
+  .pc-size-5 {
+    font-size: $pc-size-5 !important;
+  }
+  .pc-size-6 {
+    font-size: $pc-size-6 !important;
+  }
+  .pc-size-7 {
+    font-size: $pc-size-7 !important;
+  }
+}
+@include max {
+  .sp-size-1 {
+    font-size: $sp-size-1 !important;
+  }
+  .sp-size-2 {
+    font-size: $sp-size-2 !important;
+  }
+  .sp-size-3 {
+    font-size: $sp-size-3 !important;
+  }
+  .sp-size-4 {
+    font-size: $sp-size-4 !important;
+  }
+  .sp-size-5 {
+    font-size: $sp-size-5 !important;
+  }
+  .sp-size-6 {
+    font-size: $sp-size-6 !important;
+  }
+  .sp-size-7 {
+    font-size: $sp-size-7 !important;
+  }
+}

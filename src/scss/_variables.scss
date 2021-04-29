@@ -1,0 +1,74 @@
+$img_path: "/assets/img";
+
+// ==========================================================================
+//
+// Font
+//
+// ==========================================================================
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/assets/font/YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
+    url("/assets/font/YakuHanJP/YakuHanJP-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/font/YakuHanJP/YakuHanJP-Regular.woff2") format("woff2"),
+    url("/assets/font/YakuHanJP/YakuHanJP-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/font/YakuHanJP/YakuHanJP-Medium.woff2") format("woff2"),
+    url("/assets/font/YakuHanJP/YakuHanJP-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/font/YakuHanJP/YakuHanJP-Bold.woff2") format("woff2"),
+    url("/assets/font/YakuHanJP/YakuHanJP-Bold.woff") format("woff");
+}
+$default-font: noto-sans-cjk-jp, "Hiragino Kaku Gothic Pro",
+  "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$notosanscjk-font: noto-sans-cjk-jp, sans-serif;
+//$urw-din-font: urw-din-condensed, sans-serif;
+//$noto-font: "Noto Sans JP", sans-serif;
+
+// ==========================================================================
+//
+// Color
+//
+// ==========================================================================
+$c_bg: #f7f0e3;
+$c_text: #fff;
+$a-color: #ff4b6d;
+$c-btn: #ff6c00;
+$c-color: #e83828;
+$black-color: #000000;
+$c-yellow: #fff600;
+$hover-txt: #333333;
+$dark-blue: #333333;
+$theme-color:#333333;
+
+// ==========================================================================
+//
+// 幅
+//
+// ==========================================================================
+//breakpoints
+$pc_width: 1200px;
+$tab_max: 1199px;
+$pc_min: 857px;
+$sp_max: 856px;
+$bg_color: #2d3042;
+$font_color: #010101;
+$link_color: #efefef;
+$link_hover_color: #fff;

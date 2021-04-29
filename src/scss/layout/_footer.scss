@@ -1,0 +1,157 @@
+
+.footer{
+  background-color: #ffffff;
+  @include min {
+    padding: 120px 0 78px;
+  }
+  @include min-max{
+    padding: pcvw(120) 0 pcvw(78);
+  }
+  @include max{
+    padding: spvw(150) 0 spvw(78);
+  }
+}
+.footer-logo-karaden{
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-nav-block{
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-nav-list{
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-nav-list-item{
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-nav-list-item-link{
+  font-size: 16px;
+  font-weight: 500;
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-relational-service-block{
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-relational-service-title {
+  color: #838383;
+  @include min {
+    font-size: 16px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-relational-service-list{
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-relational-service-list-item{
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-relational-service-item-link{
+  color: #000000;
+  @include min {
+    font-size: 16px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-bottom-block{
+  background-color: #214589;
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-bottom-list{
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.footer-bottom-list-item{
+  position: relative;
+  @include min {
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    @include min {
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+}
+.footer-bottom-list-item-link{
+  color: #FFFFFF;
+  @include min {
+    font-size: 14px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
+.copyright{
+  line-height: 1;
+  @include min {
+    font-size: 16px;
+  }
+  @include min-max{
+    font-size: pcvw(18);
+  }
+  @include max{
+    font-size: spvw(22);
+  }
+}

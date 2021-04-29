@@ -1,0 +1,72 @@
+.btn{
+  color: #000000;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  @include min {
+    width: 240px;
+    height: 80px;
+    font-size: 24px;
+    transition: all 0.3s;
+    margin: 80px auto 0;
+  }
+  @include min-max {
+    margin: pcvw(80) auto 0;
+    width: pcvw(240);
+    height: pcvw(80);
+    font-size: pcvw(24);
+  }
+  @include max {
+    margin: spvw(80) auto 0;
+    width: spvw(240);
+    height: spvw(80);
+    font-size: spvw(24);
+  }
+  &:hover{
+    @include min {
+      transition: all 0.3s;
+      border: solid #fff 1px;;
+      color: #fff;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}
+.btn--close {
+  font-weight: 600;
+  border: solid #fff 1px;;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  @include min {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    margin: 80px auto 0;
+  }
+  @include min-max {
+    margin: pcvw(80) auto 0;
+    font-size: pcvw(24);
+    width: pcvw(200);
+    height: pcvw(60);
+  }
+  @include max {
+    margin: spvw(80) auto 0;
+    font-size: spvw(24);
+    width: spvw(200);
+    height: spvw(60);
+  }
+  &:hover{
+    background-color: #fff;
+    color: #000000;
+    @include min {
+      transition: all 0.3s;
+      //opacity: .6;
+    }
+  }
+}

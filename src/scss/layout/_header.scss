@@ -1,0 +1,370 @@
+.logo {
+  position: fixed;
+  z-index: 2;
+  font-weight: bold;
+  color: #000000;
+  @include min {
+    font-size: 60px;
+    left: 20px;
+    top: 30px;
+    padding: 10px 20px;
+    transition: all .3s;
+  }
+  @include min-max{
+    font-size: pcvw(60);
+    left: pcvw(20);
+    top: pcvw(30);
+  }
+  @include max {
+    font-size: spvw(60);
+    left: spvw(20);
+    top: spvw(30);
+  }
+  &:hover {
+    @include min {
+      transition: all .3s;
+      background-color: #ffffff;
+      color: #000000;
+      cursor: pointer;
+    }
+    @include max {
+    }
+  }
+}
+.scroll-logo{
+  color: #ffffff;
+}
+#nav-toggle {
+  cursor: pointer;
+  position: fixed;
+  @include min {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  @include min-max {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  @include max {
+    top: spvw(35);
+    right: spvw(20);
+  }
+  > div {
+    position: relative;
+    transition: transform 0.6s ease-in-out, width 0.6s, top 0.5s ease;
+    @include min {
+      width: 80px;
+      height: 80px;
+    }
+    @include min-max {
+      width: pcvw(80);
+      height: pcvw(80);
+    }
+    @include max {
+      width: spvw(70);
+      height: spvw(50);
+    }
+  }
+  span {
+    right: 0;
+    display: block;
+    background-color: #000000;
+    position: absolute;
+    transition: transform 0.6s ease-in-out, width 0.6s, top 0.5s ease,
+    border-bottom 0.5s ease, border-right 0.5s ease, border-top 0.5s ease;
+    @include min {
+      height: 16px;
+      width: 100%;
+    }
+    @include max {
+      height: spvw(10);
+      width: 100%;
+    }
+    &:nth-child(1) {
+      top: 0;
+      @include min {
+      }
+      @include max {
+      }
+    }
+    &:nth-child(2) {
+      @include min {
+        top: 32px;
+      }
+      @include max {
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+        transition: all 0.3s;
+      }
+    }
+    &:nth-child(3) {
+      @include min {
+        top: 64px;
+      }
+      @include max {
+        bottom: 0;
+      }
+    }
+  }
+}
+.scroll-nav {
+  > div {
+    span{
+      background-color: #ffffff!important;
+    }
+  }
+}
+.open {
+  #nav-toggle{
+    > div{
+      transition: transform 0.6s ease-in-out, width 0.6s, top 0.5s ease;
+      @include min {
+        width: 120px;
+      }
+    }
+    span {
+      transition: transform 0.6s ease-in-out, width 0.6s, top 0.5s ease,
+      border-bottom 0.5s ease, border-right 0.5s ease, border-top 0.5s ease;
+      background-color: #ffffff;
+      @include min {
+        width: 120px;
+      }
+      @include max {
+      }
+      &:nth-child(1) {
+        transform: rotate(45deg) translateY(-50%);
+        @include min {
+          top: 40px;
+        }
+        @include max {
+          top: 50%;
+        }
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        transition: all 0.3s;
+        @include min {
+        }
+        @include max {
+        }
+      }
+      &:nth-child(3) {
+        @include min {
+          top: 40px;
+          right: -10px;
+        }
+        transform: rotate(-45deg) translateY(-50%);
+        @include max {
+          top: 50%;
+          right: spvw(-8);
+        }
+      }
+    }
+  }
+}
+
+/* z-index */
+#nav-toggle {
+  z-index: 1000;
+}
+#container {
+  z-index: 900;
+}
+
+#gloval-nav {
+  z-index: 990;
+  text-align: center;
+  visibility: hidden;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: rgba(#000,.8);
+  position: fixed;
+  @include min {
+  }
+  @include max {
+  }
+}
+
+.gloval-nav-wrap {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  .open & {
+    position: fixed;
+  }
+}
+#gloval-nav {
+  ul {
+    @include max {
+      list-style: none;
+      text-align: center;
+    }
+    li {
+      @include max {
+        opacity: 0;
+        transition: transform 0.6s ease, opacity 0.2s ease;
+      }
+    }
+  }
+  .open & {
+    position: fixed;
+  }
+}
+/* open */
+.open {
+  #gloval-nav {
+    visibility: visible;
+    opacity: 1;
+    @include min {
+      display: flex;
+      justify-content: center;
+    }
+    @include max {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  #gloval-nav li {
+    opacity: 1;
+    transition: transform 1s ease, opacity 0.9s ease;
+  }
+}
+
+.gloval-nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @include max {
+    flex-wrap: wrap;
+  }
+}
+.gloval-nav-list--child {
+  @include min {
+    display: block;
+  }
+  @include max {
+    display: none;
+  }
+}
+.gloval-nav-list-item {
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  @include min {
+    margin: 0 75px;
+    min-width: 130px;
+  }
+  @include min-max{
+    margin: 0 pcvw(75);
+    min-width: pcvw(130);
+  }
+  @include max {
+    margin: 0 spvw(75) spvw(20);
+    min-width: spvw(130);
+  }
+  > a {
+    color: #ffffff;
+    width: 100%;
+    line-height: 1;
+    display: block;
+    text-align: center;
+    @include min {
+      font-size: 48px;
+      margin: 0 auto 30px;
+    }
+    @include min-max{
+      font-size: pcvw(48);
+      margin: 0 auto pcvw(30);
+    }
+    @include max {
+      font-size: spvw(48);
+      margin: 0 auto spvw(30);
+    }
+  }
+  &:hover {
+    > a {
+      @include min {
+        opacity: 1;
+      }
+    }
+  }
+}
+.gloval-nav-list--child {
+  width: 100%;
+}
+.gloval-nav-list-item--child {
+  text-align: center;
+  line-height: 1;
+  font-size: 0;
+  width: 100%;
+  > a {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    display: inline-block;
+    @include min {
+      font-size: 24px;
+      margin: 0 auto 10px;
+      transition: all .3s;
+      padding: 5px 10px;
+    }
+    @include min-max {
+      font-size: pcvw(24);
+      margin: 0 auto spvw(20);
+    }
+    @include max {
+      font-size: spvw(28);
+      margin: 0 auto spvw(20);
+    }
+    &:hover {
+      @include min {
+        background: #ffffff;
+        color: #000000;
+        transition: all .3s;
+      }
+    }
+  }
+}
+.gloval-nav-list-inner {
+  text-align: center;
+  margin: 0 auto;
+  @include min {
+  }
+  @include max {
+  }
+}
+#header-logo {
+  position: fixed;
+  z-index: 1;
+  @include min {
+    top: 40px;
+    left: 40px;
+    width: 64px;
+  }
+  @include max {
+    top: 5%;
+    left: 5%;
+    width: spvw(64);
+  }
+  a {
+    @include min {
+      opacity: 1;
+      transition: all 0.3s;
+    }
+    &:hover {
+      @include min {
+        opacity: 0.3;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
