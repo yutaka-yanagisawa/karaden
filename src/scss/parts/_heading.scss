@@ -1,6 +1,6 @@
 .section-heading{
   font-weight: bold;
-  color: #214589;
+  color: $theme-color;
   @include min {
     font-size: 48px;
   }

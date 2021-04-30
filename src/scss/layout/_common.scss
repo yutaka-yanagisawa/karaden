@@ -19,10 +19,18 @@ strong {
 .font-white{
   color: #ffffff!important;
 }
+.text-left{
+  text-align: left!important;
+}
 body{
   width: 100%;
   font-family: $default-font;
   font-size: 1.6rem;
+  @include min {
+    min-width: 1240px;
+  }
+  @include max{
+  }
 }
 body.open{
   overflow: hidden;

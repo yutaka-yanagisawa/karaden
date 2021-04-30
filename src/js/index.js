@@ -223,3 +223,12 @@ $(window).on('load', function () {
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(wf, s);
 })
+
+jQuery(function($) { 
+  $(".question").on("click", function() {
+    $(this).next().slideToggle();
+    $(this).next().toggleClass("active");
+    $(this).toggleClass("active");
+  });
+
+});

@@ -17,3 +17,12 @@
   @include max{
   }
 }
+.section-lead--result{
+  @include min {
+    margin-top: 48px!important;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}

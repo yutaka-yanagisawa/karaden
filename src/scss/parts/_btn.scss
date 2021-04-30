@@ -6,12 +6,14 @@
   color: #ffffff;
   background: #377CEA;
   position: relative;
+  box-sizing: border-box;
   @include min {
     width: 400px;
     height: 64px;
     border-radius: 64px;
     font-size: 20px;
     transition: all .3s;
+    border: solid 2px #377CEA;
   }
   @include min-max{
   }
@@ -58,6 +60,73 @@
     }
   }
 }
+.c-btn--small{
+  @include min {
+    width: 274px;
+    height: 48px;
+    border-radius: 48px;
+    font-size: 20px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+  &::before{
+    background: url(/assets/img/c-btn-arrow.png)no-repeat center center;
+    background-size: contain;
+    @include min {
+      width: 12px;
+      height: 14px;
+      right: 24px;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+  &:hover{
+    &::before{
+      @include min {
+        right: 15px;
+        opacity: 0;
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+    }
+  }
+}
+.c-btn--download{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    background: url(/assets/img/c-btn-download.png)no-repeat center center;
+    background-size: contain;
+    @include min {
+      width: 14px;
+      height: 14px;
+      right: 20px;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
+  }
+  &:hover{
+    &::before{
+      @include min {
+        right: 20px;
+        top: 70%;
+      }
+      @include min-max{
+      }
+      @include max{
+      }
+    }
+  }
+}
 .contact-btn{
   display: inline-flex;
   justify-content: center;
@@ -66,6 +135,7 @@
   color: #ffffff;
   background: #FF7F00;
   position: relative;
+  box-sizing: border-box;
   @include min {
     width: 480px;
     height: 88px;
@@ -73,6 +143,7 @@
     font-size: 28px;
     transition: all .3s;
     margin: 0 auto;
+    border: solid 2px #FF7F00;
   }
   @include min-max{
   }
@@ -89,7 +160,6 @@
       width: 12px;
       height: 14px;
       right: 24px;
-      opacity: 1;
       transition: all .3s;
     }
     @include min-max{
@@ -101,7 +171,6 @@
     @include min {
       background: #ffffff;
       color: #FF7F00;
-      border: solid 2px #FF7F00;
     }
     @include min-max{
     }
@@ -127,6 +196,7 @@
   color: #ffffff;
   background: #11C97B;
   position: relative;
+  box-sizing: border-box;
   @include min {
     width: 320px;
     height: 64px;
@@ -134,6 +204,7 @@
     font-size: 20px;
     transition: all .3s;
     margin: 48px auto 0;
+    border: solid 2px #11C97B;
   }
   @include min-max{
   }
@@ -162,7 +233,6 @@
     @include min {
       background: #ffffff;
       color: #11C97B;
-      border: solid 2px #11C97B;
     }
     @include min-max{
     }
