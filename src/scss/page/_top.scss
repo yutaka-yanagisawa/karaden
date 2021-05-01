@@ -97,6 +97,53 @@
     }
   }
 }
+.section-example{
+  position: relative;
+  z-index: 1;
+  background: #E6EBF4;
+  overflow: hidden;
+  @include min {
+    padding: 100px 0 139px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    background: #F5F7FA;
+    @include min {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      /* top: -395px; */
+      left: -80px;
+      z-index: -1;
+      border-radius: 0 8px 0 0 ;
+    }
+    @include min-max{
+    } 
+    @include max{
+    }
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    background: #E6EBF4;
+    width: 100%;
+    @include min {
+      height: 395px;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+    @include min-max{
+    } 
+    @include max{
+    }
+  }
+}
 .section-result{
   position: relative;
   z-index: 1;

@@ -14,6 +14,8 @@
     font-size: 20px;
     transition: all .3s;
     border: solid 2px #377CEA;
+    /* box-shadow */
+    box-shadow: 8px 8px 20px 0px rgba(33, 78,150,0.24);
   }
   @include min-max{
   }
