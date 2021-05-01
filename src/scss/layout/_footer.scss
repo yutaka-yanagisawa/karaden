@@ -235,20 +235,44 @@
   background: #FF7F00;
   @include min {
     margin-top: 39px;
+    transition: all .3s;
+    border: solid 2px #FF7F00;
   }
   @include min-max{
   }
   @include max{
+  }
+  &:hover{
+    @include min {
+      background: #ffffff;
+      color: #FF7F00;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
   }
 }
 .footer-btn--green{
   background: #11C97B;
   @include min {
     margin-top: 24px;
+    transition: all .3s;
+    border: solid 2px #11C97B;
   }
   @include min-max{
   }
   @include max{
+  }
+  &:hover{
+    @include min {
+      background: #ffffff;
+      color: #11C97B;
+    }
+    @include min-max{
+    }
+    @include max{
+    }
   }
 }
 .footer-bottom-block{

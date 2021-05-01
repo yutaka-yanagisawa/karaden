@@ -86,6 +86,16 @@
     }
   }
 }
+.merit-block{
+  margin: 0 auto;
+  @include min {
+    width: 1352.29px;
+  }
+  @include min-max{
+  }
+  @include max{
+  }
+}
 .feature-block {
   @include min {
     margin-top: 124px;

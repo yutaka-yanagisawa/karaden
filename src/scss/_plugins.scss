@@ -1374,6 +1374,16 @@ button[aria-label][data-balloon-pos] {
   align-items: center;
   justify-content: center;
   /* color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
+
+  @include min{
+    transition: all .3s;
+    opacity: 1;
+  }
+  &:hover{
+    @include min{
+      opacity: .6;
+    }
+  }
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -1390,6 +1400,7 @@ button[aria-label][data-balloon-pos] {
   text-transform: none;
   font-variant: initial;
   line-height: 1; */
+  
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
@@ -1401,6 +1412,14 @@ button[aria-label][data-balloon-pos] {
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
   /* content: "prev"; */
+  content: "";
+  background: url(/assets/img/swiper-arrow-prev.png)no-repeat center center;
+  background-size: contain;
+  @include min{
+    left: -32px;
+    width: 24px;
+    height: 18px;
+  }
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
@@ -1413,6 +1432,13 @@ button[aria-label][data-balloon-pos] {
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
   /* content: "next"; */
+  content: "";
+  background: url(/assets/img/swiper-arrow-next.png)no-repeat center center;
+  background-size: contain;
+  @include min{
+    width: 24px;
+    height: 18px;
+  }
 }
 /* .swiper-button-prev.swiper-button-white,
 .swiper-button-next.swiper-button-white {
@@ -1422,6 +1448,7 @@ button[aria-label][data-balloon-pos] {
 .swiper-button-next.swiper-button-black {
   --swiper-navigation-color: #000000;
 } */
+
 .swiper-button-lock {
   display: none;
 }
