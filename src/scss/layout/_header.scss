@@ -1,18 +1,47 @@
-.header-logo {
+
+.header{
   position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include min {
+    padding: 32px 40px;
+    transition: all .3s;
+  }
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  transition: .3s;
+  transform: translateY(-100%);
+  background: #ffffff;
+  @include min {
+    padding: 14px 40px 15px;
+  }
+}
+.is-show {
+  transform: translateY(0);
+}
+
+.header-logo {
+  background: url(/assets/img/header-logo.png)no-repeat center center;
+  background-size: contain;
+  display: inline-block;
   @include min {
     width: 211.34px;
     height: 51px;
     transition: all .3s;
     opacity: 1;
-    left: 40px;
-    top: 32px;
   }
   @include min-max{
   }
   @include max {
-    left: spvw(20);
-    top: spvw(30);
   }
   &:hover {
     @include min {
@@ -22,22 +51,16 @@
     @include max {
     }
   }
-}
-.header{
-  position: absolute;
-  top: 0;
-  z-index: 10;
-  width: 100%;
-  display: inline-block;
-  @include min {
-    padding: 32px 40px;
+  .header-fixed > & {
+    background: url(/assets/img/header-logo-fixed.png)no-repeat center center;
+    background-size: contain;
+    transition: all .3s;
   }
 }
 .nav-list{
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   @include min {
     padding: 16px 0;
   }
@@ -77,12 +100,17 @@
     @include max{
     }
   }
+  .header-fixed & {
+    color: #000000;
+    @include min {
+    }
+  }
 }
 .header-btn-box{
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @include min {
-    right: 40px;
-    top: 39px;
   }
   @include min-max{
   }

@@ -1,0 +1,42 @@
+.pagetop{
+  position: fixed;
+  z-index: 10;
+  @include min{
+    right: 40px;
+    bottom: 100px;
+  }
+  >a{
+    cursor: pointer;
+    border-radius: 50%;
+    background: #ffffff;
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    @include min{
+      width: 64px;
+      height: 64px;
+      /* box-shadow */
+      box-shadow: 6px 6px 16px 0px rgba(0,53,129,0.32);
+      transition: all .3s;
+      opacity: 1;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: url(/assets/img/pagetop-arrow.png)no-repeat center center;
+      background-size: contain;
+      @include min{
+        width: 18px;
+        height: 24px;
+      }
+    }
+    &:hover{
+      @include min{
+        opacity: .6;
+      }
+    }
+  }
+}

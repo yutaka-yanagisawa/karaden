@@ -53,7 +53,7 @@ $(function () {
     document.body.classList.remove("open");
    });
   //モーダル
-  $(function(){
+  /* $(function(){
     $('.popup-image').magnificPopup({
       type: 'image',
       gallery : {
@@ -63,17 +63,13 @@ $(function () {
         preload : [ 0, 1 ] // いっこ前(0)と後(1)を事前読み込み
     },
     });
-  });
-
-  //スムーススクロール
-  new SmoothScroll('a[href*="#"]', {
-    speed: 200,
-    header: ".header",
-  });
-
-
+  }); */
 });
-
+//スムーススクロール
+new SmoothScroll('a[href*="#"]', {
+  speed: 200,
+  header: ".header",
+});
 ///////////////////////////////////
 // 
 // ウィンドウ ロード時の処理
@@ -168,69 +164,39 @@ function intialSwiper() {
 }
 
 /**
- * PCのトップスクロールボタンの表示/非表示
+ * トップスクロールボタンの表示/非表示
  */
-/* function switchByWidth() {
-  if (window.matchMedia("(min-width:768px)").matches) {
-    const pagetop = $("#pagetop");
-    if (window.pageYOffset > 200) {
-      pagetop.fadeIn();
+ $(function() {
+   $(window).on("scroll", function() {
+     if ($(this).scrollTop() > 100) {
+       $(".pagetop").fadeIn();
+     } else {
+       $(".pagetop").fadeOut();
+     }
+   });
+ });
+
+/**
+ * ヘッダースクロール 固定
+ */
+
+$(function() {
+  var $win = $(window),
+      $cloneNav = $('header').clone().addClass('header-fixed').appendTo('body'),
+      showClass = 'is-show';
+
+  $win.on('load scroll', function() {
+    var value = $(this).scrollTop();
+    /* var sectionTop = document.getElementById("mainvisual").clientHeight;
+    var sectionTopScroll = sectionTop / 2;
+    if ( value > sectionTopScroll ) { */
+    var sectionTop = document.getElementById("mainvisual").clientHeight;
+    if ( value > sectionTop ) {
+      $cloneNav.addClass(showClass);
     } else {
-      pagetop.fadeOut();
+      $cloneNav.removeClass(showClass);
     }
-  }
-} */
-
-/**
- * サイドナビ　Current
- */
-
-
-$(function(){
-  var margin = 700,   //ウインドウ上部からどれぐらいの位置で変化させるか
-  sectionTop = new Array; //sectionのTop位置格納用
-
-  //(1)各sectionの縦位置を取得
-  $('.section').each(function(i) {
-      sectionTop[i] = $(this).offset().top;
   });
-
-  //init
-  changeNavCurrent(0);
-
-  //スクロールした時の処理
-  $(window).on('load scroll', function() {
-      scrollY = $(window).scrollTop();
-
-      //(2)各セクションの位置とスクロール位置を比較して、条件にあったらchangeNavCurrentを実行
-      for (var i = sectionTop.length - 1 ; i >= 0; i--) {
-          if (scrollY > sectionTop[i] - margin) {
-                  changeNavCurrent(i);
-              break;
-          }
-      };
-  });
-  //(3)ナビの処理
-  function changeNavCurrent(curNum) {
-      if (curNum != current) {
-          var current = curNum;
-          var curNum2 = curNum + 1;//HTML順序用
-          $('.sidenav-list li a').removeClass('current');
-          $('.sidenav-list li:nth-child(' + curNum2 +') a').addClass('current');
-      }
-  };
-});
-
-
-/**
- * スクロール Blur
- */
-
-window.addEventListener("scroll", function () {
-  var header = document.querySelector(".fixed-bg");
-  var sectionTop = document.getElementById("sectionStoreTop").clientHeight;
-  var sectionTopScroll = sectionTop / 2;
-  header.classList.toggle("fixed-bg-blur", window.scrollY > sectionTopScroll);
 });
 
 //FOUT対応
