@@ -1,17 +1,39 @@
-if pagename=='index'
+header.header
+  a.header-logo
+    img(src="/assets/img/header-logo.png", alt="")
+  ul.nav-list
+    li.nav-list-item 
+      a.nav-list-item-link 特長
+    li.nav-list-item 
+      a.nav-list-item-link 活用シーン
+    li.nav-list-item 
+      a.nav-list-item-link 機能
+    li.nav-list-item 
+      a.nav-list-item-link 料金
+    li.nav-list-item 
+      a.nav-list-item-link 事例
+    li.nav-list-item 
+      a.nav-list-item-link よくある質問
+    li.nav-list-item 
+      a.nav-list-item-link お役立ち情報
+  .header-btn-box
+    a(href="").header-btn.header-btn--orange 資料請求・お問合せ
+    a(href="").header-btn.header-btn--green 代理店募集
+//if pagename=='index'
+  
   #nav-toggle
     div
       span
       span
       span
-else
-  a.logo(href="/") ALL DAY
+//else
+  a.logo(href="/") 
   #nav-toggle.scroll-nav
     div
       span
       span
       span
-#gloval-nav
+//#gloval-nav
   .gloval-nav-wrap
     .nav-heading-block
       .nav-heading 

@@ -112,14 +112,14 @@ $(window).on('resize', function () {
  *  Swiperの初期化
  */
 function intialSwiper() {
-  new Swiper(".swiper-container", {
+  new Swiper(".swiper-container-scene", {
     centeredSlides: true,
     loop: true,
     speed: 800,
     slidesPerView: 1,
-    //spaceBetween: 48,
+    spaceBetween: 48,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination-scene',
       type: 'bullets',
       clickable: true,
       renderBullet: function(index, className) {
@@ -127,8 +127,33 @@ function intialSwiper() {
   　　　return '<span class="' + className + '">' + ["クレジットカード", "銀行・消費者ローン", "電気・ガス・水道・ISP","不動産","生保・損保会社","引越・物流","美容・エステ・スポーツクラブ","派遣・人材紹介・採用","鉄道・船舶・航空","コールセンター","自治体",][index] + '</span>';　 }
                  },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next-scene",
+      prevEl: ".swiper-button-prev-scene",
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      }
+    },
+    onSlideChangeEnd: function (e) {
+      e.fixLoop()
+    }
+  });
+  new Swiper(".swiper-container-example", {
+    centeredSlides: true,
+    loop: true,
+    speed: 800,
+    slidesPerView: 1,
+    spaceBetween: 64,
+    pagination: {
+      el: '.swiper-pagination-example',
+      type: 'bullets',
+      clickable: true,
+                 },
+    navigation: {
+      nextEl: ".swiper-button-next-example",
+      prevEl: ".swiper-button-prev-example",
     },
     breakpoints: {
       767: {
