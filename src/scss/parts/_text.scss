@@ -7,6 +7,7 @@
   }
 }
 .section-lead{
+  color: #333333;
   @include min {
     font-size: 18px;
     line-height: 2;
@@ -15,6 +16,23 @@
   @include min-max{
   }
   @include max{
+    font-size: spvw(28);
+    line-height: 2;
+    margin-top: spvw(70);
+    font-weight: 500;
+  }
+}
+.section-lead--contact{
+  @include min {
+    margin-top: 48px!important;
+  }
+  @include min-max{
+  }
+  @include max{
+    font-size: spvw(24);
+    line-height: 2;
+    margin-top: spvw(70);
+    font-weight: 500;
   }
 }
 .section-lead--result{

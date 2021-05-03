@@ -8,6 +8,28 @@ let startPos = 0;
 // ドキュメント読み込み時の処理 
 // 
 ///////////////////////////////////
+function switchByWidth(){
+  if (window.matchMedia('(max-width: 767px)').matches) {
+      //スマホ処理
+  } else if (window.matchMedia('(min-width:768px)').matches) {
+      //PC処理
+    $(function() {
+      var $win = $(window),
+          $cloneNav = $('header').clone().addClass('header-fixed').appendTo('body'),
+          showClass = 'is-show';
+    
+      $win.on('load scroll', function() {
+        var value = $(this).scrollTop();
+        var sectionTop = document.getElementById("mainvisual").clientHeight;
+        if ( value > sectionTop ) {
+          $cloneNav.addClass(showClass);
+        } else {
+          $cloneNav.removeClass(showClass);
+        }
+      });
+    });
+  }
+}
 
 $(function () {
   //Mobile判定
@@ -52,18 +74,6 @@ $(function () {
   $('.gloval-nav-list-item--child').click(function(){
     document.body.classList.remove("open");
    });
-  //モーダル
-  /* $(function(){
-    $('.popup-image').magnificPopup({
-      type: 'image',
-      gallery : {
-        fixedContentPos : false,
-        enabled : true, // ギャラリー表示を有効化
-        navigateByImgClick : true, // 画像クリックで次画像へ遷移
-        preload : [ 0, 1 ] // いっこ前(0)と後(1)を事前読み込み
-    },
-    });
-  }); */
 });
 //スムーススクロール
 new SmoothScroll('a[href*="#"]', {
@@ -153,8 +163,8 @@ function intialSwiper() {
     },
     breakpoints: {
       767: {
-        slidesPerView: 1.3,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 40,
       }
     },
     onSlideChangeEnd: function (e) {
@@ -180,24 +190,7 @@ function intialSwiper() {
  * ヘッダースクロール 固定
  */
 
-$(function() {
-  var $win = $(window),
-      $cloneNav = $('header').clone().addClass('header-fixed').appendTo('body'),
-      showClass = 'is-show';
 
-  $win.on('load scroll', function() {
-    var value = $(this).scrollTop();
-    /* var sectionTop = document.getElementById("mainvisual").clientHeight;
-    var sectionTopScroll = sectionTop / 2;
-    if ( value > sectionTopScroll ) { */
-    var sectionTop = document.getElementById("mainvisual").clientHeight;
-    if ( value > sectionTop ) {
-      $cloneNav.addClass(showClass);
-    } else {
-      $cloneNav.removeClass(showClass);
-    }
-  });
-});
 
 //FOUT対応
 window.WebFontConfig = {

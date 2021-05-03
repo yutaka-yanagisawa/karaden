@@ -7,19 +7,19 @@
   @include min-max{
   }
   @include max{
-    padding: spvw(150) 0 spvw(78);
+    padding: spvw(49.1) 0 spvw(80);
   }
 }
-.footer-heading-block{
+.footer-nav-block{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
   @include min {
   }
   @include min-max{
   }
   @include max{
+    flex-wrap: wrap;
   }
 }
 .footer-nav{
@@ -29,27 +29,20 @@
   @include min-max{
   }
   @include max{
+    text-align: left;
   }
 }
 .footer-logo-karaden{
+  display: inline-block;
   @include min {
     width: 211.34px;
     height: 28px;
-    display: inline-block;
   }
   @include min-max{
   }
   @include max{
-  }
-}
-.footer-nav-block{
-  display: flex;
-  justify-content: flex-start;
-  @include min {
-  }
-  @include min-max{
-  }
-  @include max{
+    width: spvw(302);
+    height: spvw(40);
   }
 }
 .footer-nav-list{
@@ -58,11 +51,13 @@
   flex-wrap: wrap;
   @include min {
     width: 400px;
-    margin-top: 33px;
+    margin-top: 23px;
   }
   @include min-max{
   }
   @include max{
+    width: 100%;
+    margin-top: spvw(30);
   }
 }
 .footer-nav-list-item{
@@ -74,6 +69,9 @@
   @include min-max{
   }
   @include max{
+    font-size: spvw(24);
+    width: 50%;
+    line-height: 2.66666667;
   }
 }
 .footer-nav-list-item-link{
@@ -89,6 +87,7 @@
   @include min-max{
   }
   @include max{
+    font-size: spvw(24);
   }
   &:hover{
     @include min {
@@ -105,22 +104,27 @@
   @include min {
     text-align: left;
     margin-right: 226px;
-    //margin-top: 71px;
+    margin-top: 50px;
   }
   @include min-max{
   }
   @include max{
+    margin-top: spvw(20);
   }
 }
 .footer-relational-service-title {
   color: #838383;
-  line-height: 2;
+  font-weight: 500;
   @include min {
     font-size: 16px;
+    line-height: 2;
   }
   @include min-max{
   }
   @include max{
+    font-size: spvw(24);
+    line-height: 2.66666667;
+    text-align: left;
   }
 }
 .footer-relational-service-list{
@@ -131,19 +135,23 @@
   @include min-max{
   }
   @include max{
+    width: 100%;
   }
 }
 .footer-relational-service-list-item{
   position: relative;
   text-align: left;
   display: inline-block;
-  line-height: 2;
+  padding: 0 0 0 1em;
   @include min {
-    padding: 0 0 0 1em;
+    line-height: 2;
+    font-size: 16px;
   }
   @include min-max{
   }
   @include max{
+    font-size: spvw(24);
+    line-height: 2.66666667;
   }
   &::before{
     content: "・";
@@ -171,6 +179,7 @@
   @include min-max{
   }
   @include max{
+    font-size: spvw(24);
   }
   &:hover{
     @include min {
@@ -186,13 +195,17 @@
 .footer-btn-block{
   @include min {
     width: 200px;
+    margin-top: 6px;
   }
   @include min-max{
   }
   @include max{
+    width: spvw(430);
+    margin: spvw(70) auto 0;
   }
 }
 .footer-btn-logo{
+  font-size: 0;
   @include min {
     width: 200px;
     opacity: 1;
@@ -202,6 +215,7 @@
   @include min-max{
   }
   @include max{
+    width: spvw(430);
   }
   &:hover{
     @include min {
@@ -229,6 +243,11 @@
   @include min-max{
   }
   @include max{
+    height: spvw(88);
+    width: spvw(430);
+    font-size: spvw(24);
+    border-radius: spvw(44);
+    margin-top: spvw(48);
   }
 }
 .footer-btn--orange{
@@ -283,13 +302,14 @@
   @include min-max{
   }
   @include max{
+    padding: spvw(40) 0 spvw(46);
   }
   >.inner{
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     @include min {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     @include min-max{
     }
@@ -299,45 +319,59 @@
 }
 .footer-bottom-list{
   display: flex;
-  justify-content: flex-start;
   font-size: 0;
   @include min {
+    justify-content: flex-start;
   }
   @include min-max{
   }
   @include max{
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 .footer-bottom-list-item{
   position: relative;
+  line-height: 1;
   @include min {
     padding: 0 14px 0 0;
     margin: 0 14px 0 0;
-    line-height: 1;
   }
   @include min-max{
   }
   @include max{
+    padding: 0 spvw(20) 0 0;
+    margin: 0 spvw(20) spvw(30) 0;
   }
   &:last-child{
     &::before{
       content: none;
     }
   }
+  &:nth-child(3){
+    &::before{
+      @include max{
+        content: none;
+      }
+    }
+  }
   &::before{
     content: "";
     position: absolute;
-    width: 0.8px;
     height: 100%;
     background: #ffffff;
     line-height: 0;
     @include min {
       right: 0;
       top: 1px;
+      width: 0.8px;
     }
     @include min-max{
     }
     @include max{
+      right: 0;
+      top: 1px;
+      width: 1px;
     }
   }
 }
@@ -354,6 +388,7 @@
   @include min-max{
   }
   @include max{
+    font-size: spvw(20);
   }
   &:hover{
     @include min {
@@ -374,9 +409,9 @@
     font-size: 16px;
   }
   @include min-max{
-    font-size: pcvw(18);
   }
   @include max{
-    font-size: spvw(22);
+    margin-top: spvw(28);
+    font-size: spvw(20);
   }
 }

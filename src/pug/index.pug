@@ -111,56 +111,86 @@ html(lang='ja')
           h2.section-heading 豊富な機能
           .section-lead さまざまなニーズに応える豊富な機能に加えて
             br
-            |約20年間分の番号履歴を元に誤送信防止する機能 や権限設定など管理機能も充実しています。
+            |約20年間分の番号履歴を元に誤送信防止する機能
+            br.sp
+            |や権限設定など管理機能も充実しています。
           .function-block
             .item
               .img-box
-                img(src="/assets/img/top-function-img01.png", alt="")
+                picture.function-img
+                  source(srcset='/assets/img/top-function-img01.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/top-function-img-sp01.png' media='(max-width: 768px)')
+                  img(src="/assets/img/top-function-img01.png", alt="")
               .text 個別/一斉送信
             .item
               .img-box
-                img(src="/assets/img/top-function-img02.png", alt="")
+                picture.function-img
+                  source(srcset='/assets/img/top-function-img02.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/top-function-img-sp02.png' media='(max-width: 768px)')
+                  img(src="/assets/img/top-function-img02.png", alt="")
               .text API連携
             .item
               .img-box
-                img(src="/assets/img/top-function-img03.png", alt="")
+                picture.function-img
+                  source(srcset='/assets/img/top-function-img03.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/top-function-img-sp03.png' media='(max-width: 768px)')
+                  img(src="/assets/img/top-function-img03.png", alt="")
               .text IVR連携
             .item
               .img-box
-                img(src="/assets/img/top-function-img04.png", alt="")
+                picture.function-img
+                  source(srcset='/assets/img/top-function-img04.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/top-function-img-sp04.png' media='(max-width: 768px)')
+                  img(src="/assets/img/top-function-img04.png", alt="")
               .text 送信元
                 br
                 |番号指定
             .item
               .img-box
-                img(src="/assets/img/top-function-img05.png", alt="")
+                picture.function-img
+                  source(srcset='/assets/img/top-function-img05.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/top-function-img-sp05.png' media='(max-width: 768px)')
+                  img(src="/assets/img/top-function-img05.png", alt="")
               .text 長文
                 br
                 |分割機能
             .item
               .img-box
-                img(src="/assets/img/top-function-img06.png", alt="")
+                picture.function-img
+                  source(srcset='/assets/img/top-function-img06.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/top-function-img-sp06.png' media='(max-width: 768px)')
+                  img(src="/assets/img/top-function-img06.png", alt="")
               .text 携帯番号
                 br
                 |履歴判定
             .item
               .img-box
-                img(src="/assets/img/top-function-img07.png", alt="")
+                picture.function-img
+                  source(srcset='/assets/img/top-function-img07.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/top-function-img-sp07.png' media='(max-width: 768px)')
+                  img(src="/assets/img/top-function-img07.png", alt="")
               .text 短縮URL機能
             .item
               .img-box
-                img(src="/assets/img/top-function-img08.png", alt="")
+                picture.function-img
+                  source(srcset='/assets/img/top-function-img08.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/top-function-img-sp08.png' media='(max-width: 768px)')
+                  img(src="/assets/img/top-function-img08.png", alt="")
               .text 双方向SMS
           a(href="").c-btn.pcmt80 詳細はこちら
       section#scene.section.section-scene
         .inner
-          h2.section-heading 空電プッシュは様々な業界で選ばれています
+          h2.section-heading.section-heading-sp2line 空電プッシュは様々な業界で選ばれています
           .scene-block
             .swiper-pagination.swiper-pagination-scene
             .swiper-container.swiper-container-scene
               .swiper-wrapper
-                .swiper-slide
-                  img(src="/assets/img/scene01.png", alt="")
+                .swiper-slide.swiper-slide-scene.swiper-slide01
+                  picture.swiper-slide-scene-img
+                    source(srcset='/assets/img/scene01.png' media='(min-width: 769px)')
+                    source(srcset='/assets/img/scene-sp01.png' media='(max-width: 768px)')
+                    img(src="/assets/img/scene01.png", alt="")
+                  img(src="/assets/img/scene-phone-sp01.png", alt="").smartphone-img.sp
                   .text-box
                     span.slide-title CASE01
                     h3.title クレジットカード
@@ -170,11 +200,18 @@ html(lang='ja')
                       li.list-item 本人認証
                       li.list-item 販促・キャンペーン
                       li.list-item お問い合わせ時のWebサイト誘導
-                    p.text 毎月の利用状況の連絡や、支払いに関する連絡、キャンペーン情報の連絡に活用いただけま
-                      |す。また、スマートフォンでカードを利用する際の本人認証としても活用できます。
-                    img(src="/assets/img/scene-phone01.png", alt="").smartphone-img
-                .swiper-slide
-                  img(src="/assets/img/scene02.png", alt="")
+                    p.text 毎月の利用状況の連絡や、支払いに関する連絡、
+                      br.sp
+                      |キャンペーン情報の連絡に活用いただけます。
+                      br.sp
+                      |また、スマートフォンでカードを利用する際の本人認証としても活用できます。
+                    img(src="/assets/img/scene-phone01.png", alt="").smartphone-img.pc
+                .swiper-slide.swiper-slide-scene.swiper-slide02
+                  picture.swiper-slide-scene-img
+                    source(srcset='/assets/img/scene02.png' media='(min-width: 769px)')
+                    source(srcset='/assets/img/scene-sp02.png' media='(max-width: 768px)')
+                    img(src="/assets/img/scene02.png", alt="")
+                  img(src="/assets/img/scene-phone-sp02.png", alt="").smartphone-img.sp
                   .text-box
                     span.slide-title CASE02
                     h3.title 銀行・消費者ローン
@@ -186,9 +223,13 @@ html(lang='ja')
                       li.list-item 販促・キャンペーン
                       li.list-item お問い合わせ時のWebサイト誘導
                     p.text サービス申込時のやり取りや、支払いに関する連絡、特典やキャンペーンなどの連絡に活用できます。
-                    img(src="/assets/img/scene-phone02.png", alt="").smartphone-img
-                .swiper-slide
-                  img(src="/assets/img/scene03.png", alt="")
+                    img(src="/assets/img/scene-phone02.png", alt="").smartphone-img.pc
+                .swiper-slide.swiper-slide-scene.swiper-slide03
+                  picture.swiper-slide-scene-img
+                    source(srcset='/assets/img/scene03.png' media='(min-width: 769px)')
+                    source(srcset='/assets/img/scene-sp03.png' media='(max-width: 768px)')
+                    img(src="/assets/img/scene03.png", alt="")
+                  img(src="/assets/img/scene-phone-sp03.png", alt="").smartphone-img.sp
                   .text-box
                     span.slide-title CASE03
                     h3.title 電気・ガス・水道・ISP
@@ -197,9 +238,13 @@ html(lang='ja')
                       li.list-item ご利用料金連絡
                       li.list-item 障害情報連絡
                     p.text 工事日や修理日の事前連絡やご利用料金のご連絡、障害が発生した場合の一斉連絡に活用できます。
-                    img(src="/assets/img/scene-phone03.png", alt="").smartphone-img
-                .swiper-slide
-                  img(src="/assets/img/scene04.png", alt="")
+                    img(src="/assets/img/scene-phone03.png", alt="").smartphone-img.pc
+                .swiper-slide.swiper-slide-scene.swiper-slide04
+                  picture.swiper-slide-scene-img
+                    source(srcset='/assets/img/scene04.png' media='(min-width: 769px)')
+                    source(srcset='/assets/img/scene-sp04.png' media='(max-width: 768px)')
+                    img(src="/assets/img/scene04.png", alt="")
+                  img(src="/assets/img/scene-phone-sp04.png", alt="").smartphone-img.sp
                   .text-box
                     span.slide-title CASE04
                     h3.title 不動産サービス
@@ -207,9 +252,13 @@ html(lang='ja')
                       li.list-item 入居者の手続き連絡
                       li.list-item 督促連絡 
                     p.text 入居者さまとのやり取りや手続きの連絡、家賃などの督促に活用できます。
-                    img(src="/assets/img/scene-phone04.png", alt="").smartphone-img
-                .swiper-slide
-                  img(src="/assets/img/scene05.png", alt="")
+                    img(src="/assets/img/scene-phone04.png", alt="").smartphone-img.pc
+                .swiper-slide.swiper-slide-scene.swiper-slide05
+                  picture.swiper-slide-scene-img
+                    source(srcset='/assets/img/scene05.png' media='(min-width: 769px)')
+                    source(srcset='/assets/img/scene-sp05.png' media='(max-width: 768px)')
+                    img(src="/assets/img/scene05.png", alt="")
+                  img(src="/assets/img/scene-phone-sp05.png", alt="").smartphone-img.sp
                   .text-box
                     span.slide-title CASE05
                     h3.title 生・損保会社
@@ -218,9 +267,13 @@ html(lang='ja')
                       li.list-item 調査・アンケート
                       li.list-item お問い合わせ時のWebサイト誘導
                     p.text 保険請求時のやり取りや、その後のお客様満足度調査に活用いただけます。音声ガイダンス(IVR)によりお客様のニーズや問い合わせ内容にあったSMSを送信できます。
-                    img(src="/assets/img/scene-phone05.png", alt="").smartphone-img
-                .swiper-slide
-                  img(src="/assets/img/scene06.png", alt="")
+                    img(src="/assets/img/scene-phone05.png", alt="").smartphone-img.pc
+                .swiper-slide.swiper-slide-scene.swiper-slide06
+                  picture.swiper-slide-scene-img
+                    source(srcset='/assets/img/scene06.png' media='(min-width: 769px)')
+                    source(srcset='/assets/img/scene-sp06.png' media='(max-width: 768px)')
+                    img(src="/assets/img/scene06.png", alt="")
+                  img(src="/assets/img/scene-phone-sp06.png", alt="").smartphone-img.sp
                   .text-box
                     span.slide-title CASE06
                     h3.title 引越・物流
@@ -229,9 +282,13 @@ html(lang='ja')
                       li.list-item 作業日事前連絡
                       li.list-item 調査・アンケート
                     p.text お客様宛の荷物の配達日時を事前に連絡したり、引越などの作業日をリマインドできます。またSMS宛てにお客様満足度調査をお送りすることも可能です。
-                    img(src="/assets/img/scene-phone06.png", alt="").smartphone-img
-                .swiper-slide
-                  img(src="/assets/img/scene07.png", alt="")
+                    img(src="/assets/img/scene-phone06.png", alt="").smartphone-img.pc
+                .swiper-slide.swiper-slide-scene.swiper-slide07
+                  picture.swiper-slide-scene-img
+                    source(srcset='/assets/img/scene07.png' media='(min-width: 769px)')
+                    source(srcset='/assets/img/scene-sp07.png' media='(max-width: 768px)')
+                    img(src="/assets/img/scene07.png", alt="")
+                  img(src="/assets/img/scene-phone-sp07.png", alt="").smartphone-img.sp
                   .text-box
                     span.slide-title CASE07
                     h3.title 美容・エステ・スポーツクラブ
@@ -240,9 +297,13 @@ html(lang='ja')
                       li.list-item 予約日時のリマインド
                       li.list-item 販促・キャンペーン
                     p.text お客様がWebサイトや電話で予約いただいた後、予約日時をリマインドとして連絡したり、お得なキャンペーン情報をお送りすることができます。
-                    img(src="/assets/img/scene-phone07.png", alt="").smartphone-img
-                .swiper-slide
-                  img(src="/assets/img/scene08.png", alt="")
+                    img(src="/assets/img/scene-phone07.png", alt="").smartphone-img.pc.pc
+                .swiper-slide.swiper-slide-scene.swiper-slide08
+                  picture.swiper-slide-scene-img
+                    source(srcset='/assets/img/scene08.png' media='(min-width: 769px)')
+                    source(srcset='/assets/img/scene-sp08.png' media='(max-width: 768px)')
+                    img(src="/assets/img/scene08.png", alt="")
+                  img(src="/assets/img/scene-phone-sp08.png", alt="").smartphone-img.sp
                   .text-box
                     span.slide-title CASE08
                     h3.title 派遣/人材紹介・採用
@@ -251,9 +312,13 @@ html(lang='ja')
                       li.list-item 面接前後の各種連絡
                       li.list-item お仕事状況アンケート
                     p.text サービス申込時のやり取りや、支払いに関する連絡、特典やキャンペーンなどの連絡に活用できます。
-                    img(src="/assets/img/scene-phone08.png", alt="").smartphone-img
-                .swiper-slide
-                  img(src="/assets/img/scene09.png", alt="")
+                    img(src="/assets/img/scene-phone08.png", alt="").smartphone-img.pc
+                .swiper-slide.swiper-slide-scene.swiper-slide09
+                  picture.swiper-slide-scene-img
+                    source(srcset='/assets/img/scene09.png' media='(min-width: 769px)')
+                    source(srcset='/assets/img/scene-sp09.png' media='(max-width: 768px)')
+                    img(src="/assets/img/scene09.png", alt="")
+                  img(src="/assets/img/scene-phone-sp04.png", alt="").smartphone-img.sp
                   .text-box
                     span.slide-title CASE09
                     h3.title 鉄道・船舶・航空
@@ -262,9 +327,13 @@ html(lang='ja')
                       li.list-item チェックイン締切時刻連絡
                       li.list-item チケット購入完了連絡
                     p.text チケットを購入されたお客様に対して、購入完了連絡や、チェックイン時間の連絡、欠航などの連絡に活用いただけます。
-                    img(src="/assets/img/scene-phone09.png", alt="").smartphone-img
-                .swiper-slide
-                  img(src="/assets/img/scene10.png", alt="")
+                    img(src="/assets/img/scene-phone09.png", alt="").smartphone-img.pc
+                .swiper-slide.swiper-slide-scene.swiper-slide10
+                  picture.swiper-slide-scene-img
+                    source(srcset='/assets/img/scene10.png' media='(min-width: 769px)')
+                    source(srcset='/assets/img/scene-sp10.png' media='(max-width: 768px)')
+                    img(src="/assets/img/scene10.png", alt="")
+                  img(src="/assets/img/scene-phone-sp10.png", alt="").smartphone-img.sp
                   .text-box
                     span.slide-title CASE10
                     h3.title コールセンター
@@ -279,9 +348,13 @@ html(lang='ja')
                           a(href="").relatedsolution-list-item-link IVRと連携したSMS送信
                         li.relatedsolution-list-item 
                           a(href="").relatedsolution-list-item-link SMSアンケートソリューション
-                    img(src="/assets/img/scene-phone10.png", alt="").smartphone-img
-                .swiper-slide
-                  img(src="/assets/img/scene11.png", alt="")
+                    img(src="/assets/img/scene-phone10.png", alt="").smartphone-img.pc
+                .swiper-slide.swiper-slide-scene.swiper-slide11
+                  picture.swiper-slide-scene-img
+                    source(srcset='/assets/img/scene11.png' media='(min-width: 769px)')
+                    source(srcset='/assets/img/scene-sp11.png' media='(max-width: 768px)')
+                    img(src="/assets/img/scene11.png", alt="")
+                  img(src="/assets/img/scene-phone-sp11.png", alt="").smartphone-img.sp
                   .text-box
                     span.slide-title CASE11
                     h3.title 自治体
@@ -294,7 +367,7 @@ html(lang='ja')
                       ul.relatedsolution-list
                         li.relatedsolution-list-item 
                           a(href="").relatedsolution-list-item-link 空電プッシュ for LGWAN
-                    img(src="/assets/img/scene-phone11.png", alt="").smartphone-img
+                    img(src="/assets/img/scene-phone11.png", alt="").smartphone-img.pc
             // 前ページボタン
             .swiper-button-prev.swiper-button-prev-scene
             // 次ページボタン
@@ -302,8 +375,10 @@ html(lang='ja')
             a(href="").c-btn.pcmt0 活用シーン一覧
       section#result.section.section-result
         .inner
-          h2.section-heading.text-left 空電プッシュの確かな実績と効果
-          .section-lead.section-lead--result.text-left 約８割が効果を実感！豊富な実績を支える確かな効果
+          h2.section-heading.section-heading-sp2line.text-left-pc 空電プッシュの確かな実績
+            br.sp
+            |と効果
+          .section-lead.section-lead--result.text-left-pc 約８割が効果を実感！豊富な実績を支える確かな効果
           .result-block
             .item
               .title
@@ -311,9 +386,9 @@ html(lang='ja')
                 |70
                 span ％
               .text 家賃の未納者に対して連絡したところ、
-                br
+                br.pc
                 span 70％以上のレスポンスがあり、
-                br
+                br.pc
                 |オペレーターの人員削減につながった。
             .item
               .title
@@ -321,25 +396,30 @@ html(lang='ja')
                 |85
                 span ％
               .text 震災で被災されたご契約者へ安否確認
-                br
+                br.pc
                 |と契約・お支払いの案内をするため、
-                br
+                br.pc
                 |フリーダイヤルへコールバックの依頼
-                br
+                br.pc
                 |をしたところ、
                 span 85％以上のレスポンス
-                br
+                br.pc
                 |が得られた。
             .item
               .title 4
                 span 倍
               .text カード利用明細登録のURLを案内した
                 |ところ、
-                span Webサイトへの誘引がEメール
+                span Web
+                  br.sp
+                  |サイトへの誘引がEメール
                   |の4倍以上
                 |となった。
         .results-company-block
-          img(src="/assets/img/result-company-img.png", alt="")
+          picture.img
+            source(srcset='/assets/img/result-company-img.png' media='(min-width: 769px)')
+            source(srcset='/assets/img/result-company-img-sp.png' media='(max-width: 768px)')
+            img(src="/assets/img/result-company-img.png", alt="")
           .text-box
             h3.title さまざまな業界での導入実績
             p.text おかげさまで多くのお客様からご利用いただき、
@@ -347,28 +427,43 @@ html(lang='ja')
               |5年連続国内SMS業界シェアNo.1を達成しました。
               br
               |高いレベルでのセキュリティ、配信スペック、サポートを
-              br
+              br.pc
               |評価していただいております。
       section#example.section.section-example
         .inner
           h2.section-heading.font-white 導入事例
         .example-block
-          .swiper-container-example
+          .swiper-container.swiper-container-example
             .swiper-wrapper.swiper-wrapper-example
               .swiper-slide.swiper-slide-example.swiper-slide-example01
-                img(src="/assets/img/example-img01.png", alt="")
+                picture.swiper-slide-example-img
+                  source(srcset='/assets/img/example-img01.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/example-img-sp01.png' media='(max-width: 768px)')
+                  img(src="/assets/img/example-img01.png", alt="")
                 .title 空電プッシュのスピーディな導入で
-                  br
+                  br.pc
                   |自然災害への対応を効率化
                 .text 三井住友海上火災保険様
               .swiper-slide.swiper-slide-example.swiper-slide-example02
-                img(src="/assets/img/example-img01.png", alt="")
+                picture.swiper-slide-example-img
+                  source(srcset='/assets/img/example-img01.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/example-img-sp01.png' media='(max-width: 768px)')
+                  img(src="/assets/img/example-img01.png", alt="")
               .swiper-slide.swiper-slide-example.swiper-slide-example03
-                img(src="/assets/img/example-img01.png", alt="")
+                picture.swiper-slide-example-img
+                  source(srcset='/assets/img/example-img01.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/example-img-sp01.png' media='(max-width: 768px)')
+                  img(src="/assets/img/example-img01.png", alt="")
               .swiper-slide.swiper-slide-example.swiper-slide-example04
-                img(src="/assets/img/example-img01.png", alt="")
+                picture.swiper-slide-example-img
+                  source(srcset='/assets/img/example-img01.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/example-img-sp01.png' media='(max-width: 768px)')
+                  img(src="/assets/img/example-img01.png", alt="")
               .swiper-slide.swiper-slide-example.swiper-slide-example05
-                img(src="/assets/img/example-img01.png", alt="")
+                picture.swiper-slide-example-img
+                  source(srcset='/assets/img/example-img01.png' media='(min-width: 769px)')
+                  source(srcset='/assets/img/example-img-sp01.png' media='(max-width: 768px)')
+                  img(src="/assets/img/example-img01.png", alt="")
           // 前ページボタン
           .swiper-button-prev.swiper-button-prev-example
           // 次ページボタン
@@ -385,20 +480,20 @@ html(lang='ja')
                 br
                 |抱えているご担当者様必見！
               p.text 着眼率90%を誇る顧客メッセージ
-                br
+                br.pc
                 |を確実に伝えるための手法はこれ
-                br
+                br.pc
                 |だ！
               a(href="").c-btn.c-btn--small.c-btn--download.pcmt40 ダウンロードする
             .item
               img.img(src="/assets/img/top-usefulcontents-img02.png", alt="")
               p.lead 金融関係者必見！
               p.text 今、注目されている、着眼率90％
-                br
+                br.pc
                 |を誇る「連絡」や「督促」をタイ
-                br
+                br.pc
                 |ムリーかつ確実に伝えることがで
-                br
+                br.pc
                 |きる手法は、これだ！
               a(href="").c-btn.c-btn--small.c-btn--download.pcmt40 ダウンロードする
             .item
@@ -458,7 +553,9 @@ html(lang='ja')
       section#contact.section.section-contact
         .inner
           h2.section-heading.font-white お問合せ
-          .section-lead.font-white 空電プッシュは、国内シェアNo.1の法人向けSMS送信サービスです。
+          .section-lead.section-lead--contact.font-white 空電プッシュは、国内シェアNo.1の
+            br.sp
+            |法人向けSMS送信サービスです。
             br
             |ご不明な点はお気軽にお問い合わせください。
             br

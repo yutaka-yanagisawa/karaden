@@ -1,248 +1,3 @@
-.scene-block{
-  .swiper-container-scene {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    /* Fix of Webkit flickering */
-    z-index: 1;
-    @include min{
-      margin-top: 48px;
-    }
-  }
-  .swiper-button-prev-scene,
-  .swiper-button-next-scene {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #ffffff;
-    @include min{
-      width: 64px;
-      height: 64px;
-      margin-top: -104px;
-      /* box-shadow */
-      box-shadow: 6px 6px 16px 0px rgba(0,53,129,0.32);
-    }
-  }
-  .swiper-button-prev,
-  .swiper-container-rtl .swiper-button-next {
-    right: auto;
-    @include min{
-      left: -32px;
-    }
-  }
-  .swiper-button-prev:after,
-  .swiper-container-rtl .swiper-button-next:after {
-    /* content: "prev"; */
-    content: "";
-    background: url(/assets/img/swiper-arrow-prev.png)no-repeat center center;
-    background-size: contain;
-    @include min{
-      left: -32px;
-      width: 24px;
-      height: 18px;
-    }
-  }
-  .swiper-button-next,
-  .swiper-container-rtl .swiper-button-prev {
-    right: 10px;
-    left: auto;
-    @include min{
-      right: -32px;
-    }
-  }
-  .swiper-button-next:after,
-  .swiper-container-rtl .swiper-button-prev:after {
-    /* content: "next"; */
-    content: "";
-    background: url(/assets/img/swiper-arrow-next.png)no-repeat center center;
-    background-size: contain;
-    @include min{
-      width: 24px;
-      height: 18px;
-    }
-  }
-  .swiper-pagination-bullet {
-    width: auto;
-    display: inline-block;
-    box-sizing: border-box;
-    font-weight: 500;
-    position: relative;
-    @include min{
-      font-size: 20px;
-      padding: 0 20px;
-      margin-bottom: 30px;
-    }
-    &::before{
-      position: absolute;
-      content: "";
-      left: 50%;
-      transform: translateX(-50%);
-      @include min{
-       width: 0px;
-       height: 3px;
-       bottom: -10px;
-       background: $theme-color;
-       transition: all .3s;
-       opacity: 0;
-      }
-    }
-    &::after{
-      content: "";
-      position: absolute;
-      width: 1px;
-      height: 100%;
-      background: #000;
-      right: 0;
-      top: 0;
-    }
-    &:nth-child(6){
-      &::after{
-        content: none;
-      }
-    }
-    &:last-child{
-      &::after{
-        content: none;
-      }
-    }
-  }
-  .swiper-pagination-bullet-active {
-    color: $theme-color;
-    position: relative;
-    font-weight: bold;
-     &::before{
-       position: absolute;
-       content: "";
-       left: 50%;
-       transform: translateX(-50%);
-       @include min{
-        width: 60px;
-        height: 3px;
-        bottom: -10px;
-        background: $theme-color;
-        opacity: 1;
-       }
-     }
-  }
-}
-.example-block{
-  .swiper-container-example {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    /* Fix of Webkit flickering */
-    z-index: 1;
-    @include min{
-      margin-top: 120px;
-      max-width: 1304px;
-      padding: 40px 32px;
-    }
-  }
-  .swiper-slide-example{
-    position: relative;
-    text-align: center;
-    @include min{
-      width: 100%;
-      border-radius: 8px 40px 40px 40px;
-      /* box-shadow */
-      box-shadow: 8px 8px 20px 0px rgba(33, 78,150,0.16);
-      height: 600px;
-      padding: 350px 40px 40px;
-    }
-    >img{
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: -1;
-    }
-  }
-  .swiper-button-prev-example,
-  .swiper-button-next-example {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #ffffff;
-    @include min{
-      width: 64px;
-      height: 64px;
-      margin-top: -116px;
-      /* box-shadow */
-      box-shadow: 6px 6px 16px 0px rgba(0,53,129,0.32);
-    }
-  }
-  .swiper-button-prev,
-  .swiper-container-rtl .swiper-button-next {
-    right: auto;
-    @include min{
-      left: 0px;
-    }
-  }
-  .swiper-button-prev:after,
-  .swiper-container-rtl .swiper-button-next:after {
-    /* content: "prev"; */
-    content: "";
-    background: url(/assets/img/swiper-arrow-prev.png)no-repeat center center;
-    background-size: contain;
-    @include min{
-      left: -32px;
-      width: 24px;
-      height: 18px;
-    }
-  }
-  .swiper-button-next,
-  .swiper-container-rtl .swiper-button-prev {
-    right: 10px;
-    left: auto;
-    @include min{
-      right: 0px;
-    }
-  }
-  .swiper-button-next:after,
-  .swiper-container-rtl .swiper-button-prev:after {
-    /* content: "next"; */
-    content: "";
-    background: url(/assets/img/swiper-arrow-next.png)no-repeat center center;
-    background-size: contain;
-    @include min{
-      width: 24px;
-      height: 18px;
-    }
-  }
-  .swiper-pagination-bullet {
-    background: #FFFFFF;
-    display: inline-block;
-    @include min{
-      width: 48px;
-      height: 8px;
-      margin: 0 8px;
-      border-radius: 4px;
-      transition: all .3s;
-    }
-  }
-  .swiper-pagination-bullet-active {
-    background: #3A5D9F;
-  }
-}
-
-
-
 
 /*
  * Container style
@@ -1464,13 +1219,13 @@ button[aria-label][data-balloon-pos] {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  overflow: hidden;
   list-style: none;
   padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
   @include min{
     margin-top: 48px;
+    overflow: hidden;
   }
 }
 .swiper-container-vertical > .swiper-wrapper {
@@ -1506,9 +1261,9 @@ button[aria-label][data-balloon-pos] {
   height: auto;
   position: relative;
   transition-property: transform;
-  @include min{
+  /* @include min{
     padding-bottom: 228px;
-  }
+  } */
 }
 .swiper-slide-invisible-blank {
   visibility: hidden;

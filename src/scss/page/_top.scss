@@ -88,20 +88,23 @@
   @include min-max{
   }
   @include max{
+    padding: spvw(120) 0 ;
   }
   &::before{
     content: "";
     position: absolute;
     background: #E6EBF4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
     @include min {
-      width: 100%;
-      height: 100%;
-      top: 0;
       left: -80px;
-      z-index: -1;
       border-radius: 0 8px 0 0;
     }
     @include min-max{
+      left: spvw(-20);
+      border-radius: 0 spvw(8) 0 0;
     }
     @include max{
     }
@@ -118,18 +121,19 @@
   @include min-max{
   }
   @include max{
+    padding: spvw(120) 0 ;
   }
   &::before{
     content: "";
     position: absolute;
     background: #F5F7FA;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
     @include min {
-      width: 100%;
-      height: 100%;
-      top: 0;
       /* top: -395px; */
       left: -80px;
-      z-index: -1;
       border-radius: 0 8px 0 0 ;
     }
     @include min-max{
@@ -142,11 +146,11 @@
     position: absolute;
     background: #E6EBF4;
     width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
     @include min {
       height: 395px;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
     }
     @include min-max{
     } 
@@ -156,7 +160,7 @@
 }
 .section-result{
   position: relative;
-  z-index: 1;
+  z-index: 0;
   background: #E6EBF4;
   overflow: hidden;
   @include min {
@@ -165,21 +169,23 @@
   @include min-max{
   }
   @include max{
+    padding: spvw(106) 0 spvw(120);
   }
   &::before{
     content: "";
     position: absolute;
     background: #F5F7FA;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
     @include min {
-      width: 100%;
-      height: 100%;
-      top: 0;
-      /* top: -395px; */
       left: -80px;
-      z-index: -1;
       border-radius: 0 8px 0 0 ;
     }
     @include min-max{
+      left: spvw(-20);
+      border-radius: 0 spvw(8) 0 0 ;
     } 
     @include max{
     }
@@ -189,15 +195,16 @@
     position: absolute;
     background: #E6EBF4;
     width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
     @include min {
       height: 395px;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
     }
     @include min-max{
     } 
     @include max{
+      height: spvw(541);
     }
   }
 }
@@ -212,17 +219,18 @@
   @include min-max{
   }
   @include max{
+    padding: spvw(120) 0;
   }
   &::before{
     content: "";
     position: absolute;
     background: #3A5D9F;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    z-index: -1;
     @include min {
-      width: 100%;
-      height: 50%;
-      top: 0;
-      left: 0px;
-      z-index: -1;
     }
     @include min-max{
     } 
@@ -234,15 +242,16 @@
     position: absolute;
     background: #E6EBF4;
     width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
     @include min {
       height: 395px;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
     }
     @include min-max{
     } 
     @include max{
+      height: spvw(684);
     }
   }
 }
@@ -256,22 +265,24 @@
   @include min-max{
   }
   @include max{
+    padding: spvw(120) 0;
   }
   &::before{
     content: "";
     position: absolute;
     background: #F5F7FA;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
     @include min {
-      width: 100%;
-      height: 100%;
-      top: 0;
       right: -80px;
-      z-index: -1;
-      border-radius: 8px 0 0 0 ;
     }
     @include min-max{
     } 
     @include max{
+      right: spvw(-20);
+      border-radius: spvw(4) 0 0 0 ;
     }
   }
 }
@@ -283,6 +294,7 @@
   @include min-max{
   }
   @include max{
+    padding: spvw(120) 0 spvw(120);
   }
 }
 .section-contact{
@@ -294,5 +306,6 @@
   @include min-max{
   }
   @include max{
+    padding: spvw(120) 0 spvw(100);
   }
 }

@@ -21,6 +21,14 @@
   @include min-max{
   }
   @include max{
+    width: spvw(510);
+    height: spvw(100);
+    border-radius: spvw(50);
+    font-size: spvw(28);
+    transition: all .3s;
+    /* box-shadow */
+    box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78,150,0.24);
+    margin: spvw(80) auto 0;
   }
   &::before{
     position: absolute;
@@ -39,6 +47,9 @@
     @include min-max{
     }
     @include max{
+      width: spvw(24);
+      height: spvw(28);
+      right: spvw(40);
     }
   }
   &:hover{
@@ -73,6 +84,10 @@
   @include min-max{
   }
   @include max{
+    width: spvw(470);
+    height: spvw(88);
+    border-radius: spvw(50);
+    font-size: spvw(28);
   }
   &::before{
     background: url(/assets/img/c-btn-arrow.png)no-repeat center center;
@@ -85,6 +100,9 @@
     @include min-max{
     }
     @include max{
+      width: spvw(24);
+      height: spvw(28);
+      right: spvw(40);
     }
   }
   &:hover{
@@ -139,18 +157,23 @@
   background: #FF7F00;
   position: relative;
   box-sizing: border-box;
+  margin: 0 auto;
   @include min {
     width: 480px;
     height: 88px;
     border-radius: 88px;
     font-size: 28px;
     transition: all .3s;
-    margin: 0 auto;
     border: solid 2px #FF7F00;
   }
   @include min-max{
   }
   @include max{
+    border-radius: spvw(60);
+    width: spvw(610);
+    height: spvw(120);
+    font-size: spvw(32);
+    box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(124,77,31,0.24);
   }
   &::before{
     position: absolute;
@@ -168,6 +191,9 @@
     @include min-max{
     }
     @include max{
+      width: spvw(24);
+      height: spvw(28);
+      right: spvw(48);
     }
   }
   &:hover{
@@ -212,6 +238,13 @@
   @include min-max{
   }
   @include max{
+    width: spvw(510);
+    height: spvw(100);
+    border-radius: spvw(50);
+    font-size: spvw(28);
+    transition: all .3s;
+    margin: spvw(48) auto 0;
+    box-shadow: 8px 8px 20px 0px rgba(124,77,31,0.24);
   }
   &::before{
     position: absolute;
@@ -230,6 +263,9 @@
     @include min-max{
     }
     @include max{
+      width: spvw(24);
+      height: spvw(28);
+      right: spvw(40);
     }
   }
   &:hover{

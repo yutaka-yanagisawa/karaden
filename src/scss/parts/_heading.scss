@@ -7,6 +7,12 @@
   @include min-max{
   }
   @include max{
+    font-size: spvw(48);
+  }
+}
+.section-heading-sp2line{
+  @include max{
+    line-height: 1.4792667;
   }
 }
 .block-heading{

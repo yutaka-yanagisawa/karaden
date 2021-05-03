@@ -22,6 +22,11 @@ strong {
 .text-left{
   text-align: left!important;
 }
+.text-left-pc{
+  @include min {
+    text-align: left!important;
+  }
+}
 body{
   width: 100%;
   font-family: $default-font;
