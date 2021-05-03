@@ -221,18 +221,25 @@
     @include min-max{
     }
     @include max{
+      margin-top: spvw(70);
     }
     &::before{
       content: "";
       position: absolute;
-      width: 580px;
-      height: 400px;
       z-index: -1;
       @include min {
+        width: 580px;
+        height: 400px;
       }
       @include min-max{
       }
       @include max{
+        width: spvw(670);
+        height: spvw(462);
+        transform: translateX(-50%);
+        left: 50%;
+        /* top: spvw(80); */
+        bottom: spvw(312);
       }
     }
     &:nth-child(1){
@@ -254,6 +261,7 @@
         @include min-max{
         }
         @include max{
+          margin-top: spvw(110);
         }
       }
       .text-box{
@@ -372,14 +380,17 @@
   .title{
     font-weight: bold;
     line-height: 1.5;
-    text-align: left;
     @include min {
       font-size: 40px;
       padding-left: 24px;
+      text-align: left;
     }
     @include min-max{
     }
     @include max{
+      font-size: spvw(40);
+      line-height: 1.6;
+      text-align: center;
     }
   }
   .text-box{
@@ -393,10 +404,19 @@
       margin-top: 41px;
       /* box-shadow */
       box-shadow: 6px 6px 16px 0px rgba(33, 78,150,0.16);
+      border-radius: 4px 40px 40px 40px;
     }
     @include min-max{
     }
     @include max{
+      width: spvw(590);
+      height: spvw(392);;
+      padding: spvw(48) spvw(40);
+      /* margin-top: 41px; */
+      /* box-shadow */
+      margin: spvw(430) auto 0;
+      box-shadow: spvw(6) spvw(6) spvw(16) 0px rgba(33, 78,150,0.16);
+      border-radius: spvw(4) spvw(40) spvw(40) spvw(40);
     }
     &::before{
       content: "";
@@ -412,19 +432,27 @@
       @include min-max{
       }
       @include max{
+        font-size: spvw(120);
+        left: spvw(28);
+        top: spvw(10);
       }
     }
   }
   .text{
+    text-align: left;
+    line-height: 2em;
     @include min {
       font-size: 16px;
-      line-height: 2em;
-      text-align: left;
     }
     @include min-max{
     }
     @include max{
       font-size: spvw(24);
+    }
+  }
+  .c-btn{
+    @include max{
+      margin: 0 auto;
     }
   }
 }
