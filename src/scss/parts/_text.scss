@@ -36,3 +36,114 @@
   @include max{
   }
 }
+.breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include min {
+  }
+  @include max{
+    position: absolute;
+    bottom: spvw(24);
+    left: spvw(40);
+    width: 100%;
+  }
+}
+.breadcrumb-item{
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  @include min {
+    margin-left: 1.5em;
+    font-size: 16px;
+    line-height: 2;
+  }
+  @include max{
+    margin-left: 1.5em;
+    font-size: spvw(20);
+    line-height: 1.6;
+  }
+  &::before{
+    content: ">";
+    position: absolute;
+    left: -1em;
+    top: 50%;
+    transform: translateY(-50%);
+    @include min {
+      font-size: 16px;
+      line-height: 2;
+    }
+    @include max{
+      font-size: spvw(20);
+      line-height: 1.6;
+    }
+  }
+  &:first-child{
+    margin: 0;
+    &::before{
+      content: none;
+    }
+  }
+  >a{
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    @include min {
+      font-size: 16px;
+      line-height: 2;
+      cursor: pointer;
+      opacity: 1;
+      transition: all .3s;
+    }
+    @include max{
+      font-size: spvw(20);
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      background: #ffffff;
+      @include min {
+        height: 1px;
+        bottom: 2px;
+        left: 0;
+      }
+      @include max{
+        height: spvw(2);
+        bottom: spvw(2);
+        left: 0;
+      }
+    }
+    &:hover{
+      @include min {
+        opacity: .6;
+      }
+    }
+  }
+  >span{
+    color: #ffffff;
+    /* position: relative; */
+    @include min {
+      font-size: 16px;
+      line-height: 2;
+      /* margin-left: 1.5em; */
+    }
+    @include max{
+      font-size: spvw(20);
+    }
+    /* &::before{
+      content: ">";
+      position: absolute;
+      left: -1em;
+      top: 50%;
+      transform: translateY(-50%);
+      @include min {
+        font-size: 16px;
+        line-height: 2;
+      }
+      @include max{
+        font-size: spvw(20);
+      }
+    } */
+  }
+}

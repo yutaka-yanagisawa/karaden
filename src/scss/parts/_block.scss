@@ -1,14 +1,38 @@
-.mainvisual-block--top{
+.mainvisual-block{
   width: 100%;
   @include min {
-    height: 720px;
-    padding-top: 240px;
     background: url(/assets/img/mainvisual-bg.png)no-repeat center center;
     background-size: cover;
   }
   @include max{
     background: url(/assets/img/mainvisual-bg-sp.png)no-repeat center center;
     background-size: cover;
+  }
+}
+.mainvisual-block--lower{
+  @include min {
+    padding: 123px 40px 150px;
+  }
+  @include max{
+    position: relative;
+    padding: spvw(178) spvw(40) spvw(173);
+  }
+}
+.mainvisual-block--faq{
+  @include min {
+    padding: 123px 40px 169px;
+  }
+  @include max{
+    
+    padding: spvw(178) spvw(40) spvw(173);
+  }
+}
+.mainvisual-block--top{
+  @include min {
+    height: 720px;
+    padding-top: 240px;
+  }
+  @include max{
     padding-bottom: spvw(602);
     padding-top: spvw(140);
   }
@@ -1642,7 +1666,7 @@
       @include min{
         width: 24px;
         height: 4px;
-        right: spvw(33);
+        right: 42px;
       }
       @include max{
         width: spvw(48);

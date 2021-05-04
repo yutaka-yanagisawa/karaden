@@ -68,9 +68,9 @@ $(function () {
    document.getElementById("nav-toggle").addEventListener("click", () => {
      document.body.classList.toggle("open");
    });
-   document.getElementById("global-nav-close-btn").addEventListener("click", () => {
+   /* document.getElementById("global-nav-close-btn").addEventListener("click", () => {
     document.body.classList.remove("open");
-   });
+   }); */
   $('.global-nav-list-item--child').click(function(){
     document.body.classList.remove("open");
    });

@@ -1,3 +1,27 @@
+.page-heading{
+  font-weight: bold;
+  color: $theme-color;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1;
+  color: #ffffff;
+  @include min {
+    font-size: 60px;
+    padding-top: 75px;
+  }
+  @include max{
+    font-size: spvw(60);
+    line-height: 1.48333333;
+  }
+}
+.page-heading--faq{
+  @include min {
+    font-size: 60px;
+  }
+  @include max{
+    font-size: spvw(48);
+  }
+}
 .section-heading{
   font-weight: bold;
   color: $theme-color;
