@@ -42,23 +42,23 @@ $(function () {
   ) {
     mobile = true;
     $(function(){
-      $('.gloval-nav-list-item .target').click(function(){
+      $('.global-nav-list-item .target').click(function(){
         const activeClass = "active";
         $(this).toggleClass(activeClass);
         $(this).next().slideToggle(250);
-        $('.gloval-nav-list-item .target').not($(this)).next('.gloval-nav-list--child').slideUp();
-        $('.gloval-nav-list-item .target').not($(this)).removeClass("active");
+        $('.global-nav-list-item .target').not($(this)).next('.global-nav-list--child').slideUp();
+        $('.global-nav-list-item .target').not($(this)).removeClass("active");
       });
-      $('#gloval-nav-close-btn').click(function(){
-        $('.gloval-nav-list--child').slideUp();
-        $('.gloval-nav-list-item .target').removeClass("active");
+      $('#global-nav-close-btn').click(function(){
+        $('.global-nav-list--child').slideUp();
+        $('.global-nav-list-item .target').removeClass("active");
       });
       
     });
   }
   
   //ハンバーガメニュー　アコーディオン
-  /* $(".gloval-nav-list-item .target").on("click", function () {
+  /* $(".global-nav-list-item .target").on("click", function () {
     const activeClass = "active";
     $(this).toggleClass(activeClass);
     $(this).next().slideToggle(250);
@@ -68,10 +68,10 @@ $(function () {
    document.getElementById("nav-toggle").addEventListener("click", () => {
      document.body.classList.toggle("open");
    });
-   document.getElementById("gloval-nav-close-btn").addEventListener("click", () => {
+   document.getElementById("global-nav-close-btn").addEventListener("click", () => {
     document.body.classList.remove("open");
    });
-  $('.gloval-nav-list-item--child').click(function(){
+  $('.global-nav-list-item--child').click(function(){
     document.body.classList.remove("open");
    });
 });

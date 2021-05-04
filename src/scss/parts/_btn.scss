@@ -18,8 +18,6 @@
     box-shadow: 8px 8px 20px 0px rgba(33, 78,150,0.24);
     margin: 48px auto 0;
   }
-  @include min-max{
-  }
   @include max{
     width: spvw(510);
     height: spvw(100);
@@ -29,6 +27,7 @@
     /* box-shadow */
     box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78,150,0.24);
     margin: spvw(80) auto 0;
+    padding-bottom: spvw(3);
   }
   &::before{
     position: absolute;
@@ -74,14 +73,22 @@
     }
   }
 }
+.c-btn--splarge{ 
+  @include max{
+    width: spvw(550);
+  }
+}
+.c-btn--spsmall{
+  @include max{
+    height: spvw(88);
+  }
+}
 .c-btn--small{
   @include min {
     width: 274px;
     height: 48px;
     border-radius: 48px;
     font-size: 20px;
-  }
-  @include min-max{
   }
   @include max{
     width: spvw(470);
@@ -166,8 +173,6 @@
     transition: all .3s;
     border: solid 2px #FF7F00;
   }
-  @include min-max{
-  }
   @include max{
     border-radius: spvw(60);
     width: spvw(610);
@@ -234,8 +239,6 @@
     transition: all .3s;
     margin: 48px auto 0;
     border: solid 2px #11C97B;
-  }
-  @include min-max{
   }
   @include max{
     width: spvw(510);

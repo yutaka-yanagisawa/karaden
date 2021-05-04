@@ -2,8 +2,6 @@
   width: 100%;
   @include min {
   }
-  @include min-max{
-  }
   @include max{
   }
 }
@@ -13,9 +11,8 @@
   @include min {
     padding: 64px 0;
   }
-  @include min-max{
-  }
   @include max{
+    padding: spvw(66) 0 ;
   }
 }
 .section-merit{
@@ -26,25 +23,26 @@
   @include min {
     padding: 100px 0 120px;
   }
-  @include min-max{
-  }
   @include max{
+    padding: spvw(120) 0 ;
   }
   &::before{
     content: "";
     position: absolute;
     background: #E6EBF4;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
     @include min {
-      width: 100%;
-      height: 100%;
-      top: 0;
       left: -80px;
-      z-index: -1;
       border-radius: 0 8px 0 0;
     }
     @include min-max{
     }
     @include max{
+      left: spvw(-20);
+      border-radius: spvw(8) 0 0 0;
     }
   }
 }
@@ -55,8 +53,6 @@
   background: #E6EBF4;
   @include min {
     padding: 100px 0 120px;
-  }
-  @include min-max{
   }
   @include max{
     padding: spvw(120) 0 ;
@@ -88,8 +84,6 @@
   @include min {
     padding: 100px 0 120px;
   }
-  @include min-max{
-  }
   @include max{
     padding: spvw(120) 0 ;
   }
@@ -106,10 +100,10 @@
       border-radius: 0 8px 0 0;
     }
     @include min-max{
-      left: spvw(-20);
-      border-radius: 0 spvw(8) 0 0;
     }
     @include max{
+      left: spvw(-20);
+      border-radius: 0 spvw(8) 0 0;
     }
   }
 }
@@ -120,8 +114,6 @@
   overflow: hidden;
   @include min {
     padding: 100px 0 139px;
-  }
-  @include min-max{
   }
   @include max{
     padding: spvw(120) 0 ;
@@ -142,6 +134,8 @@
     @include min-max{
     } 
     @include max{
+      right: spvw(-20);
+      border-radius: 0 spvw(8) 0 0;
     }
   }
   &::after{
@@ -158,6 +152,7 @@
     @include min-max{
     } 
     @include max{
+      height: spvw(560);
     }
   }
 }
@@ -168,8 +163,6 @@
   overflow: hidden;
   @include min {
     padding: 100px 0 139px;
-  }
-  @include min-max{
   }
   @include max{
     padding: spvw(106) 0 spvw(120);
@@ -219,8 +212,6 @@
   @include min {
     padding: 120px 0 ;
   }
-  @include min-max{
-  }
   @include max{
     padding: spvw(120) 0;
   }
@@ -265,8 +256,6 @@
   @include min {
     padding: 100px 0 120px;
   }
-  @include min-max{
-  }
   @include max{
     padding: spvw(120) 0;
   }
@@ -294,8 +283,6 @@
   @include min {
     padding: 120px 0;
   }
-  @include min-max{
-  }
   @include max{
     padding: spvw(120) 0 spvw(120);
   }
@@ -305,8 +292,6 @@
   background-size: cover;
   @include min {
     padding: 100px 0 120px;
-  }
-  @include min-max{
   }
   @include max{
     padding: spvw(120) 0 spvw(100);

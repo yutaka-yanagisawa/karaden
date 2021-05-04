@@ -1,8 +1,6 @@
 .section-text{
   @include min {
   }
-  @include min-max{
-  }
   @include max{
   }
 }
@@ -12,8 +10,6 @@
     font-size: 18px;
     line-height: 2;
     margin-top: 80px;
-  }
-  @include min-max{
   }
   @include max{
     font-size: spvw(28);
@@ -26,8 +22,6 @@
   @include min {
     margin-top: 48px!important;
   }
-  @include min-max{
-  }
   @include max{
     font-size: spvw(24);
     line-height: 2;
@@ -38,8 +32,6 @@
 .section-lead--result{
   @include min {
     margin-top: 48px!important;
-  }
-  @include min-max{
   }
   @include max{
   }

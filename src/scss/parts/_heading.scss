@@ -4,8 +4,6 @@
   @include min {
     font-size: 48px;
   }
-  @include min-max{
-  }
   @include max{
     font-size: spvw(48);
   }
@@ -20,15 +18,11 @@
     font-size: 40px;
     font-weight: bold;
   }
-  @include min-max{
-  }
   @include max{
   }
 }
 .text-heading{
   @include min {
-  }
-  @include min-max{
   }
   @include max{
   }

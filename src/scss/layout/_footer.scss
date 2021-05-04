@@ -4,8 +4,6 @@
   @include min {
     padding: 40px 0 40px;
   }
-  @include min-max{
-  }
   @include max{
     padding: spvw(49.1) 0 spvw(80);
   }
@@ -16,8 +14,6 @@
   justify-content: flex-start;
   @include min {
   }
-  @include min-max{
-  }
   @include max{
     flex-wrap: wrap;
   }
@@ -25,8 +21,6 @@
 .footer-nav{
   @include min {
     text-align: left;
-  }
-  @include min-max{
   }
   @include max{
     text-align: left;
@@ -37,8 +31,6 @@
   @include min {
     width: 211.34px;
     height: 28px;
-  }
-  @include min-max{
   }
   @include max{
     width: spvw(302);
@@ -53,8 +45,6 @@
     width: 400px;
     margin-top: 23px;
   }
-  @include min-max{
-  }
   @include max{
     width: 100%;
     margin-top: spvw(30);
@@ -65,8 +55,6 @@
   height: auto;
   @include min {
     width: 200px;
-  }
-  @include min-max{
   }
   @include max{
     font-size: spvw(24);
@@ -84,8 +72,6 @@
     transition: all .3s;
     cursor: pointer;
   }
-  @include min-max{
-  }
   @include max{
     font-size: spvw(24);
   }
@@ -93,8 +79,6 @@
     @include min {
       opacity: .6;
       transition: all .3s;
-    }
-    @include min-max{
     }
     @include max{
     }
@@ -105,8 +89,6 @@
     text-align: left;
     margin-right: 226px;
     margin-top: 50px;
-  }
-  @include min-max{
   }
   @include max{
     margin-top: spvw(20);
@@ -119,8 +101,6 @@
     font-size: 16px;
     line-height: 2;
   }
-  @include min-max{
-  }
   @include max{
     font-size: spvw(24);
     line-height: 2.66666667;
@@ -131,8 +111,6 @@
   text-align: left;
   @include min {
     width: 365px;
-  }
-  @include min-max{
   }
   @include max{
     width: 100%;
@@ -147,8 +125,6 @@
     line-height: 2;
     font-size: 16px;
   }
-  @include min-max{
-  }
   @include max{
     font-size: spvw(24);
     line-height: 2.66666667;
@@ -162,8 +138,6 @@
     transform: translateY(-50%);
     @include min {
     }
-    @include min-max{
-    }
     @include max{
     }
   }
@@ -176,8 +150,6 @@
     transition: all .3s;
     cursor: pointer;
   }
-  @include min-max{
-  }
   @include max{
     font-size: spvw(24);
   }
@@ -185,8 +157,6 @@
     @include min {
       opacity: .6;
       transition: all .3s;
-    }
-    @include min-max{
     }
     @include max{
     }
@@ -196,8 +166,6 @@
   @include min {
     width: 200px;
     margin-top: 6px;
-  }
-  @include min-max{
   }
   @include max{
     width: spvw(430);
@@ -212,8 +180,6 @@
     transition: all .3s;
     cursor: pointer;
   }
-  @include min-max{
-  }
   @include max{
     width: spvw(430);
   }
@@ -221,8 +187,6 @@
     @include min {
       opacity: .6;
       transition: all .3s;
-    }
-    @include min-max{
     }
     @include max{
     }
@@ -240,14 +204,13 @@
     border-radius: 48px;
     font-size: 16px;
   }
-  @include min-max{
-  }
   @include max{
     height: spvw(88);
     width: spvw(430);
-    font-size: spvw(24);
+    font-size: spvw(28);
     border-radius: spvw(44);
     margin-top: spvw(48);
+    padding-bottom: spvw(3);
   }
 }
 .footer-btn--orange{
@@ -257,16 +220,12 @@
     transition: all .3s;
     border: solid 2px #FF7F00;
   }
-  @include min-max{
-  }
   @include max{
   }
   &:hover{
     @include min {
       background: #ffffff;
       color: #FF7F00;
-    }
-    @include min-max{
     }
     @include max{
     }
@@ -279,16 +238,12 @@
     transition: all .3s;
     border: solid 2px #11C97B;
   }
-  @include min-max{
-  }
   @include max{
   }
   &:hover{
     @include min {
       background: #ffffff;
       color: #11C97B;
-    }
-    @include min-max{
     }
     @include max{
     }
@@ -298,8 +253,6 @@
   background-color: $theme-color;
   @include min {
     padding: 30px 0;
-  }
-  @include min-max{
   }
   @include max{
     padding: spvw(40) 0 spvw(46);
@@ -311,8 +264,6 @@
       justify-content: space-between;
       align-items: center;
     }
-    @include min-max{
-    }
     @include max{
     }
   }
@@ -322,8 +273,6 @@
   font-size: 0;
   @include min {
     justify-content: flex-start;
-  }
-  @include min-max{
   }
   @include max{
     justify-content: center;
@@ -336,8 +285,6 @@
   @include min {
     padding: 0 14px 0 0;
     margin: 0 14px 0 0;
-  }
-  @include min-max{
   }
   @include max{
     padding: 0 spvw(20) 0 0;
@@ -366,8 +313,6 @@
       top: 1px;
       width: 0.8px;
     }
-    @include min-max{
-    }
     @include max{
       right: 0;
       top: 1px;
@@ -385,8 +330,6 @@
     transition: all .3s;
     cursor: pointer;
   }
-  @include min-max{
-  }
   @include max{
     font-size: spvw(20);
   }
@@ -394,8 +337,6 @@
     @include min {
       opacity: .6;
       transition: all .3s;
-    }
-    @include min-max{
     }
     @include max{
     }
@@ -407,8 +348,6 @@
   font-weight: 400;
   @include min {
     font-size: 16px;
-  }
-  @include min-max{
   }
   @include max{
     margin-top: spvw(28);

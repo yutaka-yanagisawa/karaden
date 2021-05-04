@@ -1,9 +1,13 @@
 .pagetop{
   position: fixed;
-  z-index: 10;
+  z-index: 2;
   @include min{
     right: 40px;
     bottom: 100px;
+  }
+  @include max{
+    right: spvw(40);
+    bottom: spvw(100);
   }
   >a{
     cursor: pointer;
@@ -20,6 +24,11 @@
       transition: all .3s;
       opacity: 1;
     }
+    @include max{
+      width: spvw(88);
+      height: spvw(88);
+      box-shadow: spvw(6) spvw(6) spvw(16) 0px rgba(0,53,129,0.32);
+    }
     &::after{
       content: "";
       position: absolute;
@@ -31,6 +40,10 @@
       @include min{
         width: 18px;
         height: 24px;
+      }
+      @include max{
+        width: spvw(24.75);
+        height: spvw(33);
       }
     }
     &:hover{

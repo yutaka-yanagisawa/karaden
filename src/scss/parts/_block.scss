@@ -1,14 +1,16 @@
 .mainvisual-block--top{
-  background: url(/assets/img/mainvisual-bg.png)no-repeat center center;
-  background-size: cover;
   width: 100%;
   @include min {
     height: 720px;
     padding-top: 240px;
-  }
-  @include min-max{
+    background: url(/assets/img/mainvisual-bg.png)no-repeat center center;
+    background-size: cover;
   }
   @include max{
+    background: url(/assets/img/mainvisual-bg-sp.png)no-repeat center center;
+    background-size: cover;
+    padding-bottom: spvw(602);
+    padding-top: spvw(140);
   }
   >.inner{
     position: relative;
@@ -21,9 +23,10 @@
       font-size: 28px;
       line-height: 1;
     }
-    @include min-max{
-    }
     @include max{
+      font-size: spvw(32);
+      /* line-height: 1.46875; */
+      letter-spacing: spvw(1.5625);
     }
   }
   .title{
@@ -32,9 +35,10 @@
       height: 88px;
       margin-top: 32px;
     }
-    @include min-max{
-    }
     @include max{
+      width: spvw(540);
+      height: spvw(98);
+      margin-top: spvw(32);
     }
   }
   .text{
@@ -46,9 +50,10 @@
       margin-top: 40px;
       line-height: 2.1818;
     }
-    @include min-max{
-    }
     @include max{
+      font-size: spvw(30);
+      line-height: 1.8666666667;
+      margin-top: spvw(39);
     }
   }
   .mainvisual-img-smartphone{
@@ -59,9 +64,11 @@
       top: -150px;
       right: 263px;
     }
-    @include min-max{
-    }
-    @include max{
+    @include max{ 
+      width: spvw(362);
+      height: spvw(706);
+      top: spvw(363);
+      left: spvw(40);
     }
   }
   .mainvisual-img-award{
@@ -72,44 +79,44 @@
       top: -40px;
       right: 12px;
     }
-    @include min-max{
-    }
     @include max{
+      width: spvw(305);
+      height: spvw(504);
+      top: spvw(416);
+      right: spvw(41.8);
     }
   }
 }
 .company-block{
   display: flex;
-  justify-content: space-around;
   align-items: center;
   @include min {
     padding: 65px 0 63px;
+    justify-content: space-around;
   }
-  @include min-max{
-  }
+  
   @include max{
+    padding: spvw(75) 0 spvw(30);
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   >.item{
     @include min {
       height: 74px;
       width: 187px;
     }
-    @include min-max{
-      height: pcvw(74);
-      width: pcvw(187);
-    }
     @include max{
+      height: spvw(75);
+      width: spvw(187);
     }
   }
 }
 
 .infomation-block{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   @include min {
-  }
-  @include min-max{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   @include max{
   }
@@ -121,18 +128,17 @@
       font-size: 32px;
       margin-right: 80px;
     }
-    @include min-max{
-    }
     @include max{
+      font-size: spvw(40);
+      text-align: left;
     }
   }
   >.list {
     @include min {
       text-align: left;
     }
-    @include min-max{
-    }
     @include max{
+      margin-top: spvw(30);
     }
   }
   .item{
@@ -141,23 +147,22 @@
       font-size: 16px;
       margin-top: 32px;
     }
-    @include min-max{
-    }
     @include max{
       font-size: spvw(24);
+      margin-top: spvw(24);
     }
     &:first-child{
       margin: 0;
     }
     >a{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: left;
       opacity: 1;
       transition: all .3s;
       cursor: pointer;
+      text-align: left;
       @include min-max{
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       @include max{
       }
@@ -165,8 +170,6 @@
         @include min {
           opacity: .6;
           transition: all .3s;
-        }
-        @include min-max{
         }
         @include max{
         }
@@ -178,37 +181,39 @@
     @include min {
       margin-right: 1em;
     }
-    @include min-max{
-    }
     @include max{
+      line-height: 1.666666667;
+      text-align: left;
+      font-size: spvw(24);
     }
   }
   .text{
     @include min {
     }
-    @include min-max{
-    }
     @include max{
+      line-height: 1.666666667;
+      text-align: left;
+      font-size: spvw(24);
     }
   }
 }
 .merit-block{
-  margin: 0 auto;
   @include min {
     max-width: 1352.29px;
     width: 100%;
     min-width: 1160px;
-  }
-  @include min-max{
+    margin: 0 auto;
   }
   @include max{
+    max-width:spvw(732);
+    height: spvw(780);
+    text-align: left;
+    margin: spvw(70) auto 0 0;
   }
 }
 .feature-block {
   @include min {
     margin-top: 124px;
-  }
-  @include min-max{
   }
   @include max{
   }
@@ -217,8 +222,6 @@
     @include min {
       padding: 25px 40px;
       margin-top: 100px;
-    }
-    @include min-max{
     }
     @include max{
       margin-top: spvw(70);
@@ -230,8 +233,6 @@
       @include min {
         width: 580px;
         height: 400px;
-      }
-      @include min-max{
       }
       @include max{
         width: spvw(670);
@@ -247,8 +248,6 @@
       @include min {
         padding-right: 520px;
       }
-      @include min-max{
-      }
       @include max{
       }
       &::before{
@@ -258,8 +257,6 @@
           right: 0;
           top: 0;
         }
-        @include min-max{
-        }
         @include max{
           margin-top: spvw(110);
         }
@@ -268,8 +265,6 @@
         @include min {
           border-radius: 48px 8px 48px 48px;
         }
-        @include min-max{
-        }
         @include max{
         }
         &::before{
@@ -277,8 +272,6 @@
           @include min {
             left: 34.1px;
             top: 15.1px;
-          }
-          @include min-max{
           }
           @include max{
           }
@@ -289,8 +282,6 @@
       @include min {
         padding-left: 520px;
       }
-      @include min-max{
-      }
       @include max{
       }
       &::before{
@@ -300,16 +291,12 @@
           left: 0;
           top: 0;
         }
-        @include min-max{
-        }
         @include max{
         }
       }
       .title{
         @include min {
           padding-left: 100px;
-        }
-        @include min-max{
         }
         @include max{
         }
@@ -318,8 +305,6 @@
         @include min {
           border-radius: 8px 48px 48px 48px;
         }
-        @include min-max{
-        }
         @include max{
         }
         &::before{
@@ -327,8 +312,6 @@
           @include min {
             right: 34.1px;
             top: 15.1px;
-          }
-          @include min-max{
           }
           @include max{
           }
@@ -339,8 +322,6 @@
       @include min {
         padding-right: 520px;
       }
-      @include min-max{
-      }
       @include max{
       }
       &::before{
@@ -350,16 +331,12 @@
           right: 0;
           top: 0;
         }
-        @include min-max{
-        }
         @include max{
         }
       }
       .text-box{
         @include min {
           border-radius: 48px 8px 48px 48px;
-        }
-        @include min-max{
         }
         @include max{
         }
@@ -368,8 +345,6 @@
           @include min {
             left: 34.1px;
             top: 15.1px;
-          }
-          @include min-max{
           }
           @include max{
           }
@@ -384,8 +359,6 @@
       font-size: 40px;
       padding-left: 24px;
       text-align: left;
-    }
-    @include min-max{
     }
     @include max{
       font-size: spvw(40);
@@ -406,13 +379,10 @@
       box-shadow: 6px 6px 16px 0px rgba(33, 78,150,0.16);
       border-radius: 4px 40px 40px 40px;
     }
-    @include min-max{
-    }
     @include max{
       width: spvw(590);
-      height: spvw(392);;
-      padding: spvw(48) spvw(40);
-      /* margin-top: 41px; */
+      /* height: spvw(392); */
+      padding: spvw(40) spvw(40) spvw(48);
       /* box-shadow */
       margin: spvw(430) auto 0;
       box-shadow: spvw(6) spvw(6) spvw(16) 0px rgba(33, 78,150,0.16);
@@ -429,8 +399,6 @@
       @include min {
         font-size: 100px;
       }
-      @include min-max{
-      }
       @include max{
         font-size: spvw(120);
         left: spvw(28);
@@ -443,8 +411,6 @@
     line-height: 2em;
     @include min {
       font-size: 16px;
-    }
-    @include min-max{
     }
     @include max{
       font-size: spvw(24);
@@ -463,8 +429,6 @@
     margin-top: 70px;
     justify-content: center;
   }
-  @include min-max{
-  }
   @include max{
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -474,15 +438,11 @@
     @include min {
       height: 154px;
     }
-    @include min-max{
-    }
     @include max{
       width: 33%;
     }
     .function-img{
       @include min {
-      }
-      @include min-max{
       }
       @include max{
         display: inline-block;
@@ -491,16 +451,12 @@
     &:nth-child(1){
       @include min {
       }
-      @include min-max{
-      }
       @include max{
       }
       .function-img{
         @include min {
           width: 76.67px;
           height: 87px;
-        }
-        @include min-max{
         }
         @include max{
           width: spvw(170);
@@ -511,16 +467,12 @@
     &:nth-child(2){
       @include min {
       }
-      @include min-max{
-      }
       @include max{
       }
       .function-img{
         @include min {
           width: 80px;
           height: 68px;
-        }
-        @include min-max{
         }
         @include max{
           width: spvw(175);
@@ -531,16 +483,12 @@
     &:nth-child(3){
       @include min {
       }
-      @include min-max{
-      }
       @include max{
       }
       .function-img{
         @include min {
           width: 76px;
           height: 80px;
-        }
-        @include min-max{
         }
         @include max{
           width: spvw(169);
@@ -551,16 +499,12 @@
     &:nth-child(4){
       @include min {
       }
-      @include min-max{
-      }
       @include max{
       }
       .function-img{
         @include min {
           width: 86px;
           height: 76px;
-        }
-        @include min-max{
         }
         @include max{
           width: spvw(185);
@@ -571,16 +515,12 @@
     &:nth-child(5){
       @include min {
       }
-      @include min-max{
-      }
       @include max{
       }
       .function-img{
         @include min {
           width: 72px;
           height: 82px;
-        }
-        @include min-max{
         }
         @include max{
           width: spvw(163);
@@ -591,16 +531,12 @@
     &:nth-child(6){
       @include min {
       }
-      @include min-max{
-      }
       @include max{
       }
       .function-img{
         @include min {
           width: 79.4px;
           height: 66px;
-        }
-        @include min-max{
         }
         @include max{
           width: spvw(174);
@@ -611,16 +547,12 @@
     &:nth-child(7){
       @include min {
       }
-      @include min-max{
-      }
       @include max{
       }
       .function-img{
         @include min {
           width: 80px;
           height: 68px;
-        }
-        @include min-max{
         }
         @include max{
           width: spvw(175);
@@ -631,16 +563,12 @@
     &:nth-child(8){
       @include min {
       }
-      @include min-max{
-      }
       @include max{
       }
       .function-img{
         @include min {
           width: 76.8px;
           height: 76.8px;
-        }
-        @include min-max{
         }
         @include max{
           width: spvw(170);
@@ -655,8 +583,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-    @include min-max{
     }
     @include max{
       height: spvw(187);
@@ -676,8 +602,6 @@
       margin-top: 17px;
       align-items: center;
     }
-    @include min-max{
-    }
     @include max{
       font-size: spvw(28);
       line-height: 1.57142857;
@@ -690,8 +614,6 @@
   position: relative;
   @include min {
     margin-top: 75px;
-  }
-  @include min-max{
   }
   @include max{
     margin-top: spvw(80);
@@ -794,7 +716,7 @@
       box-shadow: 6px 6px 16px 0px rgba(0,53,129,0.32);
     }
     @include max{
-      top: spvw(650);
+      top: spvw(680);
       width: spvw(88);
       height: spvw(88);
       margin-top: spvw(-132);
@@ -996,8 +918,6 @@
       left: 50%;
       transform: translateX(-50%);
     }
-    @include min-max{
-    }
     @include max{
       z-index: 2;
       display: flex;
@@ -1030,8 +950,6 @@
       border-radius: 16px 16px 16px 4px;
       top: -48px;
     }
-    @include min-max{
-    }
     @include max{
       width: spvw(120);
       height: spvw(48);
@@ -1046,8 +964,6 @@
     @include min {
       font-size: 32px;
     }
-    @include min-max{
-    }
     @include max{
       font-size: spvw(40);
       width: 100%;
@@ -1060,8 +976,6 @@
     align-items: flex-start;
     @include min {
       margin-top: 20px;
-    }
-    @include min-max{
     }
     @include max{
       margin-top: spvw(16);
@@ -1081,8 +995,6 @@
       padding: 0 12px 2px;
       border-radius: 4px 16px 16px 16px;
       height: 32px;
-    }
-    @include min-max{
     }
     @include max{
       margin-right: spvw(15);
@@ -1106,8 +1018,6 @@
       font-size: 16px;
       margin-top: 27px;
     }
-    @include min-max{
-    }
     @include max{
       font-size: spvw(24);
       margin-top: spvw(20);
@@ -1120,8 +1030,6 @@
       top: -136px;
       width: 270px;
       height: 474px;
-    }
-    @include min-max{
     }
     @include max{
       z-index: 1;
@@ -1138,8 +1046,6 @@
     @include min {
       margin-top: 16px;
     }
-    @include min-max{
-    }
     @include max{
       font-size: spvw(24);
       flex-wrap: wrap;
@@ -1150,8 +1056,6 @@
     font-weight: bold;
     @include min {
       font-size: 18px;
-    }
-    @include min-max{
     }
     @include max{
       font-size: spvw(28);
@@ -1166,16 +1070,12 @@
     align-items: center;
     @include min {
     }
-    @include min-max{
-    }
     @include max{
       flex-wrap: wrap;
     }
   }
   .relatedsolution-list-item{
     @include min {
-    }
-    @include min-max{
     }
     @include max{
       width: 100%;
@@ -1195,8 +1095,6 @@
       transition: all .3s;
       padding-bottom: 2px;
     }
-    @include min-max{
-    }
     @include max{
       line-height: 1.33333333;
       font-size: spvw(24);
@@ -1213,8 +1111,6 @@
         height: 2px;
         bottom: -2px;
       }
-      @include min-max{
-      }
       @include max{
         height: spvw(4);
         bottom: spvw(2);
@@ -1223,8 +1119,6 @@
     &:hover{
       @include min {
         opacity: .6;
-      }
-      @include min-max{
       }
       @include max{
       }
@@ -1239,8 +1133,6 @@
     max-width: 1302px;
     min-width: 1160px;
     margin: 80px auto 0;
-  }
-  @include min-max{
   }
   @include max{
   }
@@ -1395,8 +1287,6 @@
     @include min {
       font-size: 40px;
     }
-    @include min-max{
-    }
     @include max{
       font-size: spvw(40);
     }
@@ -1410,8 +1300,6 @@
       font-size: 16px;
       margin-top: 16px;
     }
-    @include min-max{
-    }
     @include max{
       margin-top: spvw(16);
       font-size: spvw(24);
@@ -1424,8 +1312,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-  }
-  @include min-max{
   }
   @include max{
     padding: 0 spvw(20);
@@ -1441,8 +1327,6 @@
       /* box-shadow */
       box-shadow: 8px 8px 20px 0px rgba(33, 78,150,0.16);
     }
-    @include min-max{
-    }
     @include max{
       margin-top: spvw(48);
       width: spvw(630);
@@ -1456,8 +1340,6 @@
         margin-left: 0;
         margin-top: 70px;
       }
-      @include min-max{
-      }
       @include max{
         margin-top: spvw(75);
       }
@@ -1466,15 +1348,11 @@
       @include min {
         margin-top: 40px;
       }
-      @include min-max{
-      }
       @include max{
       }
     }
     &:nth-child(3){
       @include min {
-      }
-      @include min-max{
       }
       @include max{
       }
@@ -1489,8 +1367,6 @@
     @include min {
       font-size: 73px;
       padding-right: 68px;
-    }
-    @include min-max{
     }
     @include max{
       padding-right: spvw(92.73);
@@ -1508,8 +1384,6 @@
         width: 68px;
         height: 88px;
       }
-      @include min-max{
-      }
       @include max{
         width: spvw(92.73);
         height: spvw(120);
@@ -1518,8 +1392,6 @@
     >span{
       @include min {
         font-size: 51px;
-      }
-      @include min-max{
       }
       @include max{
         font-size: spvw(65);
@@ -1533,8 +1405,6 @@
       line-height: 2;
       margin-top: 35px;
       font-size: 16px;
-    }
-    @include min-max{
     }
     @include max{
       margin-top: spvw(33);
@@ -1564,8 +1434,6 @@
     /* box-shadow */
     box-shadow: 8px 8px 20px 0px rgba(33, 78,150,0.24);
   }
-  @include min-max{
-  }
   @include max{
     padding: spvw(48) spvw(20) spvw(94);
     width: 90%;
@@ -1579,8 +1447,6 @@
       width: 701px;
       height: 469px;
     }
-    @include min-max{
-    }
     @include max{
       width: spvw(629);
       height: spvw(421);
@@ -1589,8 +1455,6 @@
   .text-box{
     @include min {
       margin-left: 37px;
-    }
-    @include min-max{
     }
     @include max{
       padding: 0 spvw(20);
@@ -1601,8 +1465,6 @@
     color: #1A1A1A;
     @include min {
       font-size: 32px;
-    }
-    @include min-max{
     }
     @include max{
       line-height: 1;
@@ -1617,8 +1479,6 @@
       margin-top: 24px;
       font-size: 16px;
     }
-    @include min-max{
-    }
     @include max{
       margin-top: spvw(26);
       font-size: spvw(24);
@@ -1631,8 +1491,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-  }
-  @include min-max{
   }
   @include max{
     margin-top: spvw(120);
@@ -1649,8 +1507,6 @@
       margin-left: 49px;
       /* box-shadow */
       box-shadow: 8px 8px 20px 0px rgba(33, 78,150,0.24);
-    }
-    @include min-max{
     }
     @include max{
       width: 100%;
@@ -1670,8 +1526,6 @@
         height: 151.54px;
         margin-left: 6px;
       }
-      @include min-max{
-      }
       @include max{
         width: spvw(265.47);
         height: spvw(226);
@@ -1685,8 +1539,6 @@
         font-size: 16px;
         line-height: 1.5;
         margin-top: 20px;
-      }
-      @include min-max{
       }
       @include max{
         font-size: spvw(24);
@@ -1703,8 +1555,6 @@
         font-size: 18px;
         line-height: 1.7777;
       }
-      @include min-max{
-      }
       @include max{
         font-size: spvw(28);
         margin-top: spvw(14);
@@ -1718,8 +1568,6 @@
         left: 50%;
         transform: translateX(-50%);
       }
-      @include min-max{
-      }
       @include max{
         margin-top: spvw(35);
       }
@@ -1730,16 +1578,12 @@
   @include min {
     margin-top: 120px;
   }
-  @include min-max{
-  }
   @include max{
     margin-top: spvw(120);
   }
   >.item{
     @include min {
       margin-top: 32px;
-    }
-    @include min-max{
     }
     @include max{
       margin-top: spvw(48);
@@ -1763,8 +1607,6 @@
       /* box-shadow */
       box-shadow: 6px 6px 16px 0px rgba(33, 78,150,0.16);
     }
-    @include min-max{
-    }
     @include max{
       height: spvw(120);
       border-radius: spvw(64) spvw(64) spvw(64) spvw(4);
@@ -1784,8 +1626,6 @@
         left: 24px;
         top: 50%;
         transform: translateY(-50%);
-      }
-      @include min-max{
       }
       @include max{
         font-size: spvw(40);
@@ -1848,8 +1688,6 @@
     @include min {
       font-size: 18px;
     }
-    @include min-max{
-    }
     @include max{
       font-size: spvw(28);
       line-height: 1.71428571;
@@ -1862,8 +1700,6 @@
     @include min {
       border-radius: 4px 40px 40px 40px;
       padding: 26px 48px 26px 32px;
-    }
-    @include min-max{
     }
     @include max{
       border-radius: spvw(4) spvw(64) spvw(64) spvw(64);
@@ -1878,8 +1714,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     @include min {
-    }
-    @include min-max{
     }
     @include max{
     }
@@ -1896,8 +1730,6 @@
         top: 27px; */
         margin-right: 34px;
       }
-      @include min-max{
-      }
       @include max{
         font-size: spvw(40);
         line-height: 1;
@@ -1912,8 +1744,6 @@
       font-size: 16px;
       line-height: 2;
     }
-    @include min-max{
-    }
     @include max{
       font-size: spvw(24);
       line-height: 2;
@@ -1924,8 +1754,6 @@
   @include min {
     width: 480px;
     margin: 0 auto;
-  }
-  @include min-max{
   }
   @include max{
     margin: spvw(70) auto 0;
