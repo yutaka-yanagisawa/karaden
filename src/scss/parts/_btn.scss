@@ -28,6 +28,7 @@
     box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78,150,0.24);
     margin: spvw(80) auto 0;
     padding-bottom: spvw(3);
+    line-height: 0.96;
   }
   &::before{
     position: absolute;
@@ -81,6 +82,11 @@
 .c-btn--spsmall{
   @include max{
     height: spvw(88);
+  }
+  &::before{
+    @include max{
+      right: spvw(32);
+    }
   }
 }
 .c-btn--small{

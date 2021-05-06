@@ -62,7 +62,9 @@
     line-height: 2.66666667;
     }
   &:nth-child(odd){
-    margin-right: 34px;
+    @include min {
+      margin-right: 34px;
+    }
   }
 }
 .footer-nav-list-item-link{
