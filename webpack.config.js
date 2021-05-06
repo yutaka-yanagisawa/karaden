@@ -56,19 +56,15 @@ const app = {
         ],
       },
       {
-        test: /\.pug/,
-        use: [{
-            loader: 'html-loader',
-            options: {
-              minimize: false
-            }
-          },
+        test: /\.pug$/,
+        exclude: /node_modules/,
+        use: [
           {
-            loader: 'pug-html-loader',
+            loader: 'pug-loader',
             options: {
               pretty: true,
-              basedir: 'src/pug'
-            },
+              root: path.resolve(__dirname, 'src/pug'),
+            }
           },
         ],
       },
