@@ -469,7 +469,7 @@
   @include max{
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: spvw(55) auto 0;
+    margin: spvw(30) auto 0;
   }
   >.item{
     @include min {
@@ -478,12 +478,18 @@
     }
     @include max{
       width: 33%;
+      margin-top: spvw(40);
     }
     .function-img{
       @include min {
       }
       @include max{
         display: inline-block;
+      }
+    }
+    &:nth-child(-n+3){
+      @include max{
+        margin-top: 0;
       }
     }
     &:nth-child(1){
@@ -643,7 +649,7 @@
     @include max{
       font-size: spvw(28);
       line-height: 1.57142857;
-      height: spvw(85);
+      /* height: spvw(85); */
       align-items: flex-start;
     }
   }
@@ -825,7 +831,7 @@
     }
     @include max{
       font-size: spvw(28);
-      margin: 0 spvw(20) spvw(30);
+      margin: 0 spvw(20) spvw(40);
     }
     &::before{
       position: absolute;
