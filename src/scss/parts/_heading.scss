@@ -27,6 +27,7 @@
   color: $theme-color;
   @include min {
     font-size: 48px;
+    letter-spacing: 4.8px;
   }
   @include max{
     font-size: spvw(48);

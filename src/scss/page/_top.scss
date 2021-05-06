@@ -9,7 +9,7 @@
   background: #F5F7FA;
   width: 100%;
   @include min {
-    padding: 64px 0;
+    padding: 54px 0;
   }
   @include max{
     padding: spvw(66) 0 ;
@@ -52,7 +52,7 @@
   z-index: 0;
   background: #E6EBF4;
   @include min {
-    padding: 100px 0 120px;
+    padding: 109px 0 120px;
   }
   @include max{
     padding: spvw(120) 0 ;
