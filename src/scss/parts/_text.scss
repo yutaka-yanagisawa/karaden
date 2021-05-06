@@ -8,13 +8,13 @@
   color: #333333;
   @include min {
     font-size: 18px;
-    line-height: 2;
-    margin-top: 80px;
+    line-height: 2.22;
+    margin-top: 71px;
   }
   @include max{
     font-size: spvw(28);
     line-height: 2;
-    margin-top: spvw(70);
+    margin-top: spvw(71);
     font-weight: 500;
   }
 }
