@@ -125,6 +125,9 @@ function intialSwiper() {
     slidesPerView: 1,
     spaceBetween: 48,
     effect: "fade", //フェードのエフェクト
+    /* fadeEffect: {
+      crossFade: true
+    }, */
     pagination: {
       el: '.swiper-pagination-scene',
       type: 'bullets',
@@ -142,6 +145,9 @@ function intialSwiper() {
         slidesPerView: 1,
         spaceBetween: 20,
         effect: "fade", //フェードのエフェクト
+        fadeEffect: {
+          crossFade: true
+        },
       }
     },
     onSlideChangeEnd: function (e) {
