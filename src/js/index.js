@@ -124,6 +124,7 @@ function intialSwiper() {
     speed: 800,
     slidesPerView: 1,
     spaceBetween: 48,
+    effect: "fade", //フェードのエフェクト
     pagination: {
       el: '.swiper-pagination-scene',
       type: 'bullets',
@@ -140,6 +141,7 @@ function intialSwiper() {
       767: {
         slidesPerView: 1,
         spaceBetween: 20,
+        effect: "fade", //フェードのエフェクト
       }
     },
     onSlideChangeEnd: function (e) {
@@ -152,6 +154,7 @@ function intialSwiper() {
     speed: 800,
     slidesPerView: 1,
     spaceBetween: 64,
+    effect: "fade", //フェードのエフェクト
     pagination: {
       el: '.swiper-pagination-example',
       type: 'bullets',
@@ -165,6 +168,7 @@ function intialSwiper() {
       767: {
         slidesPerView: 1,
         spaceBetween: 40,
+        effect: "fade", //フェードのエフェクト
       }
     },
     onSlideChangeEnd: function (e) {
