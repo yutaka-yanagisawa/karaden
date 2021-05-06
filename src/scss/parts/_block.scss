@@ -301,7 +301,7 @@
           content: "01";
           @include min {
             left: 34.1px;
-            top: 15.1px;
+            top: 0.1px;
           }
           @include max{
           }
@@ -341,7 +341,7 @@
           content: "02";
           @include min {
             right: 34.1px;
-            top: 15.1px;
+            top: 0.1px;
           }
           @include max{
           }
@@ -374,7 +374,7 @@
           content: "03";
           @include min {
             left: 34.1px;
-            top: 15.1px;
+            top: 0.1px;
           }
           @include max{
           }
@@ -430,7 +430,7 @@
       font-family: $roboto-font;
       line-height: 1;
       @include min {
-        font-size: 100px;
+        font-size: 115px;
       }
       @include max{
         font-size: spvw(120);
@@ -471,6 +471,7 @@
   >.item{
     @include min {
       height: 154px;
+      margin: 0 10px;
     }
     @include max{
       width: 33%;
@@ -489,8 +490,8 @@
       }
       .function-img{
         @include min {
-          width: 76.67px;
-          height: 87px;
+          /* width: 76.67px;
+          height: 87px; */
         }
         @include max{
           width: spvw(170);
@@ -505,8 +506,8 @@
       }
       .function-img{
         @include min {
-          width: 80px;
-          height: 68px;
+          /* width: 80px;
+          height: 68px; */
         }
         @include max{
           width: spvw(175);
@@ -521,8 +522,8 @@
       }
       .function-img{
         @include min {
-          width: 76px;
-          height: 80px;
+          /* width: 76px;
+          height: 80px; */
         }
         @include max{
           width: spvw(169);
@@ -537,8 +538,8 @@
       }
       .function-img{
         @include min {
-          width: 86px;
-          height: 76px;
+          /* width: 86px;
+          height: 76px; */
         }
         @include max{
           width: spvw(185);
@@ -553,8 +554,8 @@
       }
       .function-img{
         @include min {
-          width: 72px;
-          height: 82px;
+          /* width: 72px;
+          height: 82px; */
         }
         @include max{
           width: spvw(163);
@@ -569,8 +570,8 @@
       }
       .function-img{
         @include min {
-          width: 79.4px;
-          height: 66px;
+         /*  width: 79.4px;
+          height: 66px; */
         }
         @include max{
           width: spvw(174);
@@ -585,8 +586,8 @@
       }
       .function-img{
         @include min {
-          width: 80px;
-          height: 68px;
+          /* width: 80px;
+          height: 68px; */
         }
         @include max{
           width: spvw(175);
@@ -601,8 +602,8 @@
       }
       .function-img{
         @include min {
-          width: 76.8px;
-          height: 76.8px;
+         /*  width: 76.8px; */
+         /*  height: 76.8px; */
         }
         @include max{
           width: spvw(170);
