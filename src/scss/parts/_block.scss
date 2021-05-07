@@ -87,6 +87,7 @@
   .mainvisual-img-smartphone{
     position: absolute;
     background: url(../img/mainvisual-img-bg.png)no-repeat center center;
+    background-size: cover;
     @include min {
       width: 362px;
       height: 706px;

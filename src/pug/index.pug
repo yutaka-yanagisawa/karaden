@@ -25,10 +25,22 @@ html(lang='ja')
               br
               |簡単・確実に顧客とのコンタクトを実現します。
             .mainvisual-img-smartphone
-              picture
-                source(srcset='/assets/img/mainvisual-img01.png' media='(min-width: 769px)')
-                source(srcset='/assets/img/mainvisual-img-sp01.png' media='(max-width: 768px)')
-                img(src="/assets/img/mainvisual-img01.png", alt="スマートフォン") 
+              .mainvisual-img-smartphone-wrap
+                .mainvisual-img-smartphone-display.mainvisual-img-smartphone-display01
+                  img(src="/assets/img/mainvisual-img-item01.png", alt="")
+                .mainvisual-img-smartphone-display.mainvisual-img-smartphone-display02
+                  img(src="/assets/img/mainvisual-img-item02.png", alt="")
+                .mainvisual-img-smartphone-display.mainvisual-img-smartphone-display03
+                  img(src="/assets/img/mainvisual-img-item03.png", alt="")
+                .mainvisual-img-smartphone-ripple
+                  .mainvisual-img-smartphone-ripple-wrap
+                    .ripple
+                .mainvisual-img-smartphone-cursol
+                  img(src="/assets/img/mainvisual-img-cursol.svg", alt="")
+              //- picture
+              //-   source(srcset='/assets/img/mainvisual-img01.png' media='(min-width: 769px)')
+              //-   source(srcset='/assets/img/mainvisual-img-sp01.png' media='(max-width: 768px)')
+              //-   img(src="/assets/img/mainvisual-img01.png", alt="スマートフォン") 
             .mainvisual-img-award
               picture
                 source(srcset='/assets/img/mainvisual-img02.png' media='(min-width: 769px)')
