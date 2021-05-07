@@ -35,7 +35,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      background: url(/assets/img/pagetop-arrow.png)no-repeat center center;
+      background: url(../img/pagetop-arrow.png)no-repeat center center;
       background-size: contain;
       @include min{
         width: 18px;

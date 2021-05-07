@@ -230,13 +230,13 @@ $num: 5;
     @include min{
       width: 18px;
       height: 18px;
-      background: url(/assets/img/icon-point.png) no-repeat left top;
+      background: url(../img/icon-point.png) no-repeat left top;
       background-size: cover;
     }
     @include max{
       width: spvw(24);
       height: spvw(24);
-      background: url(/assets/img/icon-point.png) no-repeat left top;
+      background: url(../img/icon-point.png) no-repeat left top;
       background-size: cover;
     }
   }
