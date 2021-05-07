@@ -1,0 +1,72 @@
+.price-table{
+  width: 100%;
+}
+.price-table-body{
+  >tr{
+    &:last-child{
+      .price-table-cell{
+        border-bottom: none;
+      }
+    }
+  }
+}
+.price-table-cell{
+  background-color: #ffffff;
+  border: solid #E6EBF4;
+  @include min {
+    font-size: 20px;
+    vertical-align: middle;
+    padding: 22px 18px;
+    line-height: 1.6;
+    border-width: 0 2px 2px 0;
+  }
+  @include max{
+    font-size: spvw(24);
+    text-align: left;
+    padding: spvw(20) spvw(15) spvw(20) spvw(20);
+    border-width: 0 spvw(2) spvw(2) 0;
+    line-height: 1.33;
+    vertical-align: middle;
+  }
+  >span{
+    font-weight: bold;
+    color: #377cea;
+    @include min {
+      text-align: center;
+      font-size: 24px;
+      line-height: 1.33;
+    }
+    @include max{
+      text-align: left;
+      font-size: spvw(24);
+      line-height: 1.33;
+    }
+  }
+  &:nth-child(2){
+    @include min {
+      width: 301px;
+    }
+    @include max{
+    }
+  }
+  &:nth-child(3){
+    border-right: none;
+    @include min {
+      width: 656px;
+    }
+    @include max{
+      width: spvw(279);
+    }
+  }
+}
+.price-table-cell--th{
+  background-color: #f5f7fa;
+  font-weight: bold;
+  @include min {
+    width: 203px;
+  }
+  @include max{
+    //padding: spvw(33) spvw(15) spvw(33) spvw(20);
+    width: spvw(223);
+  }
+}
