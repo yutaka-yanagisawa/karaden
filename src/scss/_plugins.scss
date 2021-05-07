@@ -524,7 +524,7 @@ button {
       }
     }
     &:after {
-      background: url(/assets/img//swiper-arrow-left.png) no-repeat center;
+      background: url(../img//swiper-arrow-left.png) no-repeat center;
       background-size: contain;
       @include min {
         width: 40px;
@@ -567,7 +567,7 @@ button {
       }
     }
     &:after {
-      background: url(/assets/img//swiper-arrow-right.png) no-repeat center;
+      background: url(../img//swiper-arrow-right.png) no-repeat center;
       transition: all 0.3s;
       background-size: contain;
       @include min {
@@ -1398,7 +1398,7 @@ button[aria-label][data-balloon-pos] {
 .swiper-container-rtl .swiper-button-next:after {
   /* content: "prev"; */
   /* content: "";
-  background: url(/assets/img/swiper-arrow-prev.png)no-repeat center center;
+  background: url(../img/swiper-arrow-prev.png)no-repeat center center;
   background-size: contain;
   @include min{
     left: -32px;
@@ -1418,7 +1418,7 @@ button[aria-label][data-balloon-pos] {
 .swiper-container-rtl .swiper-button-prev:after {
   /* content: "next"; */
   /* content: "";
-  background: url(/assets/img/swiper-arrow-next.png)no-repeat center center;
+  background: url(../img/swiper-arrow-next.png)no-repeat center center;
   background-size: contain;
   @include min{
     width: 24px;

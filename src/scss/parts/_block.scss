@@ -1,11 +1,11 @@
 .mainvisual-block{
   width: 100%;
   @include min {
-    background: url(/assets/img/mainvisual-bg.png)no-repeat center center;
+    background: url(../img/mainvisual-bg.png)no-repeat center center;
     background-size: cover;
   }
   @include max{
-    background: url(/assets/img/mainvisual-bg-sp.png)no-repeat center center;
+    background: url(../img/mainvisual-bg-sp.png)no-repeat center center;
     background-size: cover;
   }
 }
@@ -86,6 +86,8 @@
   }
   .mainvisual-img-smartphone{
     position: absolute;
+    background: url(../img/mainvisual-img-bg.png)no-repeat center center;
+    background-size: cover;
     @include min {
       width: 362px;
       height: 706px;
@@ -283,7 +285,7 @@
       @include max{
       }
       &::before{
-        background: url(/assets/img/top-feature-img01.png)no-repeat center center;
+        background: url(../img/top-feature-img01.png)no-repeat center center;
         background-size: contain;
         @include min {
           right: 0;
@@ -317,7 +319,7 @@
       @include max{
       }
       &::before{
-        background: url(/assets/img/top-feature-img02.png)no-repeat center center;
+        background: url(../img/top-feature-img02.png)no-repeat center center;
         background-size: contain;
         @include min {
           left: 0;
@@ -357,7 +359,7 @@
       @include max{
       }
       &::before{
-        background: url(/assets/img/top-feature-img03.png)no-repeat center center;
+        background: url(../img/top-feature-img03.png)no-repeat center center;
         background-size: contain;
         @include min {
           right: 0;
@@ -793,7 +795,7 @@
   .swiper-container-rtl .swiper-button-next:after {
     /* content: "prev"; */
     content: "";
-    background: url(/assets/img/swiper-arrow-prev.png)no-repeat center center;
+    background: url(../img/swiper-arrow-prev.png)no-repeat center center;
     background-size: contain;
     @include min{
       width: 24px;
@@ -818,7 +820,7 @@
   .swiper-container-rtl .swiper-button-prev:after {
     /* content: "next"; */
     content: "";
-    background: url(/assets/img/swiper-arrow-next.png)no-repeat center center;
+    background: url(../img/swiper-arrow-next.png)no-repeat center center;
     background-size: contain;
     @include min{
       width: 24px;
@@ -1285,7 +1287,7 @@
   .swiper-container-rtl .swiper-button-next:after {
     /* content: "prev"; */
     content: "";
-    background: url(/assets/img/swiper-arrow-prev.png)no-repeat center center;
+    background: url(../img/swiper-arrow-prev.png)no-repeat center center;
     background-size: contain;
     @include min{
       /* left: -32px; */
@@ -1311,7 +1313,7 @@
   .swiper-container-rtl .swiper-button-prev:after {
     /* content: "next"; */
     content: "";
-    background: url(/assets/img/swiper-arrow-next.png)no-repeat center center;
+    background: url(../img/swiper-arrow-next.png)no-repeat center center;
     background-size: contain;
     @include min{
       width: 24px;
@@ -1438,7 +1440,7 @@
     &::before{
       content: "";
       position: absolute;
-      background: url(/assets/img/result-arrow-img.png)no-repeat center center;
+      background: url(../img/result-arrow-img.png)no-repeat center center;
       background-size: contain;
       right: 0;
       top: 50%;
