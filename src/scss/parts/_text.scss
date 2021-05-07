@@ -1,3 +1,18 @@
+.page-text{
+  text-align: center;
+  color: #ffffff;
+  @include min {
+    font-size: 16px;
+    margin-top: 35px;
+  }
+  @include max{
+    font-size: spvw(24);
+    font-weight: 500;
+    line-height: 1.67;
+    margin-top: spvw(40);
+  }
+}
+
 .section-text{
   @include min {
   }
@@ -14,6 +29,7 @@
   }
   @include max{
     font-size: spvw(48);
+    line-height: 1.47916667;
   }
 }
 .section-lead{

@@ -27,6 +27,16 @@
     padding: spvw(178) spvw(40) spvw(173);
   }
 }
+.mainvisual-block--withbtn{
+  text-align: center;
+  @include min {
+    padding: 123px 40px 90px;
+  }
+  @include max{
+    
+    padding: spvw(148) spvw(40) spvw(100);
+  }
+}
 .mainvisual-block--top{
   @include min {
     height: 720px;
@@ -1894,9 +1904,10 @@
       font-family: $roboto-font; */
       @include min {
         /* font-size: 110px;
-        letter-spacing: -0.02em; */
+        letter-spacing: -0.02em; 
         margin-top: -3px;
-        display: block;
+        display: block;*/
+        margin-top: 9px;
       }
       @include max{
         display: block;
@@ -1938,6 +1949,294 @@
       line-height: 1.67;
       margin: spvw(35) 0 0;
       font-size: spvw(24);
+    }
+  }
+}
+.support-block {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  @include max{
+    margin-top: spvw(57);
+    padding: 0 spvw(20);
+  }
+  .item{
+    background-color: #ffffff;
+    @include min {
+      width: 560px;
+      height: 212px;
+      border-radius: 40px;
+      box-shadow: 8px 8px 20px 0 rgba(33, 78, 150, 0.16);
+      padding: 40px 32px 50px;
+      margin: 42px 0 0 40px;
+    }
+    @include max{
+      width: 100%;
+      height: spvw(284);
+      padding: spvw(48) spvw(36) spvw(30);
+      border-radius: spvw(40);
+      box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.16);
+      margin-top: spvw(48);
+    }
+    &:nth-child(odd){
+      @include min {
+        margin: 42px 0 0;
+      }
+    }
+    &:first-child{
+      @include max {
+        margin: 0;
+      }
+    }
+    >.title{
+      font-weight: bold;
+      color: #1a1a1a;
+      line-height: 1.28;
+      @include min {
+        font-size: 32px;
+        text-align: center;
+      }
+      @include max{
+        font-size: spvw(32);
+        text-align: left;
+      }
+    }
+    >.text{
+      text-align: left;
+      color: #1a1a1a;
+      @include min {
+        font-size: 16px;
+        line-height: 2;
+        margin-top: 30px;
+      }
+      @include max{
+        font-size: spvw(24);
+        margin-top: spvw(32);
+        line-height: 1.67;
+      }
+    }
+  }
+}
+.customers-voice-block{
+  position: relative;
+  @include min {
+    padding: 14px 0;
+  }
+  @include max{
+    padding: 0 spvw(20);
+  }
+  > img{
+    @include min {
+      width: 360px;
+      height: 390px;
+      position: absolute;
+      left: 0;
+      z-index: -1;
+    }
+    @include max{
+      width: spvw(290);
+      height: spvw(313);
+      margin: 0 auto;
+    }
+  }
+  .text-box {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @include min {
+      padding: 33px 40px 33px 38px;
+      border-radius: 4px 40px 40px 40px;
+      box-shadow: 8px 8px 20px 0 rgba(33, 78, 150, 0.16);
+      margin-left: 322px;
+      height: 363px;
+      text-align: center;
+    }
+    @include max{
+      width: 100%;
+      padding: spvw(40);
+      border-radius: spvw(4) spvw(40) spvw(40) spvw(40);
+      box-shadow: spvw(8) spvw(8) spvw(20) 0px rgba(33, 78,150,0.16);
+      margin-top: spvw(20);
+    }
+    >.title{
+      display: inline-flex;
+      align-items: center;
+      color: #ffffff;
+      font-weight: bold;
+      background-color: #214589;
+      @include min {
+        justify-content: center;
+        letter-spacing: 1.6px;
+        font-size: 20px;
+        height: 40px;
+        padding: 5.2px 20px 5.8px 16px;
+        border-radius: 16px 16px 16px 4px;
+      }
+      @include max{
+        justify-content:  flex-start;
+        padding: spvw(10) spvw(15) spvw(9);
+        border-radius: spvw(16) spvw(16) spvw(16) spvw(4);
+        font-size: spvw(20);
+        width: spvw(130);
+        height: spvw(48);
+      }
+    }
+    >.name{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: #1a1a1a;
+      font-weight: bold;
+      width: 100%;
+      @include min {
+        font-size: 24px;
+        margin-top: 20px;
+      }
+      @include max{
+        margin-top: spvw(20);
+        font-size: spvw(32);
+      }
+    }
+    .logo{
+      display: inline-block;
+      @include min {
+        margin-right: 20px;
+      }
+      @include max{
+        margin-right: spvw(20);
+      }
+    }
+    .logo-jcb{
+      @include min {
+        width: 94px;
+        height: 70px;
+      }
+      @include max{
+        width: spvw(94);
+        height: spvw(70);
+      }
+    }
+    >.text{
+      text-align: left;
+      color: #1a1a1a;
+      line-height: 2;
+      @include min {
+        font-size: 16px;
+        margin-top: 15px;
+      }
+      @include max{
+        font-size: spvw(24);
+        margin-top: spvw(15);
+      }
+    }
+  }
+}
+.feature-page-nav-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include min {
+    padding: 25px 0 30px;
+  }
+  @include max{
+    padding: spvw(24) 0;
+  }
+  .item{
+    position: relative;
+    text-align: center;
+    @include min {
+      padding: 0 39px;
+      width: 386px;
+    }
+    @include max{
+      padding: 0 spvw(40);
+      width: spvw(250);
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      background: #1A1A1A;
+      height: 100%;
+      /* top: 50%;
+      transform: translateY(-50%); */
+      top: 0;
+      right: 0;
+      width: 1px;
+      @include min {
+      }
+      @include max{
+      }
+    }
+    &:first-child{
+      &::before{
+        content: "";
+        position: absolute;
+        background: #1A1A1A;
+        height: 100%;
+        @include min {
+          left: 0;
+          width: 1px;
+        }
+        @include max{
+        }
+      }
+    }
+    &:last-child{
+      &::after{
+        @include max{
+          content: none;
+        }
+      }
+    }
+    >a{
+      text-align: center;
+      color: #000000;
+      font-weight: bold;
+      margin: 0 auto;
+      position: relative;
+      @include min {
+        font-size: 22px;
+        transition: all .3s;
+      }
+      @include max{
+        font-size: spvw(24);
+
+      }
+      &:hover{
+        @include min {
+          color: #214589;
+        }
+        @include max{
+        }
+      }
+    }
+    &.current{
+      a{
+        color: #214589;
+        pointer-events: none;
+        @include min {
+        }
+        &::before{
+          content: "";
+          position: absolute;
+          background: $theme-color;
+          transform: translateX(-50%);
+          left: 50%;
+          right: 0;
+          @include min {
+            width: 60px;
+            height: 3px;
+            bottom: -7px;
+          }
+          @include max{
+            width: spvw(60);
+            height: spvw(6);
+            bottom: spvw(-7);
+          }
+        }
+      }
     }
   }
 }

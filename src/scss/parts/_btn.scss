@@ -131,6 +131,32 @@
     }
   }
 }
+.c-btn--mainvisual{
+  margin: 0 auto;
+  @include min {
+    width: 350px;
+    height: 48px;
+    border-radius: 48px;
+    font-size: 20px;
+    box-shadow: 8px 8px 20px 0 rgba(33, 78, 150, 0.24);
+  }
+  @include max{
+    width: spvw(350);
+    height: spvw(48);
+    border-radius: spvw(24);
+    font-size: spvw(20);
+    box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.24);
+  }
+  &::before{
+    @include min {
+    }
+    @include max{
+      width: spvw(12);
+      height: spvw(14);
+      right: spvw(20);
+    }
+  }
+}
 .c-btn--download{
   position: relative;
   &::before{

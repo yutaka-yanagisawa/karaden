@@ -1,63 +1,39 @@
 
 doctype html
-- var page = 'price'
+- var page = 'feaure03'
 - var keywords = ''
 - var description = ''
 - var title = ''
 html(lang='ja')
   include inc/_head
-  body#faq
+  body#feature
     include inc/_gtm
     .wrapper
       include inc/_header
       section#mainvisual.section.section-mainvisual
-        .mainvisual-block.mainvisual-block--lower.mainvisual-block--price
+        .mainvisual-block.mainvisual-block--lower.mainvisual-block--feature.mainvisual-block--withbtn
           ul.breadcrumb
             li.breadcrumb-item
               a(href="") 空電プッシュ
             li.breadcrumb-item
-              span 料金
-          h1.page-heading 料金
+              span 特長
+          h1.page-heading.page-heading--withbtn 特長
+          p.page-text テキストテキストテキストテキストテキストテキストテキストテキスト
+          .c-btn.c-btn--mainvisual.pcmt30.spmt30 SMSについて詳しく知る
+      .feature-page-nav-block 
+        .item 
+          a(href="") 高品質・
+            br.sp
+            |セキュリティ
+        .item 
+          a(href="") 高い送信性能と圧倒的な到達率
+        .item.current
+          a(href="") スピード導入と充実のサポート
       .section-grey
         .inner
-          h2.section-text-large 最適プランをご提案するのでお問い合わせください
-          a(href="").c-btn.pcmt50.spmt50 資料請求・お問合せ
-      .section-blue-left
-        .inner
-          table.price-table
-            tbody.price-table-body 
-              tr 
-                th.price-table-cell.price-table-cell--th 料金体系
-                td.price-table-cell 初期費用＋月額費用（定額）
-                td.price-table-cell 初期設定費用と月額のサービス提供費用となります
-                  br
-                  |※ご契約回線数により月額費用が変わってきます
-              tr 
-                th.price-table-cell.price-table-cell--th 導入サポート
-                td.price-table-cell
-                  span 無料
-                td.price-table-cell 初期導入時の使い方支援などサポート費用です
-              tr 
-                th.price-table-cell.price-table-cell--th 運用サポート
-                td.price-table-cell
-                  span 無料
-                td.price-table-cell メールによるテクニカルサポート
-                  br
-                  |サポート対応時間：
-                  br
-                  |土、日、祝日、年末年始（12月29日～1月3日）を除いた
-                  br
-                  |平日10時～18時
-              tr 
-                th.price-table-cell.price-table-cell--th API連携サポート
-                td.price-table-cell
-                  span 無料
-                td.price-table-cell お客様自社システムと連携する際のテクニカルサポート費用です
-      .section-grey
-        .inner
-          h2.section-heading 導入までの流れ
-          p.section-lead.pcmt10.spmt10 （最短3営業日での3ステップ）
-          .introduction-flow-block 
+          h2.section-heading.section-heading-sp2line スピード導入と充実のサポート
+          p.section-lead.pcmt10.spmt20 （最短3営業日での3ステップ）
+          .introduction-flow-block
             .item 
               .number STEP
                 //span 01
@@ -87,6 +63,37 @@ html(lang='ja')
                   path.cls-2(d='M6.12-37.215c0,10.019,1.293,16.052,4.2,20.469C14.415-10.5,20.341-7.8,29.714-7.8c8.726,0,14.221-2.262,18.422-7.649,3.663-4.633,5.171-10.881,5.171-21.762V-57.469c0-9.911-1.293-16.052-4.2-20.469-4.094-6.249-10.019-8.942-19.392-8.942-8.726,0-14.221,2.262-18.422,7.649C7.628-74.6,6.12-68.35,6.12-57.469Zm33.29-1.293c0,14.329-2.478,19.284-9.7,19.284s-9.7-5.063-9.7-19.284V-56.176c0-14.221,2.586-19.284,9.7-19.284,7.218,0,9.7,4.956,9.7,19.284Zm37.707-5.387H83.9c7.541,0,12.6,5.279,12.6,13.036,0,7.434-3.771,11.635-10.558,11.635-6.356,0-9.911-3.232-10.881-9.911L61.818-27.519C62.788-14.376,70.975-7.8,86.489-7.8c15.945,0,24.025-7.649,24.025-22.732,0-9.373-2.693-14.329-10.342-18.961,6.249-3.878,8.511-8.3,8.511-16.375,0-13.682-7.757-21.008-22.085-21.008-14.221,0-21.762,6.249-22.839,18.961l12.5.97c.97-5.494,4.309-8.511,9.588-8.511,5.6,0,8.834,3.663,8.834,10.127,0,6.572-4.309,10.45-11.635,10.45H77.116Z' transform='translate(-6.12 86.88)')
               h3.title ご利用開始
               p.text 操作マニュアルなどは管理画面よりダウンロード可能です。
+          h2.section-heading.pcmt120.spmt120 導入までの流れ
+          p.section-lead.pcmt10.spmt10 導入前も導入後も専任担当者がきめ細やかにサポート。24時間365日電話での故障問い合わせ窓口など、お客様のサービスをしっかり支えます。
+          .support-block 
+            .item
+              h3.title 専任担当者による導入前サポート
+              p.text お客様1社毎に営業担当者が一人つき申込みから導入後までサポートします。
+            .item
+              h3.title 24時間365日の電話対応
+              p.text 故障発生時などの緊急時は電話での受付ですぐに状況が確認いただけます。
+            .item
+              h3.title テクニカルサポート
+              p.text テクニカルなご質問に関しては技術担当が直接、迅速に回答します。
+            .item
+              h3.title 電気通信サービス
+              p.text 電気通信事業法に準拠した運用方針により、安全な運用を実施しております。
+            .item
+              h3.title NTTグループのノウハウ
+              p.text 大手通信事業者の運用ノウハウとNTTグループの信頼性でアライアンスパートナーとして安心してお取引頂けます。
+      .section-blue-left
+        .inner
+          .customers-voice-block
+            img(src="assets/img/customers-voice-img.png", alt="株式会社ジェーシービー")
+            .text-box  
+              .title お客様の声
+              .name 
+                span.logo.logo-jcb
+                  img(src="assets/img/JCB-logo.png", alt="株式会社ジェーシービー")
+                |株式会社ジェーシービー様
+              .text 細やかなサービスがありがたかったですね。
+                br
+                |初めてのことでしたから「ここまでがパッケージです」と区切られてしまったり、相談しても「それはサポートセンターへ」と言われたりすると困ってしまう。空電プッシュでは柔軟にご対応いただけましたし、不明点も営業の方が窓口になって、都度丁寧にご回答くださった。導入に向けて、みなさんに 寄り添い支えていただいたと思っております。
       section#contact.section.section-contact 
         .inner
           h2.section-heading.font-white お問合せ
