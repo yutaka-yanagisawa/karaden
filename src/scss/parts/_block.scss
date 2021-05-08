@@ -1585,7 +1585,6 @@
     }
     @include max{
       width: 100%;
-      //height: spvw(768);
       padding: spvw(72) spvw(48) spvw(64);
       border-radius: spvw(4) spvw(24) spvw(24) spvw(24);
       margin-top: spvw(80);
@@ -1780,9 +1779,6 @@
       border-radius: spvw(4) spvw(64) spvw(64) spvw(64);
       padding: spvw(30) spvw(32) spvw(39) spvw(40);
     }
-    /* &.active{
-      display: block;
-    } */
   }
   .text-answer-wrap{
     display: flex;
@@ -1797,12 +1793,9 @@
       font-weight: bold;
       text-align: left;
       color: $theme-color;
-      /* position: absolute; */
       @include min {
         font-size: 32px;
         line-height: 1;
-        /* left: 32px;
-        top: 27px; */
         margin-right: 34px;
       }
       @include max{
@@ -1871,9 +1864,6 @@
     text-align: center;
     color: #ffc80f;
     font-weight: bold;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     @include min {
       width: 130px;
       font-size: 40px;
@@ -1884,29 +1874,8 @@
       margin: 0 auto;
       font-size: spvw(40);
     }
-    /* >span{
-      color: #214589;
-      font-family: $roboto-font;
-      @include min {
-        font-size: 110px;
-        letter-spacing: -0.02em;
-        margin-top: -3px;
-        display: block;
-      }
-      @include max{
-        display: block;
-        width: spvw(83.9);
-        height: spvw(79.1);
-      }
-    } */
     >svg{
-      /* color: #214589;
-      font-family: $roboto-font; */
       @include min {
-        /* font-size: 110px;
-        letter-spacing: -0.02em; 
-        margin-top: -3px;
-        display: block;*/
         margin-top: 9px;
       }
       @include max{
@@ -2101,9 +2070,6 @@
     @include min {
       width: 360px;
       height: 390px;
-      /* position: absolute;
-      left: 0;
-      z-index: -1; */
     }
     @include max{
       width: spvw(290);
@@ -2254,8 +2220,6 @@
       position: absolute;
       background: #1A1A1A;
       height: 100%;
-      /* top: 50%;
-      transform: translateY(-50%); */
       top: 0;
       right: 0;
       width: 1px;
@@ -2332,6 +2296,289 @@
           }
         }
       }
+    }
+  }
+}
+
+.merit-list-block{
+  @include min {
+    color: #214589;
+  }
+  @include max{
+  }
+  >.item{
+    @include min {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 100px;
+    }
+    @include max{
+      display: flex;
+      flex-wrap: wrap-reverse;
+      margin-top: spvw(100);
+    }
+    &:first-child{
+      @include min {
+        margin-top: 0;
+      }
+      @include max{
+      }
+    }
+    &:nth-child(odd){
+      @include min {
+        flex-direction: row;
+      }
+      @include max{
+      }
+      .text-box{
+        @include min {
+          margin-right: 44px;
+        }
+        @include max{
+        }
+      }
+      .text-comment{
+        @include min {
+          border-radius: 24px 4px 24px 24px;
+        }
+        @include max{
+        }
+      }
+    }
+    &:nth-child(even){
+      @include min {
+        flex-direction: row-reverse;
+      }
+      @include max{
+      }
+      .text-box{
+        @include min {
+          margin-left: 44px;
+        }
+        @include max{
+        }
+      }
+      .text-comment{
+        @include min {
+          border-radius: 4px 24px 24px 24px;
+        }
+        @include max{
+        }
+      }
+    }
+  }
+  .text-box{
+    @include min {
+      /* margin-right: 44px; */
+    }
+    @include max{
+      padding: 0 spvw(20);
+    }
+  }
+  .title{
+    color: #1a1a1a;
+    font-weight: bold;
+    @include min {
+      text-align: left;
+      font-size: 40px;
+      line-height: 1;
+    }
+    @include max{
+      font-size: spvw(40);
+      line-height: 1.6;
+      letter-spacing: -0.8px;
+      text-align: center;
+      margin-top: spvw(40);
+    }
+  }
+  .text{
+    text-align: left;
+    @include min {
+      margin-top: 35px;
+      font-size: 16px;
+      line-height: 2;
+      color: #1a1a1a;
+    }
+    @include max{
+      font-size: spvw(24);
+      line-height: 2;
+      color: #000000;
+      margin-top: spvw(40);
+    }
+  }
+  .text-comment{
+    background-color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5;
+    color: $theme-color;
+    @include min {
+      padding: 30px 27px 30px 32px;
+      box-shadow: 8px 8px 20px 0 rgba(33, 78, 150, 0.16);    
+      margin-top: 35px;
+      font-size: 24px;
+    }
+    @include max{
+      margin-top: spvw(35);
+      font-size: spvw(32);
+      padding: spvw(30.9) spvw(42) spvw(34.1) spvw(35);
+      border-radius: spvw(40);
+      box-shadow: spvw(8) spvw(8) spvw(20) 0px rgba(33, 78,150,0.16);
+    }
+  }
+  .text-notes{
+    text-align: left;
+    color: #1a1a1a;
+    @include min {
+      font-size: 14px;
+      margin-top: 24px;
+    }
+    @include max{
+      font-size: spvw(20);
+      line-height: 1.6;
+      margin-top: spvw(24);
+    }
+  }
+  .img{
+    @include min {
+      width: 556px;
+      height: 372px;
+    }
+    @include max{
+      width: 100%;
+    }
+  }
+}
+.about-sms-block {
+  @include min {
+    margin-right: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  @include max{
+  }
+  >.text-box{
+    @include min {
+      margin-right: 85px;
+      margin-top: 80px;
+    }
+    @include max{
+      padding-left: spvw(33);
+    }
+    >.text{
+      text-align: left;
+      color: #333333;
+      font-weight: bold;
+      position: relative;
+      @include min {
+        font-size: 24px;
+        line-height: 1.33;
+        letter-spacing: 0.96px;
+        padding-left: 59px;
+        margin-top: 40px;
+      }
+      @include max{
+        font-size: spvw(32);
+        line-height: 1.5;
+        padding-left: spvw(59);
+        margin-top: spvw(40);
+      }
+      &::before{
+        content: "";
+        position: absolute;
+        background: url(../img/about-sms-checkbox.png)no-repeat center center;
+        background-size: contain;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include min {
+          width:  45px;
+          height: 40px;
+        }
+        @include max{
+          width: spvw(45);
+          height: spvw(40);
+        }
+      }
+    }
+  }
+  >.img{
+    @include min {
+      width: 656px;
+      height: 501px;
+    }
+    @include max{
+      display: block;
+      margin-top: spvw(50);
+    }
+  }
+}
+
+.trouble-solution-block  {
+  @include min {
+    display: none
+  }
+  @include max{
+    margin-top: spvw(70);
+  }
+  >.text-box{
+    @include max{
+      padding: spvw(45) spvw(32);
+      border-radius: spvw(40);
+      background-color: #ffffff;
+      position: relative;
+    }
+    &::before{
+      @include max{
+        content: "";
+        position: absolute;
+        bottom: spvw(-46);
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: spvw(50) solid transparent;
+        border-right: spvw(50) solid transparent;
+        border-top: spvw(46) solid #ffffff;     
+      }
+    }
+    >.text-checkbox{
+      @include max{
+        text-align: left;
+        color: #333333;
+        font-weight: bold;
+        position: relative;
+        line-height: 1.5;
+        font-size: spvw(32);
+        padding-left: spvw(59);
+        margin-top: spvw(40);
+      }
+      &:first-child{
+        @include max{
+          margin-top: 0;
+        }
+      }
+      &::before{
+        @include max{
+          content: "";
+          position: absolute;
+          background: url(../img/trouble-solution-img-sp01.png)no-repeat center center;
+          background-size: contain;
+          left: 0;
+          top: spvw(10);
+          width: spvw(45);
+          height: spvw(40);
+        }
+      }
+    }
+  }
+  >.text{
+    @include max{
+      margin-top: spvw(70);
+      font-size: spvw(48);
+      font-weight: 900;
+      text-align: center;
+      color: #ff7f00;
     }
   }
 }
