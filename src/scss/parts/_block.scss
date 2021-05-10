@@ -2582,3 +2582,549 @@
     }
   }
 }
+
+
+.function-img-block {
+  display: flex;
+  justify-content: flex-end;
+  @include min {
+    margin: 80px 0 0;
+  }
+  @include max{
+    margin-top: spvw(57);
+    padding: 0 spvw(20);
+  }
+  >.img{
+    @include min {
+      margin-right: 47.5px;
+      width: 544px;
+      height: 496px;
+    }
+  }
+  >.text-box{
+  }
+  .item{
+    background-color: #ffffff;
+    @include min {
+      width: 556px;
+      height: 224px;
+      border-radius: 4px 40px 40px 40px;
+      box-shadow: 8px 8px 20px 0 rgba(33, 78, 150, 0.16);
+      padding: 34px 48px 34px 40px;
+      margin: 48px 0 0;
+    }
+    @include max{
+      width: 100%;
+      height: spvw(284);
+      padding: spvw(48) spvw(36) spvw(30);
+      border-radius: spvw(40);
+      box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.16);
+      margin-top: spvw(48);
+    }
+    &:first-child{
+      margin: 0;
+      @include max {
+      }
+    }
+    >.title{
+      font-weight: bold;
+      color: #1a1a1a;
+      line-height: 1.28;
+      @include min {
+        font-size: 32px;
+        text-align: left;
+      }
+      @include max{
+        font-size: spvw(32);
+        text-align: left;
+      }
+    }
+    >.text{
+      text-align: left;
+      color: #1a1a1a;
+      @include min {
+        font-size: 16px;
+        line-height: 2;
+        margin-top: 21px;
+      }
+      @include max{
+        font-size: spvw(24);
+        margin-top: spvw(32);
+        line-height: 1.67;
+      }
+    }
+  }
+}
+.linked-transmission-block{
+  @include min {
+    display: flex;
+    justify-content: center;
+    margin-top:  100px;
+  }
+  @include max{
+  }
+  .item{
+    background-color: #ffffff;
+    @include min {
+      width: 556px;
+      height: 292px;
+      border-radius: 24px;
+      padding: 45px 35px 40px 32px;
+      box-shadow: 8px 8px 20px 0 rgba(33, 78, 150, 0.16);
+      margin-left: 48px;
+    }
+    @include max{
+      width: 100%;
+      height: spvw(284);
+      padding: spvw(48) spvw(36) spvw(30);
+      border-radius: spvw(40);
+      box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.16);
+      margin-top: spvw(48);
+    }
+    &:first-child{
+      margin: 0;
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 128px;
+            height: 116px;
+            left: -20px;
+            top: -33px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    &:nth-child(2){
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 124px;
+            height: 128px;
+            left: -18px;
+            top: -41px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    >.title{
+      font-weight: bold;
+      color: #1a1a1a;
+      line-height: 1.28;
+      position: relative;
+      @include min {
+        font-size: 32px;
+        text-align: left;
+        padding-left: 105px;
+      }
+      @include max{
+        font-size: spvw(32);
+        text-align: left;
+      }
+      >.img{
+        position: absolute;
+        @include min {
+        }
+        @include max{
+        }
+      }
+    }
+    >.text{
+      text-align: left;
+      color: #1a1a1a;
+      @include min {
+        font-size: 16px;
+        line-height: 2;
+        margin-top: 30px;
+      }
+      @include max{
+        font-size: spvw(24);
+        margin-top: spvw(32);
+        line-height: 1.67;
+      }
+    }
+  }
+}
+.function-img-list{
+
+  @include min {
+    display: flex;
+    justify-content: center;
+    margin-top:  100px;
+  }
+  @include max{
+  }
+  .item{
+    background-color: #ffffff;
+    @include min {
+      width: 556px;
+      height: 292px;
+      border-radius: 24px;
+      padding: 45px 35px 40px 32px;
+      box-shadow: 8px 8px 20px 0 rgba(33, 78, 150, 0.16);
+      margin-left: 48px;
+    }
+    @include max{
+      width: 100%;
+      height: spvw(284);
+      padding: spvw(48) spvw(36) spvw(30);
+      border-radius: spvw(40);
+      box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.16);
+      margin-top: spvw(48);
+    }
+    &:first-child{
+      margin: 0;
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 128px;
+            height: 116px;
+            left: -20px;
+            top: -33px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    &:nth-child(2){
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 124px;
+            height: 128px;
+            left: -18px;
+            top: -41px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    >.title{
+      font-weight: bold;
+      color: #1a1a1a;
+      line-height: 1.28;
+      position: relative;
+      @include min {
+        font-size: 32px;
+        text-align: left;
+        padding-left: 105px;
+      }
+      @include max{
+        font-size: spvw(32);
+        text-align: left;
+      }
+      >.img{
+        position: absolute;
+        @include min {
+        }
+        @include max{
+        }
+      }
+    }
+    >.text{
+      text-align: left;
+      color: #1a1a1a;
+      @include min {
+        font-size: 16px;
+        line-height: 2;
+        margin-top: 30px;
+      }
+      @include max{
+        font-size: spvw(24);
+        margin-top: spvw(32);
+        line-height: 1.67;
+      }
+    }
+  }
+}
+.function-img-list-block{
+  @include min {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:  100px;
+  }
+  @include max{
+  }
+  .item{
+    background-color: #ffffff;
+    position: relative;
+    @include min {
+      width: 556px;
+      height: 324px;
+      border-radius: 24px;
+      padding: 45px 28px 40px 32px;
+      box-shadow: 8px 8px 20px 0 rgba(33, 78, 150, 0.16);
+      margin-top: 48px;
+      margin-left: 48px;
+    }
+    @include max{
+      width: 100%;
+      height: spvw(284);
+      padding: spvw(48) spvw(36) spvw(30);
+      border-radius: spvw(40);
+      box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.16);
+      margin-top: spvw(48);
+    }
+    &:nth-child(odd){
+      @include min {
+        margin-left: 0;
+      }
+      @include max {
+      }
+    }
+    &:first-child{
+      margin: 0;
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 134px;
+            height: 124px;
+            left: -20px;
+            top: -36px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    &:nth-child(2){
+      @include min {
+        margin-top: 0;
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 120px;
+            height: 130px;
+            left: -16px;
+            top: -39px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    &:nth-child(3){
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 128px;
+            height: 114px;
+            left: -20px;
+            top: -33px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    &:nth-child(4){
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 128px;
+            height: 116px;
+            left: -20px;
+            top: -33px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    &:nth-child(5){
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 125px;
+            height: 124px;
+            left: -20px;
+            top: -34px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    &:nth-child(6){
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 141px;
+            height: 126px;
+            left: -20px;
+            top: -44px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    &:nth-child(7){
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 85px;
+            height: 73px;
+            left: 0px;
+            top: -19px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    &:nth-child(8){
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 125px;
+            height: 135px;
+            left: -21px;
+            top: -41px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    &:nth-child(9){
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 82px;
+            height: 67px;
+            left: -3px;
+            top: -19px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    &:nth-child(10){
+      @include min {
+      }
+      @include max {
+      }
+      >.title{
+        >.img{
+          @include min {
+            display: block;
+            width: 72px;
+            height: 66px;
+            left: -1px;
+            top: -14px;
+          }
+          @include max {
+          }
+        }
+      }
+    }
+    >.title{
+      font-weight: bold;
+      color: #1a1a1a;
+      line-height: 1.28;
+      position: relative;
+      @include min {
+        font-size: 32px;
+        text-align: left;
+        padding-left: 105px;
+      }
+      @include max{
+        font-size: spvw(32);
+        text-align: left;
+      }
+      >.img{
+        position: absolute;
+        @include min {
+        }
+        @include max{
+        }
+      }
+    }
+    >.text{
+      text-align: left;
+      color: #1a1a1a;
+      @include min {
+        font-size: 16px;
+        line-height: 2;
+        margin-top: 30px;
+      }
+      @include max{
+        font-size: spvw(24);
+        margin-top: spvw(32);
+        line-height: 1.67;
+      }
+    }
+  }
+}

@@ -56,7 +56,32 @@
     @include min {
       background: #ffffff;
       color: #377CEA;
-      border: solid 2px #377CEA;
+    }
+    @include max{
+    }
+    &::before{
+      @include min {
+        right: 15px;
+        opacity: 0;
+      }
+      @include max{
+      }
+    }
+  }
+}
+.c-btn--orange{ 
+  background-color: #ff7f00;
+  position: relative;
+  box-sizing: border-box;
+  @include min {
+    border: solid 2px #FF7F00;
+  }
+  @include max{
+  }
+  &:hover{
+    @include min {
+      background: #ffffff;
+      color: #FF7F00;
     }
     @include min-max{
     }
@@ -184,6 +209,35 @@
       }
       @include max{
       }
+    }
+  }
+}
+.c-btn--list{
+  @include min {
+    width: 280px;
+    height: 48px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    /* margin: 25px auto 0; */
+  }
+  @include max{
+  }
+  &::before{
+    background: url(../img/c-btn-arrow.png)no-repeat center center;
+    background-size: contain;
+    @include min {
+      width: 12px;
+      height: 14px;
+      right: 20px;
+    }
+    @include min-max{
+    }
+    @include max{
+      width: spvw(24);
+      height: spvw(28);
+      right: spvw(40);
     }
   }
 }

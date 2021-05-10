@@ -1,0 +1,174 @@
+
+doctype html
+- var page = 'feaure03'
+- var keywords = ''
+- var description = ''
+- var title = ''
+html(lang='ja')
+  include inc/_head
+  body#feature
+    include inc/_gtm
+    .wrapper
+      include inc/_header
+      section#mainvisual.section.section-mainvisual
+        .mainvisual-block.mainvisual-block--lower.mainvisual-block--feature.mainvisual-block--withbtn
+          ul.breadcrumb
+            li.breadcrumb-item
+              a(href="") 空電プッシュ
+            li.breadcrumb-item
+              span 機能
+          h1.page-heading.page-heading--withtext 豊富な機能
+          p.page-text 空電プッシュは直感的なユーザーインターフェースの管理画
+            br.sp
+            |面で操作ストレスなく、一斉/個別にSMS送信が可能です。
+      section.section-grey
+        .inner
+          h2.section-heading.section-heading-sp2line タイトルが入ります
+          p.section-lead テキストテキストテキストテキストテキストテキスト
+            |テキストテキストテキストテキストテキストテキスト
+            |テキストテキストテキストテキストテキストテキスト
+          .function-img-block 
+            img.img(src="assets/img/function-img01.png", alt="")
+            .text-box
+              .item
+                h3.title 送信性能
+                p.text 国内最大規模を誇る送信処理能力を保有し、1時間あたり186万通を送信できる設備を保有しています。大規模案件でも遅延なく送信可能です。
+              .item
+                h3.title 携帯キャリアとの直接送信契約
+                p.text 国内最大規模を誇る送信処理能力を保有し、1時間あたり186万通を送信できる設備を保有しています。大規模案件でも遅延なく送信可能です。
+      section.section-blue-left
+        .inner
+          h2.section-heading 連携配信
+          .linked-transmission-block
+            .item 
+              .title API連携
+                img.img(src="assets/img/link-icon-img01.png", alt="")
+              .text お客様のシステムから空電プッシュのAPIを利用することで、業務に
+                br
+                |連携したSMS送信を行うことができます。
+              .c-btn.c-btn--list 詳しく見る
+            .item 
+              .title IVR連携
+                img.img(src="assets/img/link-icon-img02.png", alt="")
+              .text 電話をかけてきたお客様に対して、音声ガイダンス(IVR)によりお客
+                br
+                |様のニーズや問い合わせ内容にあったSMSを送信できます。
+              .c-btn.c-btn--list.c-btn--orange 資料請求・お問合せ
+          h2.section-heading.pcmt120.spmt120 各機能
+          .function-img-list-block
+            .item 
+              .title 送信元番号指定
+                img.img(src="assets/img/function-icon-img01.png", alt="")
+              .text お客様のシステムから空電プッシュのAPIを利用することで、業務に
+                br.pc
+                |連携したSMS送信を行うことができます。
+              .c-btn.c-btn--list 詳しく見る
+            .item 
+              .title 長文分割機能
+                img.img(src="assets/img/function-icon-img02.png", alt="")
+              .text 携帯キャリア・受信端末機種を問わず、1回の送信要求で最大700文
+                br.pc
+                |字のメッセージを正しい表示順序で、メッセージが欠けることなく
+                br.pc
+                |送信できます。
+              .c-btn.c-btn--list 詳しく見る
+            .item 
+              .title 携帯番号履歴判定
+                img.img(src="assets/img/function-icon-img03.png", alt="")
+              .text 送信先携帯電話番号の契約者変更の可能性がある場合に自動的に
+                br.pc
+                |SMS送信を止める機能です。第三者への誤送信を防止します。
+                br
+                |（※2002年11月以前の変更については判定することができません）
+              .c-btn.c-btn--list 詳しく見る
+            .item 
+              .title 短縮URL機能
+                img.img(src="assets/img/function-icon-img04.png", alt="")
+              .text 長いURLを22文字へ短縮することに加え、URLクリック数の確認が
+                br.pc
+                |可能です。本機能によって疑似的にSMSの開封状況を確認できます。
+              .c-btn.c-btn--list 詳しく見る
+            .item 
+              .title 双方向SMS
+                img.img(src="assets/img/function-icon-img05.png", alt="")
+              .text SMSを送信するだけでなく、SMSで受信することができるサービス
+                br.pc
+                |です。設定により受信内容により自動応答することも可能です。
+              .c-btn.c-btn--list 詳しく見る
+            .item 
+              .title 承認機能
+                img.img(src="assets/img/function-icon-img06.png", alt="")
+              .text 事前に設定された承認者の承諾により、SMSが送信される機能です。
+                br.pc
+                |誤送信を防止します。
+              .c-btn.c-btn--list 詳しく見る
+            .item 
+              .title 送信予約機能
+                img.img(src="assets/img/function-icon-img07.png", alt="")
+              .text 予め任意の日時を指定してSMSのスケジュール送信を行うことが可
+                br.pc
+                |能です。
+              .c-btn.c-btn--list 詳しく見る
+            .item 
+              .title 差し込み機能
+                img.img(src="assets/img/function-icon-img08.png", alt="")
+              .text 一斉送信の場合でも、連絡内容の一部やお名前などを個別に指定し、
+                br.pc
+                |宛先ごとに文面を変えて送信することができます。
+              .c-btn.c-btn--list 詳しく見る
+            .item 
+              .title 再送機能
+                img.img(src="assets/img/function-icon-img09.png", alt="")
+              .text 電源がOFFになっているなど圏外でSMSが届かなかった場合に再送す
+                br.pc
+                |る設定が可能です。
+              .c-btn.c-btn--list 詳しく見る
+            .item 
+              .title LINE連携送信
+                img.img(src="assets/img/function-icon-img10.png", alt="")
+              .text 携帯電話番号マッチングで、LINEを通じてお客様に連絡をすること
+                br.pc
+                |が可能です。従来のSMSと比べ、よりリッチなメッセージを送信する
+                br.pc
+                |事ができます。
+              .c-btn.c-btn--list 詳しく見る
+      section.section-grey
+        .inner
+          h2.section-heading 仕 様
+          table.spec-table
+            tbody.spec-table-body 
+              tr 
+                th(rowspan="2").spec-table-cell.spec-table-cell--th docomo
+                td.spec-table-cell 全角と半角混在：70文字以内、全角のみ：70文字以内 、半角のみ：140文字以内
+              tr 
+                td.spec-table-cell [長文化オプション]　全角と半角混在：660文字以内
+              tr 
+                th(rowspan="2").spec-table-cell.spec-table-cell--th au
+                td.spec-table-cell 140バイト以内（※全角は2バイト、半角は1バイトとして判別）
+              tr 
+                td.spec-table-cell [長文化オプション]　全角と半角混在：670文字以内
+              tr 
+                th(rowspan="2").spec-table-cell.spec-table-cell--th SoftBank
+                td.spec-table-cell 全角と半角混在：70文字以内、全角のみ：70文字以内 、半角のみ：140文字以内
+              tr 
+                td.spec-table-cell [長文化オプション]　全角と半角混在：670文字以内
+              tr 
+                th(rowspan="2").spec-table-cell.spec-table-cell--th 楽天モバイル
+                td.spec-table-cell 全角と半角混在：70文字以内、全角のみ：70文字以内 、半角のみ：140文字以内
+              tr 
+                td.spec-table-cell [長文化オプション]　全角と半角混在：670文字以内
+      section#contact.section.section-contact 
+        .inner
+          h2.section-heading.font-white お問合せ
+          p.section-lead.section-lead--contact.font-white 空電プッシュは、国内シェアNo.1の
+            br.sp
+            |法人向けSMS送信サービスです。
+            br
+            |ご不明な点はお気軽にお問い合わせください。
+            br
+            |利用用途や配信数に応じて最適なご提案をいたします。
+          .contact-block
+            a(href="").contact-btn.pcmt70 資料請求・お問合せ
+            a(href="").agency-btn 代理店募集
+      include inc/_footer
+    
