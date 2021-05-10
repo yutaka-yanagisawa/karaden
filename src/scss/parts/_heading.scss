@@ -29,6 +29,13 @@
   @include max{
   }
 }
+.page-heading--withtext{
+  @include min {
+    padding-top: 7px;
+  }
+  @include max{
+  }
+}
 .section-heading{
   font-weight: bold;
   color: $theme-color;

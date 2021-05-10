@@ -16,6 +16,8 @@
   @include max{
     position: relative;
     padding: spvw(178) spvw(40) spvw(173);
+    background: url(../img/mainvisual-bg-lower-sp.png)no-repeat center center;
+    background-size: cover;
   }
 }
 .mainvisual-block--faq,.mainvisual-block--price{
@@ -35,6 +37,16 @@
   @include max{
     
     padding: spvw(148) spvw(40) spvw(100);
+  }
+}
+.mainvisual-block--withtext{
+  text-align: center;
+  @include min {
+    padding: 110px 40px 72px;
+  }
+  @include max{
+    
+    padding: spvw(131) spvw(40) spvw(122);
   }
 }
 .mainvisual-block--top{
