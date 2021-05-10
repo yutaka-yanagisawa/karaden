@@ -78,6 +78,9 @@
   @include min {
     margin-top: 100px;
   }
+  @include max {
+    margin-top: spvw(100);
+  }
 }
 .spec-table-body{
   >tr{
@@ -86,12 +89,18 @@
         @include min {
           border-bottom: solid 2px #dde3ef;
         }
+        @include max {
+          border-bottom: solid spvw(2) #dde3ef;
+        }
       }
     }
     &:nth-child(even){
       .spec-table-cell{
         @include min {
           border-bottom: solid 4px #dde3ef;
+        }
+        @include max {
+          border-bottom: solid spvw(4) #dde3ef;
         }
       }
     }
@@ -118,30 +127,10 @@
   }
   @include max{
     font-size: spvw(24);
-    padding: spvw(20) spvw(15) spvw(20) spvw(20);
+    padding: spvw(20) spvw(15) spvw(19) spvw(21);
     line-height: 1.33;
     vertical-align: middle;
   }
-  /* >span{
-    font-weight: bold;
-    color: #377cea;
-    @include min {
-      text-align: center;
-      font-size: 24px;
-      line-height: 1.33;
-    }
-    @include max{
-      text-align: left;
-      font-size: spvw(24);
-      line-height: 1.33;
-    }
-  } */
-  /* &:nth-child(2){
-    @include min {
-    }
-    @include max{
-    }
-  } */
 }
 .spec-table-cell--th{
   background-color: #dde3ef;
@@ -156,7 +145,11 @@
     line-height: 1.33;
   }
   @include max{
-    width: spvw(223);
+    border-right: solid spvw(2) #f5f7fa;
+    border-bottom: solid spvw(4) #f5f7fa!important;
+    width: spvw(181);
+    font-size: spvw(24);
+    line-height: 1.33;
   }
 }
 

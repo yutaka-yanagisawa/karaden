@@ -213,16 +213,19 @@
   }
 }
 .c-btn--list{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   @include min {
     width: 280px;
     height: 48px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     bottom: 40px;
     /* margin: 25px auto 0; */
   }
   @include max{
+    width: spvw(510);
+    height: spvw(88);
+    bottom: spvw(48);
   }
   &::before{
     background: url(../img/c-btn-arrow.png)no-repeat center center;
@@ -237,7 +240,7 @@
     @include max{
       width: spvw(24);
       height: spvw(28);
-      right: spvw(40);
+      right: spvw(33);
     }
   }
 }

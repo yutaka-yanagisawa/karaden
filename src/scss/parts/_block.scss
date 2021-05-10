@@ -2585,14 +2585,13 @@
 
 
 .function-img-block {
-  display: flex;
-  justify-content: flex-end;
   @include min {
     margin: 80px 0 0;
+    display: flex;
+    justify-content: flex-end;
   }
   @include max{
-    margin-top: spvw(57);
-    padding: 0 spvw(20);
+    margin-top: spvw(37);
   }
   >.img{
     @include min {
@@ -2602,6 +2601,9 @@
     }
   }
   >.text-box{
+    @include max{
+      padding: 0 spvw(20);
+    }
   }
   .item{
     background-color: #ffffff;
@@ -2615,26 +2617,29 @@
     }
     @include max{
       width: 100%;
-      height: spvw(284);
-      padding: spvw(48) spvw(36) spvw(30);
-      border-radius: spvw(40);
+      /* height: spvw(284); */
+      padding: spvw(47) spvw(32) spvw(40) spvw(40) ;
+      border-radius: spvw(4) spvw(40) spvw(40) spvw(40);
       box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.16);
       margin-top: spvw(48);
     }
     &:first-child{
-      margin: 0;
+      @include min {
+        margin-top: 0;
+      }
       @include max {
       }
     }
     >.title{
       font-weight: bold;
       color: #1a1a1a;
-      line-height: 1.28;
       @include min {
+        line-height: 1.28;
         font-size: 32px;
         text-align: left;
       }
       @include max{
+        line-height: 1;
         font-size: spvw(32);
         text-align: left;
       }
@@ -2649,7 +2654,7 @@
       }
       @include max{
         font-size: spvw(24);
-        margin-top: spvw(32);
+        margin-top: spvw(25);
         line-height: 1.67;
       }
     }
@@ -2659,12 +2664,15 @@
   @include min {
     display: flex;
     justify-content: center;
-    margin-top:  100px;
+    margin-top: 100px;
   }
   @include max{
+    margin-top: spvw(103);
+    padding: 0 spvw(20);
   }
   .item{
     background-color: #ffffff;
+    position: relative;
     @include min {
       width: 556px;
       height: 292px;
@@ -2675,11 +2683,11 @@
     }
     @include max{
       width: 100%;
-      height: spvw(284);
-      padding: spvw(48) spvw(36) spvw(30);
-      border-radius: spvw(40);
+      height: spvw(428);
+      padding: spvw(48) spvw(35) spvw(30) spvw(40);
+      border-radius: spvw(24);
       box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.16);
-      margin-top: spvw(48);
+      margin-top: spvw(80);
     }
     &:first-child{
       margin: 0;
@@ -2690,13 +2698,16 @@
       >.title{
         >.img{
           @include min {
-            display: block;
             width: 128px;
             height: 116px;
             left: -20px;
             top: -33px;
           }
           @include max {
+            width: spvw(128);
+            height: spvw(116);
+            left: spvw(-20);
+            top: spvw(-30);
           }
         }
       }
@@ -2709,13 +2720,16 @@
       >.title{
         >.img{
           @include min {
-            display: block;
             width: 124px;
             height: 128px;
             left: -18px;
             top: -41px;
           }
           @include max {
+            width: spvw(124);
+            height: spvw(128);
+            left: spvw(-25);
+            top: spvw(-35);
           }
         }
       }
@@ -2731,7 +2745,8 @@
         padding-left: 105px;
       }
       @include max{
-        font-size: spvw(32);
+        padding-left: spvw(106);
+        font-size: spvw(40);
         text-align: left;
       }
       >.img{
@@ -2752,20 +2767,20 @@
       }
       @include max{
         font-size: spvw(24);
-        margin-top: spvw(32);
+        margin-top: spvw(38);
         line-height: 1.67;
       }
     }
   }
 }
-.function-img-list{
-
+/* .function-img-list{
   @include min {
     display: flex;
     justify-content: center;
-    margin-top:  100px;
+    margin-top: 100px;
   }
   @include max{
+    margin-top: spvw(100);
   }
   .item{
     background-color: #ffffff;
@@ -2779,7 +2794,7 @@
     }
     @include max{
       width: 100%;
-      height: spvw(284);
+      height: spvw(428);
       padding: spvw(48) spvw(36) spvw(30);
       border-radius: spvw(40);
       box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.16);
@@ -2835,8 +2850,9 @@
         padding-left: 105px;
       }
       @include max{
-        font-size: spvw(32);
+        font-size: spvw(40);
         text-align: left;
+        padding-left: spvw(105);
       }
       >.img{
         position: absolute;
@@ -2861,7 +2877,7 @@
       }
     }
   }
-}
+} */
 .function-img-list-block{
   @include min {
     display: flex;
@@ -2870,6 +2886,8 @@
     margin-top:  100px;
   }
   @include max{
+    margin-top: spvw(100);
+    padding: spvw(20);
   }
   .item{
     background-color: #ffffff;
@@ -2885,11 +2903,11 @@
     }
     @include max{
       width: 100%;
-      height: spvw(284);
-      padding: spvw(48) spvw(36) spvw(30);
-      border-radius: spvw(40);
+      min-height: spvw(428);
+      padding: spvw(48) spvw(35) spvw(168) spvw(40);
+      border-radius: spvw(24);
       box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.16);
-      margin-top: spvw(48);
+      margin-top: spvw(80);
     }
     &:nth-child(odd){
       @include min {
@@ -2907,13 +2925,16 @@
       >.title{
         >.img{
           @include min {
-            display: block;
             width: 134px;
             height: 124px;
             left: -20px;
             top: -36px;
           }
           @include max {
+            width: spvw(134);
+            height: spvw(124);
+            left: spvw(-20);
+            top: spvw(-34);
           }
         }
       }
@@ -2934,6 +2955,10 @@
             top: -39px;
           }
           @include max {
+            width: spvw(120);
+            height: spvw(130);
+            left: spvw(-20);
+            top: spvw(-33);
           }
         }
       }
@@ -2946,13 +2971,16 @@
       >.title{
         >.img{
           @include min {
-            display: block;
             width: 128px;
             height: 114px;
             left: -20px;
             top: -33px;
           }
           @include max {
+            width: spvw(128);
+            height: spvw(114);
+            left: spvw(-20);
+            top: spvw(-25);
           }
         }
       }
@@ -2965,13 +2993,16 @@
       >.title{
         >.img{
           @include min {
-            display: block;
             width: 128px;
             height: 116px;
             left: -20px;
             top: -33px;
           }
           @include max {
+            width: spvw(128);
+            height: spvw(116);
+            left: spvw(-20);
+            top: spvw(-31);
           }
         }
       }
@@ -2984,13 +3015,16 @@
       >.title{
         >.img{
           @include min {
-            display: block;
             width: 125px;
             height: 124px;
             left: -20px;
             top: -34px;
           }
           @include max {
+            width: spvw(125);
+            height: spvw(124);
+            left: spvw(-20);
+            top: spvw(-34);
           }
         }
       }
@@ -3003,13 +3037,16 @@
       >.title{
         >.img{
           @include min {
-            display: block;
             width: 141px;
             height: 126px;
             left: -20px;
             top: -44px;
           }
           @include max {
+            width: spvw(141);
+            height: spvw(126);
+            left: spvw(-20);
+            top: spvw(-34);
           }
         }
       }
@@ -3022,13 +3059,16 @@
       >.title{
         >.img{
           @include min {
-            display: block;
             width: 85px;
             height: 73px;
             left: 0px;
             top: -19px;
           }
           @include max {
+            width: spvw(85);
+            height: spvw(73);
+            left: 0;
+            top: spvw(-15);
           }
         }
       }
@@ -3048,6 +3088,10 @@
             top: -41px;
           }
           @include max {
+            width: spvw(125);
+            height: spvw(135);
+            left: spvw(-20);
+            top: spvw(-36);
           }
         }
       }
@@ -3060,13 +3104,16 @@
       >.title{
         >.img{
           @include min {
-            display: block;
             width: 82px;
             height: 67px;
             left: -3px;
             top: -19px;
           }
           @include max {
+            width: spvw(82);
+            height: spvw(67);
+            left: spvw(-1);
+            top: spvw(-11);
           }
         }
       }
@@ -3079,13 +3126,16 @@
       >.title{
         >.img{
           @include min {
-            display: block;
             width: 72px;
             height: 66px;
             left: -1px;
             top: -14px;
           }
           @include max {
+            width: spvw(72);
+            height: spvw(66);
+            left: spvw(0);
+            top: spvw(-5);
           }
         }
       }
@@ -3101,7 +3151,8 @@
         padding-left: 105px;
       }
       @include max{
-        font-size: spvw(32);
+        padding-left: spvw(106);
+        font-size: spvw(40);
         text-align: left;
       }
       >.img{
@@ -3122,7 +3173,7 @@
       }
       @include max{
         font-size: spvw(24);
-        margin-top: spvw(32);
+        margin-top: spvw(39);
         line-height: 1.67;
       }
     }
