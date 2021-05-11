@@ -298,3 +298,44 @@
     padding: spvw(120) 0 spvw(100);
   }
 }
+.section-grey{
+  position: relative;
+  background: #F5F7FA;
+  z-index: 1;
+  @include min {
+    padding: 100px 0 120px;
+  }
+  @include max{
+    padding: spvw(120) 0 ;
+  }
+}
+.section-blue-left{
+  position: relative;
+  background: #F5F7FA;
+  z-index: 1;
+  @include min {
+    padding: 100px 0 120px;
+  }
+  @include max{
+    padding: spvw(120) 0 ;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    background: #E6EBF4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    @include min {
+      left: -80px;
+      border-radius: 0 8px 0 0;
+    }
+    @include min-max{
+    }
+    @include max{
+      left: spvw(-20);
+      border-radius: 0 spvw(8) 0 0;
+    }
+  }
+}

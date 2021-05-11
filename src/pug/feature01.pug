@@ -1,0 +1,99 @@
+
+doctype html
+- var page = 'feaure03'
+- var keywords = ''
+- var description = ''
+- var title = ''
+html(lang='ja')
+  include inc/_head
+  body#feature
+    include inc/_gtm
+    .wrapper
+      include inc/_header
+      section#mainvisual.section.section-mainvisual
+        .mainvisual-block.mainvisual-block--lower.mainvisual-block--feature.mainvisual-block--withbtn
+          ul.breadcrumb
+            li.breadcrumb-item
+              a(href="/") 空電プッシュ
+            li.breadcrumb-item
+              span 特長
+          h1.page-heading.page-heading--withbtn 特長
+          p.page-text--withbtn テキストテキストテキストテキストテキストテキストテキストテキスト
+          .c-btn.c-btn--mainvisual.pcmt30.spmt30 SMSについて詳しく知る
+      .feature-page-nav-block 
+        .item.current
+          a(href="feature01.html") 高品質・
+            br.sp
+            |セキュリティ
+        .item 
+          a(href="feature02.html") 高い送信性能と圧倒的な到達率
+        .item
+          a(href="feature03.html") スピード導入と充実のサポート
+      .section-grey
+        .inner
+          h2.section-heading.section-heading-sp2line 高いセキュリティでお客様情報をしっかり守る
+          p.section-lead.pcmt10.spmt10 お客様の情報を守るために、さまざまなセキュリティ対策を実施。安心してご利用いただけます。
+          .security-block 
+            .item
+              h3.title 強固なセキュリティー対策
+              p.text IDS（侵入検知システム）/WAFやデータの暗号化保存など、強固なセキュリティを備えています。
+            .item
+              h3.title 携帯キャリアとの直接送信契約
+              p.text 国内主要携帯4キャリアとクローズドなネットワークを構成し、セキュリティを高めた運用を行っています。
+            .item
+              h3.title 内部不正対策
+              p.text 監査サーバを設置し、運用作業内用をシステム上で管理。内部不正を検知します。
+            .item
+              h3.title 送信元番号指定
+              p.text お客様の電話番号を送信元番号に指定できるため、成りすましを防止できます。　　
+            .item
+              h3.title オンプレミス
+              p.text 自社のデータセンターで運用、サーバが国内にあり、リソース全体を自社で把握し、管理しています。
+            .item
+              h3.title 自社開発
+              p.text システムは社内で開発しているため、不具合の原因究明とトラブル対応を迅速に対応できます。
+            .item
+              h3.title ペネトレーションテスト実施
+              p.text システムは社内で開発しているため、不具合の原因究明とトラブル対応を迅速に対応できます。
+            .item
+              h3.title IPアドレス接続制限
+              p.text 登録外のIPアドレスからのアクセスを制限する事が可能。第三者からのアタックを防止します。　　　　　　　　　
+            .item
+              h3.title 承認機能
+              p.text オペレーターが送信する内容を承認者が確認するフローを構築することでミスのない送信が可能です。
+            .item
+              h3.title 権限管理
+              p.text ユーザー属性による権限設定ができるので適正な業務管理ができます。
+            .item
+              h3.title 操作ログ
+              p.text システム運用者のシステムログイン時には、管理者にメール自動通知。作業内容を記録（動画保存）することで内部不正をシステム的に対策しています。
+      .section-blue-left
+        .inner
+          .customers-voice-block
+            img(src="assets/img/customers-voice-img01.png", alt="株式会社オリエントコーポレーション")
+            .text-box  
+              .title お客様の声
+              .name 
+                span.logo.logo-orico
+                  img(src="assets/img/orico-logo.png", alt="株式会社オリエントコーポレーション")
+                |株式会社オリエント
+                br.sp
+                |コーポレーション様
+              .text 当社では無数の個人情報を扱うため、高い水準のセキュリティ対策が求められます。
+                br
+                |空電プッシュは国内の携帯キャリアに直接接続しており、携帯キャリア会社の判定機能なども含め、全て国内自社設備という安心感は大きいですね。
+      section#contact.section.section-contact 
+        .inner
+          h2.section-heading.font-white お問合せ
+          p.section-lead.section-lead--contact.font-white 空電プッシュは、国内シェアNo.1の
+            br.sp
+            |法人向けSMS送信サービスです。
+            br
+            |ご不明な点はお気軽にお問い合わせください。
+            br
+            |利用用途や配信数に応じて最適なご提案をいたします。
+          .contact-block
+            a(href="").contact-btn.pcmt70 資料請求・お問合せ
+            a(href="").agency-btn 代理店募集
+      include inc/_footer
+    

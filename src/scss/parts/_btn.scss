@@ -56,7 +56,32 @@
     @include min {
       background: #ffffff;
       color: #377CEA;
-      border: solid 2px #377CEA;
+    }
+    @include max{
+    }
+    &::before{
+      @include min {
+        right: 15px;
+        opacity: 0;
+      }
+      @include max{
+      }
+    }
+  }
+}
+.c-btn--orange{ 
+  background-color: #ff7f00;
+  position: relative;
+  box-sizing: border-box;
+  @include min {
+    border: solid 2px #FF7F00;
+  }
+  @include max{
+  }
+  &:hover{
+    @include min {
+      background: #ffffff;
+      color: #FF7F00;
     }
     @include min-max{
     }
@@ -131,6 +156,32 @@
     }
   }
 }
+.c-btn--mainvisual{
+  margin: 0 auto;
+  @include min {
+    width: 350px;
+    height: 48px;
+    border-radius: 48px;
+    font-size: 20px;
+    box-shadow: 8px 8px 20px 0 rgba(33, 78, 150, 0.24);
+  }
+  @include max{
+    width: spvw(350);
+    height: spvw(48);
+    border-radius: spvw(24);
+    font-size: spvw(20);
+    box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.24);
+  }
+  &::before{
+    @include min {
+    }
+    @include max{
+      width: spvw(12);
+      height: spvw(14);
+      right: spvw(20);
+    }
+  }
+}
 .c-btn--download{
   position: relative;
   &::before{
@@ -161,6 +212,39 @@
     }
   }
 }
+.c-btn--list{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  @include min {
+    width: 280px;
+    height: 48px;
+    bottom: 40px;
+    /* margin: 25px auto 0; */
+  }
+  @include max{
+    width: spvw(510);
+    height: spvw(88);
+    bottom: spvw(48);
+  }
+  &::before{
+    background: url(../img/c-btn-arrow.png)no-repeat center center;
+    background-size: contain;
+    @include min {
+      width: 12px;
+      height: 14px;
+      right: 20px;
+    }
+    @include min-max{
+    }
+    @include max{
+      width: spvw(24);
+      height: spvw(28);
+      right: spvw(33);
+    }
+  }
+}
+
 .contact-btn{
   display: inline-flex;
   justify-content: center;

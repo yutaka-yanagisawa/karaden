@@ -1,0 +1,76 @@
+
+doctype html
+- var page = 'feaure03'
+- var keywords = ''
+- var description = ''
+- var title = ''
+html(lang='ja')
+  include inc/_head
+  body#feature
+    include inc/_gtm
+    .wrapper
+      include inc/_header
+      section#mainvisual.section.section-mainvisual
+        .mainvisual-block.mainvisual-block--lower.mainvisual-block--feature.mainvisual-block--withbtn
+          ul.breadcrumb
+            li.breadcrumb-item
+              a(href="/") 空電プッシュ
+            li.breadcrumb-item
+              span 特長
+          h1.page-heading.page-heading--withbtn 特長
+          p.page-text--withbtn テキストテキストテキストテキストテキストテキストテキストテキスト
+          .c-btn.c-btn--mainvisual.pcmt30.spmt30 SMSについて詳しく知る
+      .feature-page-nav-block 
+        .item 
+          a(href="feature01.html") 高品質・
+            br.sp
+            |セキュリティ
+        .item.current
+          a(href="feature02.html") 高い送信性能と圧倒的な到達率
+        .item
+          a(href="feature03.html") スピード導入と充実のサポート
+      .section-grey
+        .inner
+          h2.section-heading.section-heading-sp2line 高い送信性能と圧倒的な到達率
+          p.section-lead.pcmt10.spmt10 国内最大規模の送信性能により大規模案件でも遅延なく送信できます。またSMS送信に関するさまざまな機能で、企業様の多様なニーズに応えます。
+          .support-block 
+            .item
+              h3.title 送信スペック国内最大級
+              p.text 国内最大規模を誇る送信処理能力を保有し、1時間あたり186万通を送信できる設備を保有しています。大規模案件でも遅延なく送信可能です。
+            .item
+              h3.title 到達率99%
+              p.text 海外キャリア接続のSMSは到達率75.4％に比べ、空電プッシュは国内キャリア接続で99.9％の到達率（自社調べ）と通信品質に圧倒的な差があります。
+            .item
+              h3.title 開封確認が可能
+              p.text SMSに記載されたURLクリック数の確認が可能なため、疑似的にSMSの開封状況を確認できます。
+            .item
+              h3.title 携帯番号履歴判定
+              p.text 送信先携帯電話番号の契約者変更の可能性がある場合に自動的にSMS送信を止める機能により第三者への誤送信を防止します。
+      .section-blue-left
+        .inner
+          .customers-voice-block
+            img(src="assets/img/customers-voice-img02.png", alt="WebCrew")
+            .text-box  
+              .title お客様の声
+              .name 
+                span.logo.logo-webcrew
+                  img(src="assets/img/webcrew-logo.png", alt="WebCrew")
+                |株式会社ウェ
+                br.sp
+                |ブクルー様
+              .text 海外のSMS送信サービスの場合、着信率が80％未満となるサービスもあるとの説明がありました。（途中省略）国内直収接続であればほぼ確実に高水準で着信すると。体感値ではありますが、着信率はかなり上がりました。
+      section#contact.section.section-contact 
+        .inner
+          h2.section-heading.font-white お問合せ
+          p.section-lead.section-lead--contact.font-white 空電プッシュは、国内シェアNo.1の
+            br.sp
+            |法人向けSMS送信サービスです。
+            br
+            |ご不明な点はお気軽にお問い合わせください。
+            br
+            |利用用途や配信数に応じて最適なご提案をいたします。
+          .contact-block
+            a(href="").contact-btn.pcmt70 資料請求・お問合せ
+            a(href="").agency-btn 代理店募集
+      include inc/_footer
+    

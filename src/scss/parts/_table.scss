@@ -1,0 +1,354 @@
+
+.price-table{
+  width: 100%;
+}
+.price-table-body{
+  >tr{
+    &:last-child{
+      .price-table-cell{
+        border-bottom: none;
+      }
+    }
+  }
+}
+.price-table-cell{
+  background-color: #ffffff;
+  border: solid #E6EBF4;
+  @include min {
+    font-size: 20px;
+    vertical-align: middle;
+    padding: 22px 18px;
+    line-height: 1.6;
+    border-width: 0 2px 2px 0;
+  }
+  @include max{
+    font-size: spvw(24);
+    text-align: left;
+    padding: spvw(20) spvw(15) spvw(20) spvw(20);
+    border-width: 0 spvw(2) spvw(2) 0;
+    line-height: 1.33;
+    vertical-align: middle;
+  }
+  >span{
+    font-weight: bold;
+    color: #377cea;
+    @include min {
+      text-align: center;
+      font-size: 24px;
+      line-height: 1.33;
+    }
+    @include max{
+      text-align: left;
+      font-size: spvw(24);
+      line-height: 1.33;
+    }
+  }
+  &:nth-child(2){
+    @include min {
+      width: 301px;
+    }
+    @include max{
+    }
+  }
+  &:nth-child(3){
+    border-right: none;
+    @include min {
+      width: 656px;
+    }
+    @include max{
+      width: spvw(279);
+    }
+  }
+}
+.price-table-cell--th{
+  background-color: #f5f7fa;
+  font-weight: bold;
+  @include min {
+    width: 203px;
+  }
+  @include max{
+    width: spvw(223);
+  }
+}
+
+
+
+.spec-table{
+  width: 100%;
+  @include min {
+    margin-top: 100px;
+  }
+  @include max {
+    margin-top: spvw(100);
+  }
+}
+.spec-table-body{
+  >tr{
+    &:nth-child(odd){
+      .spec-table-cell{
+        @include min {
+          border-bottom: solid 2px #dde3ef;
+        }
+        @include max {
+          border-bottom: solid spvw(2) #dde3ef;
+        }
+      }
+    }
+    &:nth-child(even){
+      .spec-table-cell{
+        @include min {
+          border-bottom: solid 4px #dde3ef;
+        }
+        @include max {
+          border-bottom: solid spvw(4) #dde3ef;
+        }
+      }
+    }
+    &:first-child{
+      .spec-table-cell{
+        border-top: none;
+      }
+    }
+    &:last-child{
+      .spec-table-cell{
+        border-bottom: none;
+      }
+    }
+  }
+}
+.spec-table-cell{
+  background-color: #ffffff;
+  text-align: left;
+  @include min {
+    font-size: 16px;
+    vertical-align: middle;
+    padding: 24px;
+    line-height: 1;
+  }
+  @include max{
+    font-size: spvw(24);
+    padding: spvw(20) spvw(15) spvw(19) spvw(21);
+    line-height: 1.33;
+    vertical-align: middle;
+  }
+}
+.spec-table-cell--th{
+  background-color: #dde3ef;
+  text-align: left;
+  font-weight: 500;
+  color: #1a1a1a;
+  @include min {
+    width: 240px;
+    border-right: solid 2px #f5f7fa;
+    border-bottom: solid 4px #f5f7fa!important;
+    font-size: 24px;
+    line-height: 1.33;
+  }
+  @include max{
+    border-right: solid spvw(2) #f5f7fa;
+    border-bottom: solid spvw(4) #f5f7fa!important;
+    width: spvw(181);
+    font-size: spvw(24);
+    line-height: 1.33;
+  }
+}
+
+
+
+
+
+
+
+.contact-compare-table{
+  width: 100%;
+}
+.contact-compare-table-head-cell{
+  background-color: #e3e6ea;
+  text-align: center;
+  color: #1a1a1a;
+  line-height: 1.6;
+  font-weight: 500;
+  position: relative;
+  @include min {
+    height: 140px;
+    font-size: 20px;
+    border-right: solid 2px #ffffff;
+    border-bottom: solid 2px #E6EBF4;
+    padding-top: 14px;
+  }
+  @include max{
+    font-size: spvw(24);
+    font-weight: 500;
+    line-height: 1.33;
+    padding-top: spvw(9);
+    width: spvw(120);
+    height: spvw(140);
+    border-right: solid spvw(2) #ffffff;
+    border-bottom: solid spvw(2) #E6EBF4;
+  }
+  &:nth-child(2){
+    @include min {
+    }
+    @include max{
+    }
+    >img{
+      @include min {
+        width: 32px;
+        height: 62px;
+        top: 59px;
+      }
+      @include max{
+        width: spvw(32);
+        height: spvw(62);
+        top: spvw(59);
+      }
+    }
+  }
+  &:nth-child(3){
+    @include min {
+    }
+    @include max{
+    }
+    >img{
+      @include min {
+        width: 84px;
+        height: 56px;
+        top: 62px;
+      }
+      @include max{
+        width: spvw(84);
+        height: spvw(56);
+        top: spvw(62);
+      }
+    }
+  }
+  &:nth-child(4){
+    @include min {
+    }
+    @include max{
+    }
+    >img{
+      @include min {
+        width: 67.9px;
+        height: 40px;
+        top: 70px;
+      }
+      @include max{
+        width: spvw(67.9);
+        height: spvw(40);
+        top: spvw(70);
+      }
+    }
+  }
+  &:last-child{
+    border-right: none;
+    @include min {
+    }
+    @include max{
+    }
+    >img{
+      @include min {
+        width: 74px;
+        height: 51px;
+        top: 59px;
+      }
+      @include max{
+        width: spvw(74);
+        height: spvw(51);
+        top: spvw(59);
+      }
+    }
+  }
+  >img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @include min {
+    }
+  }
+}
+.contact-compare-table-head-cell--none{
+  background-color: #ffffff;
+}
+.contact-compare-table-head-cell--sms{
+  background-color: $theme-color;
+  color: #ffffff;
+}
+.contact-compare-table-body{
+  >tr{
+    &:last-child{
+      .contact-compare-table-cell{
+        border-bottom: none;
+      }
+    }
+  }
+}
+.contact-compare-table-cell{
+  background-color: #ffffff;
+  border: solid #E6EBF4;
+  font-weight: 500;
+  @include min {
+    width: 218px;
+    font-size: 24px;
+    vertical-align: middle;
+    padding: 22px 18px;
+    line-height: 1.6;
+    border-width: 0 2px 2px 0;
+    height: 80px;
+  }
+  @include max{
+    height: spvw(80);
+    font-size: spvw(20);
+    text-align: center;
+    border-width: 0 spvw(2) spvw(2) 0;
+    line-height: 1.33;
+    vertical-align: middle;
+  }
+  &:last-child{
+    border-right: none;
+    @include min {
+    }
+    @include max{
+    }
+  }
+}
+.contact-compare-table-cell--th{
+  background-color: #dde3ef;
+  font-weight: 500;
+  color: #1a1a1a;
+  position: relative;
+  text-align: left;
+  @include min {
+    width: 280px;
+    font-size: 20px;
+    padding-left: 88px;
+  }
+  @include max{
+    width: spvw(181);
+    padding: spvw(20) spvw(15) spvw(20) spvw(20);
+  }
+  >span{
+    @include min {
+      width: 40px;
+      position: absolute;
+      left: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      height: 100%;
+    }
+    @include max{
+      display: none;
+    }
+    >img{
+      @include min {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+.contact-compare-table-celll--sms{
+  background-color: #d2e1fc;
+}

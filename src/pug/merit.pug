@@ -1,0 +1,290 @@
+
+doctype html
+- var page = 'merit'
+- var keywords = ''
+- var description = ''
+- var title = ''
+html(lang='ja')
+  include inc/_head
+  body#merit
+    include inc/_gtm
+    .wrapper
+      include inc/_header
+      section#mainvisual.section.section-mainvisual
+        .mainvisual-block.mainvisual-block--lower
+          ul.breadcrumb
+            li.breadcrumb-item
+              a(href="/") 空電プッシュ
+            li.breadcrumb-item
+              span SMSのメリット
+          h1.page-heading SMSのメリット
+      section.section-grey
+        .inner
+          h2.section-heading.section-heading-sp2line 顧客とのコミュニケーションの課題を解決
+          p.section-lead SMSは「メール・電話はなかなか連絡が取れない」「郵便は反応がわからない」「メールは開封されない」などの顧客とのコミュニケーション課題を解決します。
+        .merit-block
+          picture
+            source(srcset='assets/img/top-merit-img.png' media='(min-width: 769px)')
+            source(srcset='assets/img/top-merit-img-sp.png' media='(max-width: 768px)')
+            img(src="assets/img/top-merit-img.png", alt="SMSのメリット")
+        //.inner
+          h2.section-heading.section-heading-sp2line.sp 顧客とのコンタクト、こんな
+            br
+            |お悩みありませんか？
+          .trouble-solution-block 
+            .text-box 
+              .text-checkbox DM、メール、電話で連絡を取ろうと
+                br
+                |しているが、なかなか連絡がとれない
+              .text-checkbox DMやメールでは反応がわかりづらい
+              .text-checkbox 郵送代、電話代など連絡にかかる
+                br
+                |費用を削減したい
+            .text SMSで解決
+      section.section-blue-left
+        .inner
+          h2.section-heading SMSのメリット
+          .merit-list-block
+            .item
+              .text-box
+                h3.title 誰にでも届く
+                p.text 通話ができるほとんどの携帯電話でSMSの受信が可能です。
+                  br.pc
+                  |スマートフォンに標準搭載されている機能なので、メッセージを受け取るのに
+                  br.pc
+                  |お客様側で何か準備していただく必要はありません。
+                  br.pc
+                  |スマートフォンを買ったその日から送信できます。
+                .text-comment 日本の携帯電話・スマホ保有率は80%
+                  br.sp
+                  |以上
+              picture.img
+                source(srcset='assets/img/merit-list-img01.png' media='(min-width: 769px)')
+                source(srcset='assets/img/merit-list-img01.png' media='(max-width: 768px)')
+                img(src="assets/img/merit-list-img01.png", alt="誰にでも届く")
+            .item
+              .text-box
+                h3.title 着眼率が高い
+                p.text 日常的に使用するスマホ宛てに送信でき、受信すると画面上に新着通知がある
+                  br.pc
+                  |ため、目につきやすく、開封率が非常に高いことが特徴です。
+                p.text-comment 受信者の98%以上が届いたSMSを読んでいる*
+                p.text-notes *米国・英国での調査Conversational Advertising(June 2010) - Mobile Squared
+              picture.img
+                source(srcset='assets/img/merit-list-img02.png' media='(min-width: 769px)')
+                source(srcset='assets/img/merit-list-img02.png' media='(max-width: 768px)')
+                img(src="assets/img/merit-list-img02.png", alt="着眼率が高い")
+            .item
+              .text-box
+                h3.title 反応率が高い
+                p.text ユーザーの操作はタップだけ。URLをタップするとすぐにWebページへ遷移し
+                  br.pc
+                  |ます。さらに、電話番号をタップするとすぐに電話をかけることができます。
+                .text-comment SMSを送った対象の85％から折り返し電話が
+                  br.pc
+                  |あった*
+                p.text-notes *当社顧客実績
+              picture.img
+                source(srcset='assets/img/merit-list-img03.png' media='(min-width: 769px)')
+                source(srcset='assets/img/merit-list-img03.png' media='(max-width: 768px)')
+                img(src="assets/img/merit-list-img03.png", alt="反応率が高い")
+            .item
+              .text-box
+                h3.title ずっと繋がる
+                p.text お客様がスマートフォンや携帯電話の買い替えをきっかけに
+                  br.pc
+                  |キャリアを変更したとしても、電話番号はそのまま移行することができるた
+                  br.pc
+                  |め、お客様との接点を持続できます。
+                .text-comment メールアドレスなどと比較し携帯電話番号は
+                  br.pc
+                  |変更されることが少ない
+              picture.img
+                source(srcset='assets/img/merit-list-img04.png' media='(min-width: 769px)')
+                source(srcset='assets/img/merit-list-img04.png' media='(max-width: 768px)')
+                img(src="assets/img/merit-list-img04.png", alt="ずっと繋がる")
+            .item
+              .text-box
+                h3.title コスト削減効果が高い
+                p.text 電話をかける稼働の削減や、通話代、DMにかかる郵便代などの通信コストを
+                  br
+                  |削減可能です。
+                //.text-comment 
+              picture.img
+                source(srcset='assets/img/merit-list-img05.png' media='(min-width: 769px)')
+                source(srcset='assets/img/merit-list-img05.png' media='(max-width: 768px)')
+                img(src="assets/img/merit-list-img05.png", alt="コスト削減効果が高い")
+      section.section-grey
+        .inner
+          h2.section-heading.section-heading-sp2line お客様とのコンタクト手段の比較
+          table.contact-compare-table.pcmt100.spmt100
+            tbody.contact-compare-table-head 
+              tr
+                th.contact-compare-table-head-cell.contact-compare-table-head-cell--none
+                th.contact-compare-table-head-cell 電話
+                  img(src="assets/img/contact-compare-table-head-img01.png", alt="電話")
+                th.contact-compare-table-head-cell 郵便物
+                  img(src="assets/img/contact-compare-table-head-img02.png", alt="郵便物")
+                th.contact-compare-table-head-cell メール
+                  img(src="assets/img/contact-compare-table-head-img03.png", alt="メール")
+                th.contact-compare-table-head-cell.contact-compare-table-head-cell--sms SMS
+                  img(src="assets/img/contact-compare-table-head-img04.png", alt="SMS")
+            tbody.contact-compare-table-body 
+              tr 
+                th.contact-compare-table-cell.contact-compare-table-cell--th 
+                  span 
+                    img(src="assets/img/contact-compare-table-body-th-img01.png", alt="着眼率")
+                  |着眼率
+                td.contact-compare-table-cell 30〜40%
+                td.contact-compare-table-cell 5%
+                td.contact-compare-table-cell 10%
+                td.contact-compare-table-cell.contact-compare-table-celll--sms 99%
+              tr 
+                th.contact-compare-table-cell.contact-compare-table-cell--th 
+                  span 
+                    img(src="assets/img/contact-compare-table-body-th-img02.png", alt="到達時間")
+                  |到達時間
+                td.contact-compare-table-cell ◎
+                td.contact-compare-table-cell ×
+                td.contact-compare-table-cell ◎
+                td.contact-compare-table-cell.contact-compare-table-celll--sms ◎
+              tr 
+                th.contact-compare-table-cell.contact-compare-table-cell--th
+                  span 
+                    img(src="assets/img/contact-compare-table-body-th-img03.png", alt="伝達情報量")
+                  | 伝達情報量
+                td.contact-compare-table-cell ◎
+                td.contact-compare-table-cell ○
+                td.contact-compare-table-cell ○
+                td.contact-compare-table-cell.contact-compare-table-celll--sms △
+              tr 
+                th.contact-compare-table-cell.contact-compare-table-cell--th 
+                  span 
+                    img(src="assets/img/contact-compare-table-body-th-img04.png", alt="業務稼働")
+                  |業務稼働
+                td.contact-compare-table-cell ×
+                td.contact-compare-table-cell △
+                td.contact-compare-table-cell ◎
+                td.contact-compare-table-cell.contact-compare-table-celll--sms ◎
+              tr 
+                th.contact-compare-table-cell.contact-compare-table-cell--th 
+                  span 
+                    img(src="assets/img/contact-compare-table-body-th-img05.png", alt="トータルコスト")
+                  |トータルコスト
+                td.contact-compare-table-cell ×
+                td.contact-compare-table-cell △
+                td.contact-compare-table-cell ◎
+                td.contact-compare-table-cell.contact-compare-table-celll--sms ○
+      section.section-blue-left
+        .inner
+          h2.section-heading.section-heading-sp2line SMS送信サービス
+            br.sp
+            |「空電プッシュ」導入効果
+          .result-block.pcmt100.spmt100
+            .item
+              .title
+                span ＋
+                |70
+                span ％
+              .text 家賃の未納者に対して連絡したところ、
+                br.pc
+                span 70％以上のレスポンスがあり、
+                br.pc
+                |オペレーターの人員削減につながった。
+            .item
+              .title
+                span ＋
+                |85
+                span ％
+              .text 震災で被災されたご契約者へ安否確認
+                br.pc
+                |と契約・お支払いの案内をするため、
+                br.pc
+                |フリーダイヤルへコールバックの依頼
+                br.pc
+                |をしたところ、
+                span 85％以上のレスポンス
+                br.pc
+                |が得られた。
+            .item
+              .title 4
+                span 倍
+              .text カード利用明細登録のURLを案内した
+                |ところ、
+                span Web
+                  br.sp
+                  |サイトへの誘引がEメール
+                  |の4倍以上
+                |となった。
+      section.section-grey
+        .inner 
+          h2.section-heading.section-heading-sp2line SMS（ショートメッセージサービス）とは
+          p.section-lead SMS「ショートメッセージサービス」とは携帯電
+            br.sp
+            |話番号を宛先にして
+            br.pc
+            |短い文字数のメッセージを
+            br.sp
+            |送受信できるサービスです。
+          .about-sms-block 
+            .text-box 
+              .text 件名なし
+              .text 送信できる文字数：70文字程度
+              .text 送信元の表示は電話番号も可能
+            picture.img
+              source(srcset='assets/img/about-sms-img01.png' media='(min-width: 769px)')
+              source(srcset='assets/img/about-sms-img-sp01.png' media='(max-width: 768px)')
+              img(src="assets/img/about-sms-img01.png", alt="ミックITレポート2020年11月号")
+      section#contact.section.section-contact
+        .inner
+          h2.section-heading.font-white お問合せ
+          p.section-lead.font-white 空電プッシュは、国内シェアNo.1の
+            br.sp
+            |法人向けSMS送信サービスです。
+            br
+            |ご不明な点はお気軽にお問い合わせください。
+            br
+            |利用用途や配信数に応じて最適なご提案をいたします。
+          .contact-block
+            a(href="").contact-btn.pcmt70 資料請求・お問合せ
+            a(href="").agency-btn 代理店募集
+      section.section-grey
+        .inner
+          h2.section-heading お役立ちコンテンツ
+          .usefulcontents-block
+            .item
+              img.img(src="assets/img/top-usefulcontents-img01.png", alt="顧客とのコンタクトに課題を抱えているご担当者様必見！")
+              p.lead 顧客とのコンタクトに課題を
+                br
+                |抱えているご担当者様必見！
+              p.text 着眼率90%を誇る顧客メッセージ
+                br.pc
+                |を確実に伝えるための手法はこれ
+                br.pc
+                |だ！
+              a(href="").c-btn.c-btn--small.c-btn--download.pcmt40 ダウンロードする
+            .item
+              img.img(src="assets/img/top-usefulcontents-img02.png", alt="金融関係者必見！")
+              p.lead 金融関係者必見！
+              p.text 今、注目されている、着眼率90％
+                br.pc
+                |を誇る「連絡」や「督促」をタイ
+                br.pc
+                |ムリーかつ確実に伝えることがで
+                br.pc
+                |きる手法は、これだ！
+              a(href="").c-btn.c-btn--small.c-btn--download.pcmt40 ダウンロードする
+            .item
+              img.img(src="assets/img/top-usefulcontents-img03.png", alt="コンタクト率驚異の99％？！従来のコミュニケーションとは一線を画す注目手法！")
+              p.lead コンタクト率驚異の99％？！
+                br
+                |従来のコミュニケーションとは
+                br
+                |一線を画す注目手法！
+              p.text 「SMS」が重宝される理由とは？
+                br
+                |7つの活用ケースから探る！
+              a(href="").c-btn.c-btn--small.c-btn--download.pcmt40 ダウンロードする
+          a(href="").c-btn.pcmt80 お役立ちコンテンツ一覧
+      include inc/_footer
+    

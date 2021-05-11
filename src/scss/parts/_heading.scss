@@ -1,6 +1,5 @@
 .page-heading{
   font-weight: bold;
-  color: $theme-color;
   text-align: center;
   margin: 0 auto;
   line-height: 1;
@@ -20,6 +19,21 @@
   }
   @include max{
     font-size: spvw(48);
+  }
+}
+
+.page-heading--withbtn{
+  @include min {
+    padding-top: 34px;
+  }
+  @include max{
+  }
+}
+.page-heading--withtext{
+  @include min {
+    padding-top: 7px;
+  }
+  @include max{
   }
 }
 .section-heading{
