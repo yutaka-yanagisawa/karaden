@@ -1,0 +1,302 @@
+
+doctype html
+- var page = 'scene'
+- var keywords = ''
+- var description = ''
+- var title = ''
+html(lang='ja')
+  include inc/_head
+  body#scene
+    include inc/_gtm
+    .wrapper
+      include inc/_header
+      section#mainvisual.section.section-mainvisual
+        .mainvisual-block.mainvisual-block--lower
+          ul.breadcrumb
+            li.breadcrumb-item
+              a(href="") 空電プッシュ
+            li.breadcrumb-item
+              span 活用シーン
+          h1.page-heading 活用シーン
+      section.section-grey
+        .inner
+          h2.section-heading 利用用途
+          .usage-block 
+            .item 
+              h3.title 本人認証
+              .text-box
+                img(src="assets/img/usage-img01.png", alt="本人認証").img
+                p.text 不正ログインやなりすましなどを防ぎ、提供するサービスのセキュリティを向上させるためにSMSを活用できます。
+              a(href="").c-btn.c-btn--list 詳しく見る
+            .item 
+              h3.title 業務連絡
+              .text-box
+                img(src="assets/img/usage-img02.png", alt="業務連絡").img
+                p.text 緊急度の高い内容や必ず見ていただきたい内容をお客様に案内する場合に活用できます。
+              a(href="").c-btn.c-btn--list 詳しく見る
+            .item 
+              h3.title 督 促
+              .text-box
+                img(src="assets/img/usage-img03.png", alt="督 促").img
+                p.text クレジットカードや家賃などの料金滞納時、電話がつながらない方や郵送通知でのリアクションがない方にSMSをご活用いただけます。
+              a(href="").c-btn.c-btn--list 詳しく見る
+            .item 
+              h3.title 販売促進・プロモーション
+              .text-box
+                img(src="assets/img/usage-img04.png", alt="販売促進・プロモーション").img
+                p.text クーポン送付やセールイベントの告知など販促にも活用可能です。
+              a(href="").c-btn.c-btn--list 詳しく見る
+            .item 
+              h3.title 事前連絡・リマインダー
+              .text-box
+                img(src="assets/img/usage-img05.png", alt="事前連絡・リマインダー").img
+                p.text 商品の配送や、工事・点検のための訪問日時、契約更新日など事前連絡やリマインダーに活用できます。
+              a(href="").c-btn.c-btn--list 詳しく見る
+            .item 
+              h3.title アンケート
+              .text-box
+                img(src="assets/img/usage-img06.png", alt="アンケート").img
+                p.text 顧客にSMS送信し、アンケートサイトへ誘導することで、アンケートの回収率を向上します。
+              a(href="").c-btn.c-btn--list 詳しく見る
+      section.section-blue-left
+        .inner
+          h2.section-heading 業界別導入例 
+          .scene-example-link-nav-block
+            .item 
+              a(href="#example01") クレジットカード
+            .item 
+              a(href="#example02") 銀行・消費者ローン
+            .item 
+              a(href="#example03") 電気・ガス・水道・ISP
+            .item 
+              a(href="#example04") 不動産
+            .item 
+              a(href="#example05") 生保・損保会社
+            .item 
+              a(href="#example06") 引越・物流
+            .item 
+              a(href="#example07") 美容・エステ・スポーツクラブ
+            .item 
+              a(href="#example08") 派遣・人材紹介・採用
+            .item 
+              a(href="#example09") 鉄道・船舶・航空
+            .item 
+              a(href="#example10") コールセンター
+            .item 
+              a(href="#example11") 自治体
+          .scene-example-block
+            #example01.item.item01
+              picture.scene-example-img
+                source(srcset='assets/img/scene-example-img01.png' media='(min-width: 769px)')
+                source(srcset='assets/img/scene-example-img-sp01.png' media='(max-width: 768px)')
+                img(src="assets/img/scene-example-img01.png", alt="")
+              img(src="assets/img/scene-example-phone-sp01.png", alt="").smartphone-img.sp
+              .text-box
+                h3.title クレジットカード
+                ul.list 
+                  li.list-item 利用明細のご連絡
+                  li.list-item 督促連絡
+                  li.list-item 本人認証
+                  li.list-item 販促・キャンペーン
+                  li.list-item お問い合わせ時のWebサイト誘導
+                p.text 毎月の利用状況の連絡や、支払いに関する連絡、
+                  br.sp
+                  |キャンペーン情報の連絡に活用いただけます。
+                  br.sp
+                  |また、スマートフォンでカードを利用する際の本人認証としても活用できます。
+            #example02.item.item02
+              picture.scene-example-img
+                source(srcset='assets/img/scene-example-img02.png' media='(min-width: 769px)')
+                source(srcset='assets/img/scene-example-img-sp02.png' media='(max-width: 768px)')
+                img(src="assets/img/scene-example-img02.png", alt="")
+              img(src="assets/img/scene-example-phone-sp02.png", alt="").smartphone-img.sp
+              .text-box
+                h3.title 銀行・消費者ローン
+                ul.list 
+                  li.list-item 各種お手続き連絡
+                  li.list-item 送金連絡
+                  li.list-item 銀行窓口の順番連絡
+                  li.list-item 督促連絡
+                  li.list-item 販促・キャンペーン
+                  li.list-item お問い合わせ時のWebサイト誘導
+                p.text サービス申込時のやり取りや、支払いに関する連絡、特典やキャンペーンなどの連絡に活用できます。
+            #example03.item.item03
+              picture.scene-example-img
+                source(srcset='assets/img/scene-example-img03.png' media='(min-width: 769px)')
+                source(srcset='assets/img/scene-example-img-sp03.png' media='(max-width: 768px)')
+                img(src="assets/img/scene-example-img03.png", alt="")
+              img(src="assets/img/scene-example-phone-sp03.png", alt="").smartphone-img.sp
+              .text-box
+                h3.title 電気・ガス・水道・ISP
+                ul.list 
+                  li.list-item 工事日時の事前連絡
+                  li.list-item ご利用料金連絡
+                  li.list-item 障害情報連絡
+                p.text 工事日や修理日の事前連絡やご利用料金のご連絡、障害が発生した場合の一斉連絡に活用できます。
+            #example04.item.item04
+              picture.scene-example-img
+                source(srcset='assets/img/scene-example-img04.png' media='(min-width: 769px)')
+                source(srcset='assets/img/scene-example-img-sp04.png' media='(max-width: 768px)')
+                img(src="assets/img/scene-example-img04.png", alt="")
+              img(src="assets/img/scene-example-phone-sp04.png", alt="").smartphone-img.sp
+              .text-box
+                h3.title 不動産サービス
+                ul.list 
+                  li.list-item 入居者の手続き連絡
+                  li.list-item 督促連絡 
+                p.text 入居者さまとのやり取りや手続きの連絡、家賃などの督促に活用できます。
+            #example05.item.item05
+              picture.scene-example-img
+                source(srcset='assets/img/scene-example-img05.png' media='(min-width: 769px)')
+                source(srcset='assets/img/scene-example-img-sp05.png' media='(max-width: 768px)')
+                img(src="assets/img/scene-example-img05.png", alt="")
+              img(src="assets/img/scene-example-phone-sp05.png", alt="").smartphone-img.sp
+              .text-box
+                h3.title 生・損保会社
+                ul.list 
+                  li.list-item 保険請求時の各種ご案内
+                  li.list-item 調査・アンケート
+                  li.list-item お問い合わせ時のWebサイト誘導
+                p.text 保険請求時のやり取りや、その後のお客様満足度調査に活用いただけます。音声ガイダンス(IVR)によりお客様のニーズや問い合わせ内容にあったSMSを送信できます。
+            #example06.item.item06
+              picture.scene-example-img
+                source(srcset='assets/img/scene-example-img06.png' media='(min-width: 769px)')
+                source(srcset='assets/img/scene-example-img-sp06.png' media='(max-width: 768px)')
+                img(src="assets/img/scene-example-img06.png", alt="")
+              img(src="assets/img/scene-example-phone-sp06.png", alt="").smartphone-img.sp
+              .text-box
+                h3.title 引越・物流
+                ul.list 
+                  li.list-item 荷物の配達日時の連絡
+                  li.list-item 作業日事前連絡
+                  li.list-item 調査・アンケート
+                p.text お客様宛の荷物の配達日時を事前に連絡したり、引越などの作業日をリマインドできます。またSMS宛てにお客様満足度調査をお送りすることも可能です。
+            #example07.item.item07
+              picture.scene-example-img
+                source(srcset='assets/img/scene-example-img07.png' media='(min-width: 769px)')
+                source(srcset='assets/img/scene-example-img-sp07.png' media='(max-width: 768px)')
+                img(src="assets/img/scene-example-img07.png", alt="")
+              img(src="assets/img/scene-example-phone-sp07.png", alt="").smartphone-img.sp
+              .text-box
+                h3.title 美容・エステ・スポーツクラブ
+                ul.list 
+                  li.list-item 予約完了連絡
+                  li.list-item 予約日時のリマインド
+                  li.list-item 販促・キャンペーン
+                p.text お客様がWebサイトや電話で予約いただいた後、予約日時をリマインドとして連絡したり、お得なキャンペーン情報をお送りすることができます。
+            #example08.item.item08
+              picture.scene-example-img
+                source(srcset='assets/img/scene-example-img08.png' media='(min-width: 769px)')
+                source(srcset='assets/img/scene-example-img-sp08.png' media='(max-width: 768px)')
+                img(src="assets/img/scene-example-img08.png", alt="")
+              img(src="assets/img/scene-example-phone-sp08.png", alt="").smartphone-img.sp
+              .text-box
+                h3.title 派遣/人材紹介・採用
+                ul.list 
+                  li.list-item 面接日の連絡
+                  li.list-item 面接前後の各種連絡
+                  li.list-item お仕事状況アンケート
+                p.text サービス申込時のやり取りや、支払いに関する連絡、特典やキャンペーンなどの連絡に活用できます。
+            #example09.item.item09
+              picture.scene-example-img
+                source(srcset='assets/img/scene-example-img09.png' media='(min-width: 769px)')
+                source(srcset='assets/img/scene-example-img-sp09.png' media='(max-width: 768px)')
+                img(src="assets/img/scene-example-img09.png", alt="")
+              img(src="assets/img/scene-example-phone-sp09.png", alt="").smartphone-img.sp
+              .text-box
+                h3.title 鉄道・船舶・航空
+                ul.list 
+                  li.list-item 欠航連絡
+                  li.list-item チェックイン締切時刻連絡
+                  li.list-item チケット購入完了連絡
+                p.text チケットを購入されたお客様に対して、購入完了連絡や、チェックイン時間の連絡、欠航などの連絡に活用いただけます。
+            #example10.item.item10
+              picture.scene-example-img
+                source(srcset='assets/img/scene-example-img10.png' media='(min-width: 769px)')
+                source(srcset='assets/img/scene-example-img-sp10.png' media='(max-width: 768px)')
+                img(src="assets/img/scene-example-img10.png", alt="")
+              img(src="assets/img/scene-example-phone-sp10.png", alt="").smartphone-img.sp
+              .text-box
+                h3.title コールセンター
+                ul.list 
+                  li.list-item 時間外問い合わせのWebサイト誘導
+                  li.list-item オペレーターの応対品質アンケート
+                p.text 時間外の問い合わせやあふれ呼対策として、音声ガイダンス(IVR)によりお客様のニーズや問い合わせ内容にあったSMSを送信できます。またコールセンターの品質アンケートにも送付できます。
+                .relatedsolution
+                  p.relatedsolution-title 関連ソリューション：
+                  ul.relatedsolution-list
+                    li.relatedsolution-list-item 
+                      a(href="").relatedsolution-list-item-link IVRと連携したSMS送信
+                    li.relatedsolution-list-item 
+                      a(href="").relatedsolution-list-item-link SMSアンケートソリューション
+            #example11.item.item11
+              picture.scene-example-img
+                source(srcset='assets/img/scene-example-img11.png' media='(min-width: 769px)')
+                source(srcset='assets/img/scene-example-img-sp11.png' media='(max-width: 768px)')
+                img(src="assets/img/scene-example-img11.png", alt="")
+              img(src="assets/img/scene-example-phone-sp11.png", alt="").smartphone-img.sp
+              .text-box
+                h3.title 自治体
+                ul.list 
+                  li.list-item 住民への各種連絡
+                  li.list-item 税金の督促連絡
+                p.text 各都道府県・市区町村から住民への情報発信に活用いただけます。
+                .relatedsolution
+                  p.relatedsolution-title 関連ソリューション：
+                  ul.relatedsolution-list
+                    li.relatedsolution-list-item 
+                      a(href="").relatedsolution-list-item-link 空電プッシュ for LGWAN
+
+      section#contact.section.section-contact
+        .inner
+          h2.section-heading.font-white お問合せ
+          p.section-lead.font-white 空電プッシュは、国内シェアNo.1の
+            br.sp
+            |法人向けSMS送信サービスです。
+            br
+            |ご不明な点はお気軽にお問い合わせください。
+            br
+            |利用用途や配信数に応じて最適なご提案をいたします。
+          .contact-block
+            a(href="").contact-btn.pcmt70 資料請求・お問合せ
+            a(href="").agency-btn 代理店募集
+      section.section-grey
+        .inner
+          h2.section-heading お役立ちコンテンツ
+          .usefulcontents-block
+            .item
+              img.img(src="assets/img/top-usefulcontents-img01.png", alt="顧客とのコンタクトに課題を抱えているご担当者様必見！")
+              p.lead 顧客とのコンタクトに課題を
+                br
+                |抱えているご担当者様必見！
+              p.text 着眼率90%を誇る顧客メッセージ
+                br.pc
+                |を確実に伝えるための手法はこれ
+                br.pc
+                |だ！
+              a(href="").c-btn.c-btn--small.c-btn--download.pcmt40 ダウンロードする
+            .item
+              img.img(src="assets/img/top-usefulcontents-img02.png", alt="金融関係者必見！")
+              p.lead 金融関係者必見！
+              p.text 今、注目されている、着眼率90％
+                br.pc
+                |を誇る「連絡」や「督促」をタイ
+                br.pc
+                |ムリーかつ確実に伝えることがで
+                br.pc
+                |きる手法は、これだ！
+              a(href="").c-btn.c-btn--small.c-btn--download.pcmt40 ダウンロードする
+            .item
+              img.img(src="assets/img/top-usefulcontents-img03.png", alt="コンタクト率驚異の99％？！従来のコミュニケーションとは一線を画す注目手法！")
+              p.lead コンタクト率驚異の99％？！
+                br
+                |従来のコミュニケーションとは
+                br
+                |一線を画す注目手法！
+              p.text 「SMS」が重宝される理由とは？
+                br
+                |7つの活用ケースから探る！
+              a(href="").c-btn.c-btn--small.c-btn--download.pcmt40 ダウンロードする
+          a(href="").c-btn.pcmt80 お役立ちコンテンツ一覧
+      include inc/_footer
+    
