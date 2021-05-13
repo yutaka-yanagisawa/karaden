@@ -1,4 +1,4 @@
-import SmoothScroll from "smooth-scroll";
+import smoothScroll from "smooth-scroll";
 
 let mobile = false;
 let startPos = 0;
@@ -68,10 +68,19 @@ $(function () {
 });
 
 //スムーススクロール
-new SmoothScroll('a[href*="#"]', {
+/* new SmoothScroll('a[href*="#"]', {
   speed: 200,
   header: ".header",
-});
+}); */
+
+// スムーススクロールを起動する
+let options = { 
+  speed: 200,//1000px進むスピード
+  easing: 'easeInOutCubic',//イージング
+  offset: 50,//停止位置
+};
+
+let scroll = new smoothScroll('a[href*="#"]', options);
 ///////////////////////////////////
 //
 // ウィンドウ ロード時の処理
