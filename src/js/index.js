@@ -1,4 +1,4 @@
-import SmoothScroll from "smooth-scroll";
+import smoothScroll from "smooth-scroll";
 
 let mobile = false;
 let startPos = 0;
@@ -55,33 +55,12 @@ $(function () {
   ) {
     mobile = true;
     $(function () {
-      /* $(".global-nav-list-item .target").click(function () {
-        const activeClass = "active";
-        $(this).toggleClass(activeClass);
-        $(this).next().slideToggle(250);
-        $(".global-nav-list-item .target")
-          .not($(this))
-          .next(".global-nav-list--child")
-          .slideUp();
-        $(".global-nav-list-item .target").not($(this)).removeClass("active");
-      });
-      $("#global-nav-close-btn").click(function () {
-        $(".global-nav-list--child").slideUp();
-        $(".global-nav-list-item .target").removeClass("active");
-      }); */
     });
   }
 
-  //ハンバーガメニュー　アコーディオン
-  /* $(".global-nav-list-item .target").on("click", function () {
-    const activeClass = "active";
-    $(this).toggleClass(activeClass);
-    $(this).next().slideToggle(250);
-  }); */
+  //アコーディオン  
 
-  
-
-  $(".question").on("click", function () {
+  $(".question").click(function(){
     $(this).next().slideToggle();
     $(this).next().toggleClass("active");
     $(this).toggleClass("active");
@@ -89,10 +68,19 @@ $(function () {
 });
 
 //スムーススクロール
-new SmoothScroll('a[href*="#"]', {
+/* new SmoothScroll('a[href*="#"]', {
   speed: 200,
   header: ".header",
-});
+}); */
+
+// スムーススクロールを起動する
+let options = { 
+  speed: 200,//1000px進むスピード
+  easing: 'easeInOutCubic',//イージング
+  offset: 50,//停止位置
+};
+
+let scroll = new smoothScroll('a[href*="#"]', options);
 ///////////////////////////////////
 //
 // ウィンドウ ロード時の処理
