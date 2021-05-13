@@ -55,33 +55,12 @@ $(function () {
   ) {
     mobile = true;
     $(function () {
-      /* $(".global-nav-list-item .target").click(function () {
-        const activeClass = "active";
-        $(this).toggleClass(activeClass);
-        $(this).next().slideToggle(250);
-        $(".global-nav-list-item .target")
-          .not($(this))
-          .next(".global-nav-list--child")
-          .slideUp();
-        $(".global-nav-list-item .target").not($(this)).removeClass("active");
-      });
-      $("#global-nav-close-btn").click(function () {
-        $(".global-nav-list--child").slideUp();
-        $(".global-nav-list-item .target").removeClass("active");
-      }); */
     });
   }
 
-  //ハンバーガメニュー　アコーディオン
-  /* $(".global-nav-list-item .target").on("click", function () {
-    const activeClass = "active";
-    $(this).toggleClass(activeClass);
-    $(this).next().slideToggle(250);
-  }); */
+  //アコーディオン  
 
-  
-
-  $(".question").on("click", function () {
+  $(".question").click(function(){
     $(this).next().slideToggle();
     $(this).next().toggleClass("active");
     $(this).toggleClass("active");
