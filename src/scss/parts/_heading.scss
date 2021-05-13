@@ -21,7 +21,13 @@
     font-size: spvw(48);
   }
 }
-
+.page-heading--small{
+  @include min {
+    padding-top: 35px;
+  }
+  @include max{
+  }
+}
 .page-heading--withbtn{
   @include min {
     padding-top: 34px;

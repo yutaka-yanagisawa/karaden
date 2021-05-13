@@ -11,17 +11,17 @@ html(lang='ja')
     .wrapper
       include inc/_header
       section#mainvisual.section.section-mainvisual
-        .mainvisual-block.mainvisual-block--lower
+        .mainvisual-block.mainvisual-block--lower.mainvisual-block--lower-small
           ul.breadcrumb
             li.breadcrumb-item
               a(href="/") 空電プッシュ
             li.breadcrumb-item
               span SMSのメリット
-          h1.page-heading SMSのメリット
+          h1.page-heading.page-heading--small SMSのメリット
       section.section-grey
         .inner
-          h2.section-heading.section-heading-sp2line 顧客とのコミュニケーションの課題を解決
-          p.section-lead SMSは「メール・電話はなかなか連絡が取れない」「郵便は反応がわからない」「メールは開封されない」などの顧客とのコミュニケーション課題を解決します。
+          h2.section-heading.section-heading-sp2line.pcmt20.spmt20 顧客とのコミュニケーションの課題を解決
+          p.section-lead.pcmt10.spmt10 SMSは「メール・電話はなかなか連絡が取れない」「郵便は反応がわからない」「メールは開封されない」などの顧客とのコミュニケーション課題を解決します。
         .merit-block
           picture
             source(srcset='assets/img/top-merit-img.png' media='(min-width: 769px)')
@@ -43,7 +43,6 @@ html(lang='ja')
             .text SMSで解決
       section.section-blue-left
         .inner
-          h2.section-heading SMSのメリット
           .merit-list-block
             .item
               .text-box
@@ -107,14 +106,14 @@ html(lang='ja')
               .text-box
                 h3.title コスト削減効果が高い
                 p.text 電話をかける稼働の削減や、通話代、DMにかかる郵便代などの通信コストを
-                  br
+                  br.pc
                   |削減可能です。
                 //.text-comment 
               picture.img
                 source(srcset='assets/img/merit-list-img05.png' media='(min-width: 769px)')
                 source(srcset='assets/img/merit-list-img05.png' media='(max-width: 768px)')
                 img(src="assets/img/merit-list-img05.png", alt="コスト削減効果が高い")
-      section.section-grey
+      section.section-grey-right
         .inner
           h2.section-heading.section-heading-sp2line お客様とのコンタクト手段の比較
           table.contact-compare-table.pcmt100.spmt100
