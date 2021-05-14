@@ -65,22 +65,33 @@ $(function () {
     $(this).next().toggleClass("active");
     $(this).toggleClass("active");
   });
+
+  //スムーススクロール
+  $('.scene-example-link-nav-block a[href^="#"]').click(function() {
+    let speed = 400; 
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top;
+    $('body,html').animate({
+      scrollTop: position - 100
+    }, speed, 'swing');
+    return false;
+  });
+
+  $('.pagetop a[href^="#"]').click(function() {
+    let speed = 400; 
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top;
+    $('body,html').animate({
+      scrollTop: position - 100
+    }, speed, 'swing');
+    return false;
+  });
+
 });
 
-//スムーススクロール
-/* new SmoothScroll('a[href*="#"]', {
-  speed: 200,
-  header: ".header",
-}); */
 
-// スムーススクロールを起動する
-let options = { 
-  speed: 200,//1000px進むスピード
-  easing: 'easeInOutCubic',//イージング
-  offset: 50,//停止位置
-};
-
-let scroll = new smoothScroll('a[href*="#"]', options);
 ///////////////////////////////////
 //
 // ウィンドウ ロード時の処理
