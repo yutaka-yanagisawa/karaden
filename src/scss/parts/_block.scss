@@ -997,7 +997,8 @@
       z-index: 1;
       width: 1000px;
       height: 348px;
-      padding: 48px 297px 48px 48px;
+      //padding: 48px 297px 48px 48px;
+      padding: 48px 275px 48px 48px;
       bottom: 80px;
       border-radius: 4px 40px 40px 40px;
       position: absolute;
@@ -2622,7 +2623,7 @@
   }
 }
 
-.trouble-solution-block  {
+/* .trouble-solution-block  {
   @include min {
     display: none
   }
@@ -2687,7 +2688,7 @@
       color: #ff7f00;
     }
   }
-}
+} */
 
 
 .function-img-block {
