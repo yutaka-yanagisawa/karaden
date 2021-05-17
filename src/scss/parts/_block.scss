@@ -1849,7 +1849,7 @@
   }
 }
 
-.introduction-flow-block{
+.step-flow-block{
   @include min {
     margin-top: 40px;
     display: flex;
@@ -2015,7 +2015,7 @@
     }
   }
 }
-.security-block {
+.text-box-block--pc3col {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -2085,7 +2085,7 @@
     }
   }
 }
-.support-block {
+.text-box-block--pc2col{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
