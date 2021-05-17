@@ -2264,6 +2264,16 @@
         height: spvw(70);
       }
     }
+    .logo-honpo{
+      @include min {
+        width: 354px;
+        height: 70px;
+      }
+      @include max{
+        width: spvw(354);
+        height: spvw(70);
+      }
+    }
     .logo-orico{
       @include min {
         width: 200px;
