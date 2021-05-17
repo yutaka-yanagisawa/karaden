@@ -1,4 +1,4 @@
-import smoothScroll from "smooth-scroll";
+/* import smoothScroll from "smooth-scroll"; */
 
 let mobile = false;
 let startPos = 0;
@@ -46,7 +46,7 @@ function switchByWidth() {
 
 $(function () {
   //Mobile判定
-  const ua = navigator.userAgent;
+ /*  const ua = navigator.userAgent;
   if (
     ua.indexOf("iPhone") > 0 ||
     ua.indexOf("iPod") > 0 ||
@@ -56,41 +56,37 @@ $(function () {
     mobile = true;
     $(function () {
     });
-  }
-
-  //アコーディオン  
-
-  $(".question").click(function(){
-    $(this).next().slideToggle();
-    $(this).next().toggleClass("active");
-    $(this).toggleClass("active");
-  });
-
-  //スムーススクロール
-  $('.scene-example-link-nav-block a[href^="#"]').click(function() {
-    let speed = 400; 
-    let href = $(this).attr("href");
-    let target = $(href == "#" || href == "" ? 'html' : href);
-    let position = target.offset().top;
-    $('body,html').animate({
-      scrollTop: position - 100
-    }, speed, 'swing');
-    return false;
-  });
-
-  $('.pagetop a[href^="#"]').click(function() {
-    let speed = 400; 
-    let href = $(this).attr("href");
-    let target = $(href == "#" || href == "" ? 'html' : href);
-    let position = target.offset().top;
-    $('body,html').animate({
-      scrollTop: position - 100
-    }, speed, 'swing');
-    return false;
-  });
-
+  } */
+});
+//アコーディオン  
+$(".question").click(function(){
+  $(this).next().slideToggle();
+  $(this).next().toggleClass("active");
+  $(this).toggleClass("active");
 });
 
+//スムーススクロール
+$('.scene-example-link-nav-block a[href^="#"]').click(function() {
+  let speed = 400; 
+  let href = $(this).attr("href");
+  let target = $(href == "#" || href == "" ? 'html' : href);
+  let position = target.offset().top;
+  $('body,html').animate({
+    scrollTop: position - 100
+  }, speed, 'swing');
+  return false;
+});
+
+$('.pagetop a[href^="#"]').click(function() {
+  let speed = 400; 
+  let href = $(this).attr("href");
+  let target = $(href == "#" || href == "" ? 'html' : href);
+  let position = target.offset().top;
+  $('body,html').animate({
+    scrollTop: position - 100
+  }, speed, 'swing');
+  return false;
+});
 
 ///////////////////////////////////
 //
@@ -109,7 +105,7 @@ $(window).on("load", function () {
 //
 ///////////////////////////////////
 $(window).on("resize", function () {
-  //switchByWidth();
+  switchByWidth();
 });
 
 ///////////////////////////////////
