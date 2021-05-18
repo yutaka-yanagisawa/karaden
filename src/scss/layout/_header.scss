@@ -26,6 +26,9 @@
   @include min {
     padding: 14px 40px 15px;
   }
+  @include max {
+    display: none;
+  }
   .header-btn-box{
     @include min {
       top: 20px;
