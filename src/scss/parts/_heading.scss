@@ -59,11 +59,15 @@
   }
 }
 .block-heading{
+  font-weight: bold;
+  color: #1a1a1a;
   @include min {
     font-size: 40px;
-    font-weight: bold;
+    text-align: left;
   }
   @include max{
+    text-align: center;
+    font-size: spvw(40);
   }
 }
 .text-heading{

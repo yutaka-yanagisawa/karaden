@@ -12,14 +12,14 @@ function switchByWidth() {
   if (window.matchMedia("(max-width: 767px)").matches) {
     //スマホ処理
     //メニュー開閉
-  document.getElementById("nav-toggle").addEventListener("click", () => {
-    document.body.classList.toggle("open");
-  });
-  document.getElementById("global-nav-close-btn").addEventListener("click", () => {
-    document.body.classList.remove("open");
-   });
-  $(".global-nav-list-item--child").click(function () {
-    document.body.classList.remove("open");
+    document.getElementById("nav-toggle").addEventListener("click", () => {
+      document.body.classList.toggle("open");
+    });
+    document.getElementById("global-nav-close-btn").addEventListener("click", () => {
+      document.body.classList.remove("open");
+    });
+    $(".global-nav-list-item--child").click(function () {
+      document.body.classList.remove("open");
   });
   } else if (window.matchMedia("(min-width:768px)").matches) {
     //PC処理
@@ -56,35 +56,36 @@ $(function () {
     $(function () {
     });
   } */
-});
-//アコーディオン  
-$(".question").click(function(){
-  $(this).next().slideToggle();
-  $(this).next().toggleClass("active");
-  $(this).toggleClass("active");
-});
 
-//スムーススクロール
-$('.scene-example-link-nav-block a[href^="#"]').click(function() {
-  let speed = 400; 
-  let href = $(this).attr("href");
-  let target = $(href == "#" || href == "" ? 'html' : href);
-  let position = target.offset().top;
-  $('body,html').animate({
-    scrollTop: position - 100
-  }, speed, 'swing');
-  return false;
-});
+  //アコーディオン  
+  $(".question").click(function(){
+    $(this).next().slideToggle();
+    $(this).next().toggleClass("active");
+    $(this).toggleClass("active");
+  });
 
-$('.pagetop a[href^="#"]').click(function() {
-  let speed = 400; 
-  let href = $(this).attr("href");
-  let target = $(href == "#" || href == "" ? 'html' : href);
-  let position = target.offset().top;
-  $('body,html').animate({
-    scrollTop: position - 100
-  }, speed, 'swing');
-  return false;
+  //スムーススクロール
+  $('.scene-example-link-nav-block a[href^="#"]').click(function() {
+    let speed = 400; 
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top;
+    $('body,html').animate({
+      scrollTop: position - 100
+    }, speed, 'swing');
+    return false;
+  });
+
+  $('.pagetop a[href^="#"]').click(function() {
+    let speed = 400; 
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top;
+    $('body,html').animate({
+      scrollTop: position - 100
+    }, speed, 'swing');
+    return false;
+  });
 });
 
 ///////////////////////////////////
