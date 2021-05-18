@@ -23,6 +23,22 @@ function switchByWidth() {
   });
   } else if (window.matchMedia("(min-width:768px)").matches) {
     //PC処理
+    
+  }
+}
+
+$(function () {
+  //Mobile判定
+  const ua = navigator.userAgent;
+  if (
+    ua.indexOf("iPhone") > 0 ||
+    ua.indexOf("iPod") > 0 ||
+    ua.indexOf("iPad") > 0 ||
+    (ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0)
+  ) {
+    mobile = true;
+  }
+  else{
     $(function () {
       var $win = $(window),
         $cloneNav = $("header")
@@ -41,21 +57,6 @@ function switchByWidth() {
       });
     });
   }
-}
-
-$(function () {
-  //Mobile判定
- /*  const ua = navigator.userAgent;
-  if (
-    ua.indexOf("iPhone") > 0 ||
-    ua.indexOf("iPod") > 0 ||
-    ua.indexOf("iPad") > 0 ||
-    (ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0)
-  ) {
-    mobile = true;
-    $(function () {
-    });
-  } */
 
   //アコーディオン  
   $(".question").click(function(){
