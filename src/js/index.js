@@ -30,7 +30,6 @@ function switchByWidth() {
           .addClass("header-fixed")
           .appendTo("body"),
         showClass = "is-show";
-
       $win.on("load scroll", function () {
         var value = $(this).scrollTop();
         var sectionTop = document.getElementById("mainvisual").clientHeight;

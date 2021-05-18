@@ -42,6 +42,7 @@
   @include min {
     font-size: 48px;
     letter-spacing: 1.92px;
+    line-height: 1.2;
   }
   @include max{
     font-size: spvw(48);
