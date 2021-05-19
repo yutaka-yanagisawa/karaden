@@ -1,12 +1,16 @@
-<?php include('./inc/head.php'); ?>
+<?php $title = "SMSのメリット | SMS送信サービス「空電プッシュ」";?>
+<?php $description = "SMS「ショートメッセージサービス」とは携帯電話番号を宛先にして短い文字数のメッセージを送受信できるサービスです。SMSは顧客とのコミュニケーションの課題を解決します。";?>
+<?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
+<?php include('./_inc/head.php'); ?>
   <body id="merit">
-<!-- Google Tag Manager (noscript)-->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript)-->
+    <?php include('./_inc/body-top.php'); ?>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript)-->
     <div class="wrapper">
-<?php include('./inc/header.php'); ?>
+      <?php include('./_inc/header.php'); ?>
       <section class="section section-mainvisual" id="mainvisual">
         <div class="mainvisual-block mainvisual-block--lower mainvisual-block--lower-small">
           <ul class="breadcrumb">
@@ -208,7 +212,8 @@
           </div><a class="c-btn pcmt80" href="">お役立ちコンテンツ一覧</a>
         </div>
       </section>
-<?php include('./inc/footer.php'); ?>
+      <?php include('../_inc/footer.php'); ?>
     </div>
+    <?php include('../_inc/body-bottom.php'); ?>
   </body>
 </html>

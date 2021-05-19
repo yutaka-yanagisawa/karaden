@@ -2,15 +2,15 @@
 <footer class="footer" id="footer">
   <div class="inner">
     <div class="footer-nav-block">
-      <div class="footer-nav"><a class="footer-logo-karaden" href=""><img src="assets/img/footer-logo.png" alt="空電プッシュ"></a>
+      <div class="footer-nav"><a class="footer-logo-karaden" href="./"><img src="assets/img/footer-logo.png" alt="空電プッシュ"></a>
         <ul class="footer-nav-list">
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="merit.html">SMSのメリット</a></li>
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="price.html">料金</a></li>
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="feature01.html">特長</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./merit">SMSのメリット</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./price">料金</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./feature01">特長</a></li>
           <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="">事例</a></li>
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="scene.html">活用シーン</a></li>
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="faq.html">よくある質問</a></li>
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="function.html">機能</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./scene">活用シーン</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./faq">よくある質問</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./function">機能</a></li>
           <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="">お役立ち情報</a></li>
         </ul>
       </div>

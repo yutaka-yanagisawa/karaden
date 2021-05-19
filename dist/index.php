@@ -1,12 +1,16 @@
-<?php include('./inc/head.php'); ?>
+<?php $title = "SMS送信サービス 空電プッシュ（法人向け） 5年連続シェアNo.1 | NTTコム オンライン";?>
+<?php $description = "「空電プッシュ」はNTTコムオンラインが提供する、国内最大級のSMS送信サービスです。携帯電話やスマートフォンのSMS（ショートメッセージ）機能を使い、電話やEメール以上に、簡単・確実にお客様とのコンタクトを実現します。";?>
+<?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
+<?php include('./_inc/head.php'); ?>
   <body id="top">
-<!-- Google Tag Manager (noscript)-->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript)-->
+    <?php include('./_inc/body-top.php'); ?>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript)-->
     <div class="wrapper">
-<?php include('./inc/header.php'); ?>
+      <?php include('./_inc/header.php'); ?>
       <section class="section section-mainvisual" id="mainvisual">
         <div class="mainvisual-block mainvisual-block--top">
           <div class="inner">
@@ -535,7 +539,7 @@
               <div class="answer">
                 <div class="text-answer-wrap"><span>A</span>
                   <p class="text text-answer">
-                    国内向けに送信する場合には、利用いただけません。お客様所有の通話可能な電話番号のみ指定できます。</p>
+                    ドコモ、au、ソフトバンク回線を利用しているMVNOの携帯電話には、SMS送信可能です。ただし、SMS受信可能な端末でかつSMS契約を締結している携帯電話端末のみになります。</p>
                 </div>
               </div>
             </div>
@@ -546,7 +550,7 @@
               <div class="answer">
                 <div class="text-answer-wrap"><span>A</span>
                   <p class="text text-answer">
-                    ドコモ、au、楽天は指定可能です。ソフトバンクはサービス共通番号※となります。<br>※オプションにより6桁のお客様専用番号をご提供いたします。</p>
+                    ドコモ、au、ソフトバンク回線を利用しているMVNOの携帯電話には、SMS送信可能です。ただし、SMS受信可能な端末でかつSMS契約を締結している携帯電話端末のみになります。</p>
                 </div>
               </div>
             </div>
@@ -557,7 +561,7 @@
               <div class="answer">
                 <div class="text-answer-wrap"><span>A</span>
                   <p class="text text-answer">
-                    ドコモ：660文字、au：140バイト（近日中に670文字へ文字数拡張予定）、ソフトバンク：670文字、楽天モバイル：670文字を送信可能です。</p>
+                    ドコモ、au、ソフトバンク回線を利用しているMVNOの携帯電話には、SMS送信可能です。ただし、SMS受信可能な端末でかつSMS契約を締結している携帯電話端末のみになります。</p>
                 </div>
               </div>
             </div>
@@ -571,7 +575,8 @@
           <div class="contact-block"><a class="contact-btn pcmt70" href="">資料請求・お問合せ</a><a class="agency-btn" href="">代理店募集</a></div>
         </div>
       </section>
-<?php include('./inc/footer.php'); ?>
+      <?php include('../_inc/footer.php'); ?>
     </div>
+    <?php include('../_inc/body-bottom.php'); ?>
   </body>
 </html>

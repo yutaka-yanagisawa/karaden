@@ -1,12 +1,16 @@
-<?php include('./inc/head.php'); ?>
+<?php $title = "特長 | SMS送信サービス「空電プッシュ」";?>
+<?php $description = "お客様の情報を守るために、さまざまなセキュリティ対策を実施。安心してご利用いただけます。";?>
+<?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
+<?php include('./_inc/head.php'); ?>
   <body id="feature">
-<!-- Google Tag Manager (noscript)-->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript)-->
+    <?php include('./_inc/body-top.php'); ?>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript)-->
     <div class="wrapper">
-<?php include('./inc/header.php'); ?>
+      <?php include('./_inc/header.php'); ?>
       <section class="section section-mainvisual" id="mainvisual">
         <div class="mainvisual-block mainvisual-block--lower mainvisual-block--feature mainvisual-block--withbtn">
           <ul class="breadcrumb">

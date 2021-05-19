@@ -1,12 +1,16 @@
-<?php include('./inc/head.php'); ?>
-  <body id="feature">
-<!-- Google Tag Manager (noscript)-->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript)-->
+<?php $title = "豊富な機能 | SMS送信サービス「空電プッシュ」";?>
+<?php $description = "SMS送信サービス　空電プッシュ(法人向けASP)は、SMSの一斉配信だけでなく、お客様がご用意されたCTI(電話とコンピューターの統合システム）やIVR（音声自動応答装置）などの顧客管理システムと連携して自動的にSMS送信するなど、用途にあわせて様々な機能を提供します。";?>
+<?php $keywords = "SMS,ショートメール,ショートメッセージ,クラウド,ASP,API,代理店,電話番号,携帯番号,NTT,SMS,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
+<?php include('./_inc/head.php'); ?>
+  <body id="function">
+    <?php include('./_inc/body-top.php'); ?>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript)-->
     <div class="wrapper">
-<?php include('./inc/header.php'); ?>
+      <?php include('./_inc/header.php'); ?>
       <section class="section section-mainvisual" id="mainvisual">
         <div class="mainvisual-block mainvisual-block--lower mainvisual-block--feature mainvisual-block--withtext">
           <ul class="breadcrumb">
@@ -147,7 +151,8 @@
           <div class="contact-block"><a class="contact-btn pcmt70" href="">資料請求・お問合せ</a><a class="agency-btn" href="">代理店募集</a></div>
         </div>
       </section>
-<?php include('./inc/footer.php'); ?>
+      <?php include('../_inc/footer.php'); ?>
     </div>
+    <?php include('../_inc/body-bottom.php'); ?>
   </body>
 </html>

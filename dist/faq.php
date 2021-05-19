@@ -1,12 +1,16 @@
-<?php include('./inc/head.php'); ?>
+<?php $title = "FAQ（よくある質問）| SMS送信サービス「空電プッシュ」";?>
+<?php $description = "空電プッシュについて、お客さまから寄せられたサービスに関するご質問等を掲載しております。APIやパラメーターなどのインタフェース仕様、利用者の端末について、ご利用条件などを記載しています";?>
+<?php $keywords = "SMS,空電プッシュについて,空電プッシュとは,FAQ,仕様,機能,端末,利用条件";?>
+<?php include('./_inc/head.php'); ?>
   <body id="faq">
-<!-- Google Tag Manager (noscript)-->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript)-->
+    <?php include('./_inc/body-top.php'); ?>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript)-->
     <div class="wrapper">
-<?php include('./inc/header.php'); ?>
+      <?php include('./_inc/header.php'); ?>
       <section class="section section-mainvisual" id="mainvisual">
         <div class="mainvisual-block mainvisual-block--lower mainvisual-block--faq">
           <ul class="breadcrumb">
@@ -255,7 +259,8 @@
           <div class="contact-block"><a class="contact-btn pcmt70" href="">資料請求・お問合せ</a><a class="agency-btn" href="">代理店募集</a></div>
         </div>
       </section>
-<?php include('./inc/footer.php'); ?>
+      <?php include('../_inc/footer.php'); ?>
     </div>
+    <?php include('../_inc/body-bottom.php'); ?>
   </body>
 </html>
