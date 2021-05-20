@@ -1,20 +1,21 @@
 <?php $title = "特長 | SMS送信サービス「空電プッシュ」";?>
-<?php $description = "国内最大規模の送信性能により大規模案件でも遅延なく送信できます。またSMS送信に関するさまざまな機能で、企業様の多様なニーズに応えます。";?>
+<?php $description = "お客様の情報を守るために、さまざまなセキュリティ対策を実施。安心してご利用いただけます。";?>
 <?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
-<?php include('./_inc/head.php'); ?>
+<?php $path = "../";?>
+<?php include('../_inc/head.php'); ?>
   <body id="feature">
-    <?php include('./_inc/body-top.php'); ?>
+    <?php include('../_inc/body-top.php'); ?>
     <!-- Google Tag Manager (noscript)-->
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript)-->
     <div class="wrapper">
-      <?php include('./_inc/header.php'); ?>
+      <?php include('../_inc/header.php'); ?>
       <section class="section section-mainvisual" id="mainvisual">
         <div class="mainvisual-block mainvisual-block--lower mainvisual-block--feature mainvisual-block--withbtn">
           <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="./">空電プッシュ</a></li>
+            <li class="breadcrumb-item"><a href="../">空電プッシュ</a></li>
             <li class="breadcrumb-item"><span>特長</span></li>
           </ul>
           <h1 class="page-heading page-heading--withbtn">特長</h1>
@@ -23,9 +24,9 @@
         </div>
       </section>
       <div class="feature-page-nav-block"> 
-        <div class="item"> <a href="feature01.html">高品質・<br class="sp">セキュリティ</a></div>
-        <div class="item current"><a href="feature02.html">高い送信性能と圧倒的な到達率</a></div>
-        <div class="item"><a href="feature03.html">スピード導入と充実のサポート</a></div>
+        <div class="item"> <a href="../feature01/">高品質・<br class="sp">セキュリティ</a></div>
+        <div class="item current"><a href="../feature02/">高い送信性能と圧倒的な到達率</a></div>
+        <div class="item"><a href="../feature03/">スピード導入と充実のサポート</a></div>
       </div>
       <div class="section-grey">
         <div class="inner">
@@ -53,10 +54,10 @@
       </div>
       <div class="section-blue-left">
         <div class="inner">
-          <div class="customers-voice-block"><img src="assets/img/customers-voice-img02.png" alt="保険見直し本舗">
+          <div class="customers-voice-block"><img src="../assets/img/customers-voice-img02.png" alt="保険見直し本舗">
             <div class="text-box"> 
               <div class="title">お客様の声</div>
-              <div class="name"> <span class="logo logo-honpo"><img src="assets/img/honpo-logo.png" alt="保険見直し本舗"></span>保険見直し<br class="sp">本舗様</div>
+              <div class="name"> <span class="logo logo-honpo"><img src="../assets/img/honpo-logo.png" alt="保険見直し本舗"></span>保険見直し<br class="sp">本舗様</div>
               <div class="text">海外のSMS送信サービスの場合、着信率が80％未満となるサービスもあるとの説明がありました。（途中省略）国内直収接続であればほぼ確実に高水準で着信すると。体感値ではありますが、着信率はかなり上がりました。</div>
             </div>
           </div>
@@ -69,7 +70,8 @@
           <div class="contact-block"><a class="contact-btn pcmt70" href="">資料請求・お問合せ</a><a class="agency-btn" href="">代理店募集</a></div>
         </div>
       </section>
-<?php include('./inc/footer.php'); ?>
+      <?php include('../_inc/footer.php'); ?>
     </div>
+    <?php include('../_inc/body-bottom.php'); ?>
   </body>
 </html>

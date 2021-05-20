@@ -1,20 +1,21 @@
 <?php $title = "特長 | SMS送信サービス「空電プッシュ」";?>
 <?php $description = "導入前も導入後も専任担当者がきめ細やかにサポート。24時間365日電話での故障問い合わせ窓口など、お客様のサービスをしっかり支えます。";?>
 <?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
-<?php include('./_inc/head.php'); ?>
+<?php $path = "../";?>
+<?php include('../_inc/head.php'); ?>
   <body id="feature">
-    <?php include('./_inc/body-top.php'); ?>
+    <?php include('../_inc/body-top.php'); ?>
     <!-- Google Tag Manager (noscript)-->
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript)-->
     <div class="wrapper">
-      <?php include('./_inc/header.php'); ?>
+      <?php include('../_inc/header.php'); ?>
       <section class="section section-mainvisual" id="mainvisual">
         <div class="mainvisual-block mainvisual-block--lower mainvisual-block--feature mainvisual-block--withbtn">
           <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="./">空電プッシュ</a></li>
+            <li class="breadcrumb-item"><a href="../">空電プッシュ</a></li>
             <li class="breadcrumb-item"><span>特長</span></li>
           </ul>
           <h1 class="page-heading page-heading--withbtn">特長</h1>
@@ -23,9 +24,9 @@
         </div>
       </section>
       <section class="feature-page-nav-block"> 
-        <div class="item"> <a href="feature01.html">高品質・<br class="sp">セキュリティ</a></div>
-        <div class="item"> <a href="feature02.html">高い送信性能と圧倒的な到達率</a></div>
-        <div class="item current"><a href="feature03.html">スピード導入と充実のサポート</a></div>
+        <div class="item"> <a href="../feature01/">高品質・<br class="sp">セキュリティ</a></div>
+        <div class="item"> <a href="../feature02/">高い送信性能と圧倒的な到達率</a></div>
+        <div class="item current"><a href="../feature03/">スピード導入と充実のサポート</a></div>
       </section>
       <section class="section-grey">
         <div class="inner">
@@ -88,10 +89,10 @@
       </section>
       <section class="section-blue-left">
         <div class="inner">
-          <div class="customers-voice-block"><img src="assets/img/customers-voice-img03.png" alt="株式会社ジェーシービー">
+          <div class="customers-voice-block"><img src="../assets/img/customers-voice-img03.png" alt="株式会社ジェーシービー">
             <div class="text-box"> 
               <div class="title">お客様の声</div>
-              <div class="name"> <span class="logo logo-jcb"><img src="assets/img/JCB-logo.png" alt="株式会社ジェーシービー"></span>株式会社ジェーシービー様</div>
+              <div class="name"> <span class="logo logo-jcb"><img src="../assets/img/JCB-logo.png" alt="株式会社ジェーシービー"></span>株式会社ジェーシービー様</div>
               <div class="text">細やかなサービスがありがたかったですね。<br>初めてのことでしたから「ここまでがパッケージです」と区切られてしまったり、相談しても「それはサポートセンターへ」と言われたりすると困ってしまう。空電プッシュでは柔軟にご対応いただけましたし、不明点も営業の方が窓口になって、都度丁寧にご回答くださった。導入に向けて、みなさんに 寄り添い支えていただいたと思っております。</div>
             </div>
           </div>
@@ -104,7 +105,8 @@
           <div class="contact-block"><a class="contact-btn pcmt70" href="">資料請求・お問合せ</a><a class="agency-btn" href="">代理店募集</a></div>
         </div>
       </section>
-<?php include('./inc/footer.php'); ?>
+      <?php include('../_inc/footer.php'); ?>
     </div>
+    <?php include('../_inc/body-bottom.php'); ?>
   </body>
 </html>

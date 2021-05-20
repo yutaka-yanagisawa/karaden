@@ -1,20 +1,21 @@
 <?php $title = "SMSのメリット | SMS送信サービス「空電プッシュ」";?>
 <?php $description = "SMS「ショートメッセージサービス」とは携帯電話番号を宛先にして短い文字数のメッセージを送受信できるサービスです。SMSは顧客とのコミュニケーションの課題を解決します。";?>
 <?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
-<?php include('./_inc/head.php'); ?>
+<?php $path = "../";?>
+<?php include('../_inc/head.php'); ?>
   <body id="merit">
-    <?php include('./_inc/body-top.php'); ?>
+    <?php include('../_inc/body-top.php'); ?>
     <!-- Google Tag Manager (noscript)-->
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript)-->
     <div class="wrapper">
-      <?php include('./_inc/header.php'); ?>
+      <?php include('../_inc/header.php'); ?>
       <section class="section section-mainvisual" id="mainvisual">
         <div class="mainvisual-block mainvisual-block--lower mainvisual-block--lower-small">
           <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="./">空電プッシュ</a></li>
+            <li class="breadcrumb-item"><a href="../">空電プッシュ</a></li>
             <li class="breadcrumb-item"><span>SMSのメリット</span></li>
           </ul>
           <h1 class="page-heading page-heading--small">SMSのメリット</h1>
@@ -27,8 +28,8 @@
         </div>
         <div class="merit-block">
           <picture>
-            <source srcset="assets/img/top-merit-img.png" media="(min-width: 769px)">
-            <source srcset="assets/img/top-merit-img-sp.png" media="(max-width: 768px)"><img src="assets/img/top-merit-img.png" alt="SMSのメリット">
+            <source srcset="../assets/img/top-merit-img.png" media="(min-width: 769px)">
+            <source srcset="../assets/img/top-merit-img-sp.png" media="(max-width: 768px)"><img src="../assets/img/top-merit-img.png" alt="SMSのメリット">
           </picture>
         </div>
       </section>
@@ -42,8 +43,8 @@
                 <div class="text-comment">日本の携帯電話・スマホ保有率は80%以上</div>
               </div>
               <picture class="img">
-                <source srcset="assets/img/merit-list-img01.png" media="(min-width: 769px)">
-                <source srcset="assets/img/merit-list-img01.png" media="(max-width: 768px)"><img src="assets/img/merit-list-img01.png" alt="誰にでも届く">
+                <source srcset="../assets/img/merit-list-img01.png" media="(min-width: 769px)">
+                <source srcset="../assets/img/merit-list-img01.png" media="(max-width: 768px)"><img src="../assets/img/merit-list-img01.png" alt="誰にでも届く">
               </picture>
             </div>
             <div class="item">
@@ -54,8 +55,8 @@
                 <p class="text-notes">*米国・英国での調査Conversational Advertising(June 2010) - Mobile Squared</p>
               </div>
               <picture class="img">
-                <source srcset="assets/img/merit-list-img02.png" media="(min-width: 769px)">
-                <source srcset="assets/img/merit-list-img02.png" media="(max-width: 768px)"><img src="assets/img/merit-list-img02.png" alt="着眼率が高い">
+                <source srcset="../assets/img/merit-list-img02.png" media="(min-width: 769px)">
+                <source srcset="../assets/img/merit-list-img02.png" media="(max-width: 768px)"><img src="../assets/img/merit-list-img02.png" alt="着眼率が高い">
               </picture>
             </div>
             <div class="item">
@@ -66,8 +67,8 @@
                 <p class="text-notes">*当社顧客実績</p>
               </div>
               <picture class="img">
-                <source srcset="assets/img/merit-list-img03.png" media="(min-width: 769px)">
-                <source srcset="assets/img/merit-list-img03.png" media="(max-width: 768px)"><img src="assets/img/merit-list-img03.png" alt="反応率が高い">
+                <source srcset="../assets/img/merit-list-img03.png" media="(min-width: 769px)">
+                <source srcset="../assets/img/merit-list-img03.png" media="(max-width: 768px)"><img src="../assets/img/merit-list-img03.png" alt="反応率が高い">
               </picture>
             </div>
             <div class="item">
@@ -77,8 +78,8 @@
                 <div class="text-comment">メールアドレスなどと比較し携帯電話番号は<br class="pc">変更されることが少ない</div>
               </div>
               <picture class="img">
-                <source srcset="assets/img/merit-list-img04.png" media="(min-width: 769px)">
-                <source srcset="assets/img/merit-list-img04.png" media="(max-width: 768px)"><img src="assets/img/merit-list-img04.png" alt="ずっと繋がる">
+                <source srcset="../assets/img/merit-list-img04.png" media="(min-width: 769px)">
+                <source srcset="../assets/img/merit-list-img04.png" media="(max-width: 768px)"><img src="../assets/img/merit-list-img04.png" alt="ずっと繋がる">
               </picture>
             </div>
             <div class="item">
@@ -88,8 +89,8 @@
                 <!--.text-comment -->
               </div>
               <picture class="img">
-                <source srcset="assets/img/merit-list-img05.png" media="(min-width: 769px)">
-                <source srcset="assets/img/merit-list-img05.png" media="(max-width: 768px)"><img src="assets/img/merit-list-img05.png" alt="コスト削減効果が高い">
+                <source srcset="../assets/img/merit-list-img05.png" media="(min-width: 769px)">
+                <source srcset="../assets/img/merit-list-img05.png" media="(max-width: 768px)"><img src="../assets/img/merit-list-img05.png" alt="コスト削減効果が高い">
               </picture>
             </div>
           </div>
@@ -102,43 +103,43 @@
             <tbody class="contact-compare-table-head"> 
               <tr>
                 <th class="contact-compare-table-head-cell contact-compare-table-head-cell--none"></th>
-                <th class="contact-compare-table-head-cell">電話<img src="assets/img/contact-compare-table-head-img01.png" alt="電話"></th>
-                <th class="contact-compare-table-head-cell">郵便物<img src="assets/img/contact-compare-table-head-img02.png" alt="郵便物"></th>
-                <th class="contact-compare-table-head-cell">メール<img src="assets/img/contact-compare-table-head-img03.png" alt="メール"></th>
-                <th class="contact-compare-table-head-cell contact-compare-table-head-cell--sms">SMS<img src="assets/img/contact-compare-table-head-img04.png" alt="SMS"></th>
+                <th class="contact-compare-table-head-cell">電話<img src="../assets/img/contact-compare-table-head-img01.png" alt="電話"></th>
+                <th class="contact-compare-table-head-cell">郵便物<img src="../assets/img/contact-compare-table-head-img02.png" alt="郵便物"></th>
+                <th class="contact-compare-table-head-cell">メール<img src="../assets/img/contact-compare-table-head-img03.png" alt="メール"></th>
+                <th class="contact-compare-table-head-cell contact-compare-table-head-cell--sms">SMS<img src="../assets/img/contact-compare-table-head-img04.png" alt="SMS"></th>
               </tr>
             </tbody>
             <tbody class="contact-compare-table-body"> 
               <tr> 
-                <th class="contact-compare-table-cell contact-compare-table-cell--th"> <span> <img src="assets/img/contact-compare-table-body-th-img01.png" alt="応答率・開封率"></span>応答率・開封率</th>
+                <th class="contact-compare-table-cell contact-compare-table-cell--th"> <span> <img src="../assets/img/contact-compare-table-body-th-img01.png" alt="応答率・開封率"></span>応答率・開封率</th>
                 <td class="contact-compare-table-cell">30〜40%</td>
                 <td class="contact-compare-table-cell">5%</td>
                 <td class="contact-compare-table-cell">10%</td>
                 <td class="contact-compare-table-cell contact-compare-table-celll--sms">98%</td>
               </tr>
               <tr> 
-                <th class="contact-compare-table-cell contact-compare-table-cell--th"> <span> <img src="assets/img/contact-compare-table-body-th-img02.png" alt="到達時間"></span>到達時間</th>
+                <th class="contact-compare-table-cell contact-compare-table-cell--th"> <span> <img src="../assets/img/contact-compare-table-body-th-img02.png" alt="到達時間"></span>到達時間</th>
                 <td class="contact-compare-table-cell">◎</td>
                 <td class="contact-compare-table-cell">×</td>
                 <td class="contact-compare-table-cell">◎</td>
                 <td class="contact-compare-table-cell contact-compare-table-celll--sms">◎</td>
               </tr>
               <tr> 
-                <th class="contact-compare-table-cell contact-compare-table-cell--th"><span> <img src="assets/img/contact-compare-table-body-th-img03.png" alt="伝達情報量"></span>伝達情報量</th>
+                <th class="contact-compare-table-cell contact-compare-table-cell--th"><span> <img src="../assets/img/contact-compare-table-body-th-img03.png" alt="伝達情報量"></span>伝達情報量</th>
                 <td class="contact-compare-table-cell">◎</td>
                 <td class="contact-compare-table-cell">○</td>
                 <td class="contact-compare-table-cell">○</td>
                 <td class="contact-compare-table-cell contact-compare-table-celll--sms">△</td>
               </tr>
               <tr> 
-                <th class="contact-compare-table-cell contact-compare-table-cell--th"> <span> <img src="assets/img/contact-compare-table-body-th-img04.png" alt="業務稼働"></span>業務稼働</th>
+                <th class="contact-compare-table-cell contact-compare-table-cell--th"> <span> <img src="../assets/img/contact-compare-table-body-th-img04.png" alt="業務稼働"></span>業務稼働</th>
                 <td class="contact-compare-table-cell">×</td>
                 <td class="contact-compare-table-cell">△</td>
                 <td class="contact-compare-table-cell">◎</td>
                 <td class="contact-compare-table-cell contact-compare-table-celll--sms">◎</td>
               </tr>
               <tr> 
-                <th class="contact-compare-table-cell contact-compare-table-cell--th"> <span> <img src="assets/img/contact-compare-table-body-th-img05.png" alt="トータルコスト"></span>トータルコスト</th>
+                <th class="contact-compare-table-cell contact-compare-table-cell--th"> <span> <img src="../assets/img/contact-compare-table-body-th-img05.png" alt="トータルコスト"></span>トータルコスト</th>
                 <td class="contact-compare-table-cell">×</td>
                 <td class="contact-compare-table-cell">△</td>
                 <td class="contact-compare-table-cell">◎</td>
@@ -173,10 +174,10 @@
         <div class="inner"> 
           <h2 class="section-heading section-heading-sp2line">SMS（ショートメッセージサービス）とは</h2>
           <p class="section-lead">SMS「ショートメッセージサービス」とは携帯電<br class="sp">話番号を宛先にして<br class="pc">短い文字数のメッセージを<br class="sp">送受信できるサービスです。</p>
-          <div class="about-sms-block">
+          <div class="about-sms-block"> 
             <picture class="img">
-              <source srcset="assets/img/about-sms-img01.png" media="(min-width: 769px)">
-              <source srcset="assets/img/about-sms-img-sp01.png" media="(max-width: 768px)"><img src="assets/img/about-sms-img01.png" alt="ミックITレポート2020年11月号">
+              <source srcset="../assets/img/about-sms-img01.png" media="(min-width: 769px)">
+              <source srcset="../assets/img/about-sms-img-sp01.png" media="(max-width: 768px)"><img src="../assets/img/about-sms-img01.png" alt="ミックITレポート2020年11月号">
             </picture>
           </div>
         </div>
@@ -192,15 +193,15 @@
         <div class="inner">
           <h2 class="section-heading">お役立ちコンテンツ</h2>
           <div class="usefulcontents-block">
-            <div class="item"><img class="img" src="assets/img/top-usefulcontents-img01.png" alt="顧客とのコンタクトに課題を抱えているご担当者様必見！">
+            <div class="item"><img class="img" src="../assets/img/top-usefulcontents-img01.png" alt="顧客とのコンタクトに課題を抱えているご担当者様必見！">
               <p class="lead">顧客とのコンタクトに課題を<br>抱えているご担当者様必見！</p>
               <p class="text">着眼率90%を誇る顧客メッセージ<br class="pc">を確実に伝えるための手法はこれ<br class="pc">だ！</p><a class="c-btn c-btn--small c-btn--download pcmt40" href="">ダウンロードする</a>
             </div>
-            <div class="item"><img class="img" src="assets/img/top-usefulcontents-img02.png" alt="金融関係者必見！">
+            <div class="item"><img class="img" src="../assets/img/top-usefulcontents-img02.png" alt="金融関係者必見！">
               <p class="lead">金融関係者必見！</p>
               <p class="text">今、注目されている、着眼率90％<br class="pc">を誇る「連絡」や「督促」をタイ<br class="pc">ムリーかつ確実に伝えることがで<br class="pc">きる手法は、これだ！</p><a class="c-btn c-btn--small c-btn--download pcmt40" href="">ダウンロードする</a>
             </div>
-            <div class="item"><img class="img" src="assets/img/top-usefulcontents-img03.png" alt="コンタクト率驚異の99％？！従来のコミュニケーションとは一線を画す注目手法！">
+            <div class="item"><img class="img" src="../assets/img/top-usefulcontents-img03.png" alt="コンタクト率驚異の99％？！従来のコミュニケーションとは一線を画す注目手法！">
               <p class="lead">コンタクト率驚異の99％？！<br>従来のコミュニケーションとは<br>一線を画す注目手法！</p>
               <p class="text">「SMS」が重宝される理由とは？<br>7つの活用ケースから探る！</p><a class="c-btn c-btn--small c-btn--download pcmt40" href="">ダウンロードする</a>
             </div>

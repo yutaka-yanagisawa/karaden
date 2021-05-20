@@ -2615,8 +2615,7 @@
   }
   >.img{
     @include min {
-      width: 984px;
-      height: 752px;
+      width: 750px;
     }
     @include max{
       display: block;

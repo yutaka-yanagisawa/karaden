@@ -1,6 +1,7 @@
 <?php $title = "SMS送信サービス 空電プッシュ（法人向け） 5年連続シェアNo.1 | NTTコム オンライン";?>
 <?php $description = "「空電プッシュ」はNTTコムオンラインが提供する、国内最大級のSMS送信サービスです。携帯電話やスマートフォンのSMS（ショートメッセージ）機能を使い、電話やEメール以上に、簡単・確実にお客様とのコンタクトを実現します。";?>
 <?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
+<?php $path = "./";?>
 <?php include('./_inc/head.php'); ?>
   <body id="top">
     <?php include('./_inc/body-top.php'); ?>
@@ -80,7 +81,7 @@
             <source srcset="assets/img/top-merit-img.png" media="(min-width: 769px)">
             <source srcset="assets/img/top-merit-img-sp.png" media="(max-width: 768px)"><img src="assets/img/top-merit-img.png" alt="SMSのメリット">
           </picture>
-        </div><a class="c-btn c-btn--splarge pcmt0" href="merit.html">SMSのメリットを詳しく見る</a>
+        </div><a class="c-btn c-btn--splarge pcmt0" href="merit/">SMSのメリットを詳しく見る</a>
       </section>
       <section class="section section-feature" id="feature">
         <div class="inner">
@@ -96,13 +97,13 @@
             <div class="item"> 
               <h3 class="title">高い送信性能と<br class="pc">圧倒的な到達率</h3>
               <div class="text-box"> 
-                <p class="text">国内最大規模の送信性能により大規模案件でも遅延なく送信できます。<br>また携帯キャリアとの直接接続で99.9％の到達率（自社調べ）と<br class="pc">通信品質に圧倒的な差があります。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature02.html">送信性能の詳細はこちら</a>
+                <p class="text">国内最大規模の送信性能により大規模案件でも遅延なく送信できます。<br>また携帯キャリアとの直接接続で99.9％の到達率（自社調べ）と<br class="pc">通信品質に圧倒的な差があります。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature02">送信性能の詳細はこちら</a>
               </div>
             </div>
             <div class="item"> 
               <h3 class="title">スピード導入と<br class="pc">充実のサポート</h3>
               <div class="text-box"> 
-                <p class="text">申し込み後、最短3営業日でご利用いただけます。導入前も導入後も<br class="pc">専任担当者がきめ細やかにサポート。24時間365日電話での故障問い<br class="pc">合わせ窓口など、お客様のサービスをしっかり支えます。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature03.html">導入・サポートの詳細はこちら</a>
+                <p class="text">申し込み後、最短3営業日でご利用いただけます。導入前も導入後も<br class="pc">専任担当者がきめ細やかにサポート。24時間365日電話での故障問い<br class="pc">合わせ窓口など、お客様のサービスをしっかり支えます。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature03">導入・サポートの詳細はこちら</a>
               </div>
             </div>
           </div>
@@ -185,7 +186,7 @@
               </div>
               <div class="text">双方向SMS</div>
             </div>
-          </div><a class="c-btn pcmt80" href="function.html">詳細はこちら</a>
+          </div><a class="c-btn pcmt80" href="function">詳細はこちら</a>
         </div>
       </section>
       <section class="section section-scene" id="scene">
@@ -414,7 +415,7 @@
             <!-- 前ページボタン-->
             <div class="swiper-button-prev swiper-button-prev-scene"></div>
             <!-- 次ページボタン-->
-            <div class="swiper-button-next swiper-button-next-scene"></div><a class="c-btn pcmt0" href="scene.html">活用シーン一覧</a>
+            <div class="swiper-button-next swiper-button-next-scene"></div><a class="c-btn pcmt0" href="scene">活用シーン一覧</a>
           </div>
         </div>
       </section>
@@ -495,7 +496,7 @@
           <div class="swiper-button-prev swiper-button-prev-example"></div>
           <!-- 次ページボタン-->
           <div class="swiper-button-next swiper-button-next-example"></div>
-          <div class="swiper-pagination-example"></div><a class="c-btn pcmt80" href="scene.html">導入事例一覧</a>
+          <div class="swiper-pagination-example"></div><a class="c-btn pcmt80" href="scene">導入事例一覧</a>
         </div>
       </section>
       <section class="section section-usefulcontents" id="usefulcontents">
@@ -565,7 +566,7 @@
                 </div>
               </div>
             </div>
-          </div><a class="c-btn pcmt80" href="faq.html">よくある質問一覧</a>
+          </div><a class="c-btn pcmt80" href="faq">よくある質問一覧</a>
         </div>
       </section>
       <section class="section section-contact" id="contact">
@@ -575,8 +576,8 @@
           <div class="contact-block"><a class="contact-btn pcmt70" href="">資料請求・お問合せ</a><a class="agency-btn" href="">代理店募集</a></div>
         </div>
       </section>
-      <?php include('../_inc/footer.php'); ?>
+      <?php include('./_inc/footer.php'); ?>
     </div>
-    <?php include('../_inc/body-bottom.php'); ?>
+    <?php include('./_inc/body-bottom.php'); ?>
   </body>
 </html>

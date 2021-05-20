@@ -17,15 +17,15 @@
   <meta name="description" content="<?=$description?>">
   <meta property="og:url" content="">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="<?=$title?>">
+  <meta property="og:title" content="<?=$title?> | SMS送信サービス「空電プッシュ」">
   <meta property="og:description" content="<?=$description?>">
   <meta property="og:site_name" content="">
   <meta property="og:image" content="">
   <title><?=$title?> | SMS送信サービス「空電プッシュ」</title>
-  <link href="assets/css/style.css" rel="stylesheet">
-  <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/swiper.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <link href="<?=$path?>assets/css/style.css" rel="stylesheet">
+  <script src="<?=$path?>assets/js/jquery-3.6.0.min.js"></script>
+  <script src="<?=$path?>assets/js/swiper.min.js"></script>
+  <script src="<?=$path?>assets/js/script.js"></script>
   <script>
     if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
     document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0">');

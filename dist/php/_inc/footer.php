@@ -2,15 +2,15 @@
 <footer class="footer" id="footer">
   <div class="inner">
     <div class="footer-nav-block">
-      <div class="footer-nav"><a class="footer-logo-karaden" href="./"><img src="assets/img/footer-logo.png" alt="空電プッシュ"></a>
+      <div class="footer-nav"><a class="footer-logo-karaden" href="<?=$path?>"><img src="<?=$path?>assets/img/footer-logo.png" alt="空電プッシュ"></a>
         <ul class="footer-nav-list">
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./merit">SMSのメリット</a></li>
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./price">料金</a></li>
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./feature01">特長</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>merit/">SMSのメリット</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>price/">料金</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>feature01/">特長</a></li>
           <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="">事例</a></li>
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./scene">活用シーン</a></li>
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./faq">よくある質問</a></li>
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="./function">機能</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>scene/">活用シーン</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>faq/">よくある質問</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>function/">機能</a></li>
           <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="">お役立ち情報</a></li>
         </ul>
       </div>
@@ -22,7 +22,7 @@
           <li class="footer-relational-service-list-item"><a class="footer-relational-service-item-link" href="" style="pointer-events: none;">法人向けのSMS配信なら　 +メッセージ / SMS</a></li>
         </ul>
       </div>
-      <div class="footer-btn-block"><a class="footer-btn-logo" href=""><img src="assets/img/footer-ntt-logo.png" alt="NTTコム　オンライン"></a><a class="footer-btn footer-btn--orange" href="">資料請求・お問合せ</a><a class="footer-btn footer-btn--green" href="">代理店募集</a></div>
+      <div class="footer-btn-block"><a class="footer-btn-logo" href=""><img src="<?=$path?>assets/img/footer-ntt-logo.png" alt="NTTコム　オンライン"></a><a class="footer-btn footer-btn--orange" href="">資料請求・お問合せ</a><a class="footer-btn footer-btn--green" href="">代理店募集</a></div>
     </div>
   </div>
 </footer>
