@@ -2563,7 +2563,7 @@
   @include min {
     margin-right: 5px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
   }
   @include max{
@@ -2615,8 +2615,8 @@
   }
   >.img{
     @include min {
-      width: 656px;
-      height: 501px;
+      width: 984px;
+      height: 752px;
     }
     @include max{
       display: block;

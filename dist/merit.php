@@ -173,12 +173,7 @@
         <div class="inner"> 
           <h2 class="section-heading section-heading-sp2line">SMS（ショートメッセージサービス）とは</h2>
           <p class="section-lead">SMS「ショートメッセージサービス」とは携帯電<br class="sp">話番号を宛先にして<br class="pc">短い文字数のメッセージを<br class="sp">送受信できるサービスです。</p>
-          <div class="about-sms-block"> 
-            <div class="text-box"> 
-              <div class="text">件名なし</div>
-              <div class="text">送信できる文字数：70文字程度</div>
-              <div class="text">送信元の表示は電話番号も可能</div>
-            </div>
+          <div class="about-sms-block">
             <picture class="img">
               <source srcset="assets/img/about-sms-img01.png" media="(min-width: 769px)">
               <source srcset="assets/img/about-sms-img-sp01.png" media="(max-width: 768px)"><img src="assets/img/about-sms-img01.png" alt="ミックITレポート2020年11月号">
