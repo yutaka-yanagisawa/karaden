@@ -473,14 +473,18 @@
                   <source srcset="assets/img/example-img01.png" media="(min-width: 769px)">
                   <source srcset="assets/img/example-img-sp01.png" media="(max-width: 768px)"><img src="assets/img/example-img01.png" alt="">
                 </picture>
+                <div class="title"></div>
+                <div class="text">オリコ</div>
               </div>
               <div class="swiper-slide swiper-slide-example swiper-slide-example03">
                 <picture class="swiper-slide-example-img">
                   <source srcset="assets/img/example-img01.png" media="(min-width: 769px)">
                   <source srcset="assets/img/example-img-sp01.png" media="(max-width: 768px)"><img src="assets/img/example-img01.png" alt="">
                 </picture>
+                <div class="title"></div>
+                <div class="text">伊丹市</div>
               </div>
-              <div class="swiper-slide swiper-slide-example swiper-slide-example04">
+              <!-- <div class="swiper-slide swiper-slide-example swiper-slide-example04">
                 <picture class="swiper-slide-example-img">
                   <source srcset="assets/img/example-img01.png" media="(min-width: 769px)">
                   <source srcset="assets/img/example-img-sp01.png" media="(max-width: 768px)"><img src="assets/img/example-img01.png" alt="">
@@ -491,7 +495,7 @@
                   <source srcset="assets/img/example-img01.png" media="(min-width: 769px)">
                   <source srcset="assets/img/example-img-sp01.png" media="(max-width: 768px)"><img src="assets/img/example-img01.png" alt="">
                 </picture>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- 前ページボタン-->
