@@ -19,7 +19,7 @@
             <li class="breadcrumb-item"><span>特長</span></li>
           </ul>
           <h1 class="page-heading page-heading--withbtn">特長</h1>
-          <p class="page-text--withbtn">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p class="page-text--withbtn">国内SMS送信市場 5年連続シェアNo.1</p>
           <div class="c-btn c-btn--mainvisual pcmt30 spmt30">SMSについて詳しく知る</div>
         </div>
       </section>
@@ -31,7 +31,7 @@
       <section class="section-grey">
         <div class="inner">
           <h2 class="section-heading section-heading-sp2line">最短3営業日のスピード導入</h2>
-          <p class="section-lead pcmt10 spmt40">（最短3営業日でのスピード導入が可能です。）</p>
+          <p class="section-lead pcmt10 spmt40">お申し込みから最短3営業日での導入が可能です。</p>
           <div class="step-flow-block">
             <div class="item"> 
               <div class="number">STEP

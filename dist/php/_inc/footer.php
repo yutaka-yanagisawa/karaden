@@ -19,7 +19,6 @@
         <ul class="footer-relational-service-list">
           <li class="footer-relational-service-list-item"><a class="footer-relational-service-item-link" href="">オンライン接客ツール ビデオトーク</a></li>
           <li class="footer-relational-service-list-item"><a class="footer-relational-service-item-link" href="">顧客管理システム モバイルウェブ</a></li>
-          <li class="footer-relational-service-list-item"><a class="footer-relational-service-item-link" href="" style="pointer-events: none;">法人向けのSMS配信なら　 +メッセージ / SMS</a></li>
         </ul>
       </div>
       <div class="footer-btn-block"><a class="footer-btn-logo" href=""><img src="<?=$path?>assets/img/footer-ntt-logo.png" alt="NTTコム　オンライン"></a><a class="footer-btn footer-btn--orange" href="">資料請求・お問合せ</a><a class="footer-btn footer-btn--green" href="">代理店募集</a></div>

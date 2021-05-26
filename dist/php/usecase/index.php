@@ -35,7 +35,7 @@
               <h3 class="title">業務連絡</h3>
               <div class="text-box"><img class="img" src="../assets/img/usage-img02.png" alt="業務連絡">
                 <p class="text">緊急度の高い内容や必ず見ていただきたい内容をお客様に案内する場合に活用できます。</p>
-              </div><a class="c-btn c-btn--list" href="">詳しく見る</a>
+              </div><!-- <a class="c-btn c-btn--list" href="">詳しく見る</a> -->
             </div>
             <div class="item"> 
               <h3 class="title">督 促</h3>
@@ -47,7 +47,7 @@
               <h3 class="title">販売促進・プロモーション</h3>
               <div class="text-box"><img class="img" src="../assets/img/usage-img04.png" alt="販売促進・プロモーション">
                 <p class="text">クーポン送付やセールイベントの告知など販促にも活用可能です。</p>
-              </div><a class="c-btn c-btn--list" href="">詳しく見る</a>
+              </div><!-- <a class="c-btn c-btn--list" href="">詳しく見る</a> -->
             </div>
             <div class="item"> 
               <h3 class="title">事前連絡・リマインダー</h3>
@@ -89,13 +89,19 @@
               <div class="text-box">
                 <h3 class="title">クレジットカード</h3>
                 <ul class="list"> 
-                  <li class="list-item">利用明細のご連絡</li>
-                  <li class="list-item">督促連絡</li>
+                  <li class="list-item">支払い状況通知</li>
                   <li class="list-item">本人認証</li>
-                  <li class="list-item">販促・キャンペーン</li>
-                  <li class="list-item">お問い合わせ時のWebサイト誘導</li>
+                  <li class="list-item">キャンペーン・特典案内</li>
+                  <li class="list-item">電話問い合わせ時のWebサイト誘導</li>
+                  <li class="list-item">各種連絡</li>
                 </ul>
-                <p class="text">毎月の利用状況の連絡や、支払いに関する連絡、<br class="sp">キャンペーン情報の連絡に活用いただけます。<br class="sp">また、スマートフォンでカードを利用する際の本人認証としても活用できます。</p>
+                <p class="text">毎月の利用状況や、支払いに関する連絡<br class="sp">キャンペーン情報の連絡に活用いただけます。<br class="sp">また、スマートフォンアプリにクレジットカード登録する際の本人認証としても活用できます。</p>
+                <div class="relatedsolution">
+                  <p class="relatedsolution-title">関連ソリューション：</p>
+                  <ul class="relatedsolution-list">
+                    <li class="relatedsolution-list-item"> <a class="relatedsolution-list-item-link" href="">IVRと連携したSSM送信</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="item item02" id="example02">
@@ -106,14 +112,19 @@
               <div class="text-box">
                 <h3 class="title">銀行・消費者ローン</h3>
                 <ul class="list"> 
-                  <li class="list-item">各種お手続き連絡</li>
-                  <li class="list-item">送金連絡</li>
-                  <li class="list-item">銀行窓口の順番連絡</li>
-                  <li class="list-item">督促連絡</li>
-                  <li class="list-item">販促・キャンペーン</li>
-                  <li class="list-item">お問い合わせ時のWebサイト誘導</li>
+                  <li class="list-item">支払い状況通知</li>
+                  <li class="list-item">キャンペーン・特典案内</li>
+                  <li class="list-item">窓口の順番連絡</li>
+                  <li class="list-item">電話問い合わせ時のWebサイト誘導</li>
+                  <li class="list-item">各種連絡</li>
                 </ul>
-                <p class="text">サービス申込時のやり取りや、支払いに関する連絡、特典やキャンペーンなどの連絡に活用できます。</p>
+                <p class="text">サービス申込時のお手続き連絡や、支払い・送金に関する連絡、特典やキャンペーンなどの連絡に活用できます。<br class="sp">また、スマートフォンから送金する際の本人認証としても活用できます。</p>
+                <div class="relatedsolution">
+                  <p class="relatedsolution-title">関連ソリューション：</p>
+                  <ul class="relatedsolution-list">
+                    <li class="relatedsolution-list-item"> <a class="relatedsolution-list-item-link" href="">IVRと連携したSMS送信</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="item item03" id="example03">
@@ -128,7 +139,7 @@
                   <li class="list-item">ご利用料金連絡</li>
                   <li class="list-item">障害情報連絡</li>
                 </ul>
-                <p class="text">工事日や修理日の事前連絡やご利用料金のご連絡、障害が発生した場合の一斉連絡に活用できます。</p>
+                <p class="text">工事日や修理日の事前連絡やご利用料金の連絡、障害が発生した場合の一斉連絡に活用できます。</p>
               </div>
             </div>
             <div class="item item04" id="example04">
@@ -139,10 +150,11 @@
               <div class="text-box">
                 <h3 class="title">不動産サービス</h3>
                 <ul class="list"> 
-                  <li class="list-item">入居者の手続き連絡</li>
-                  <li class="list-item">督促連絡 </li>
+                  <li class="list-item">入居者向け各種連絡</li>
+                  <li class="list-item">支払い状況通知</li>
+                  <li class="list-item">送付書類のリマインド</li>
                 </ul>
-                <p class="text">入居者さまとのやり取りや手続きの連絡、家賃などの督促に活用できます。</p>
+                <p class="text">入居者さまとのやり取りや手続きなどの各種連絡、家賃などの支払い状況連絡に活用できます。</p>
               </div>
             </div>
             <div class="item item05" id="example05">
@@ -154,10 +166,18 @@
                 <h3 class="title">生・損保会社</h3>
                 <ul class="list"> 
                   <li class="list-item">保険請求時の各種ご案内</li>
-                  <li class="list-item">調査・アンケート</li>
-                  <li class="list-item">お問い合わせ時のWebサイト誘導</li>
+                  <li class="list-item">商品の満足度調査</li>
+                  <li class="list-item">オペレーターの対応品質調査</li>
+                  <li class="list-item">電話問い合わせ時のWebサイト誘導</li>
                 </ul>
-                <p class="text">保険請求時のやり取りや、その後のお客様満足度調査に活用いただけます。音声ガイダンス(IVR)によりお客様のニーズや問い合わせ内容にあったSMSを送信できます。</p>
+                <p class="text">保険請求時のご案内や、その後のお客様満足度調査、対応品質調査に活用いただけます。</p>
+                <div class="relatedsolution">
+                  <p class="relatedsolution-title">関連ソリューション：</p>
+                  <ul class="relatedsolution-list">
+                    <li class="relatedsolution-list-item"> <a class="relatedsolution-list-item-link" href="">IVRと連携したSMS送信</a></li>
+                    <li class="relatedsolution-list-item"> <a class="relatedsolution-list-item-link" href="">SMSアンケートソリューション</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="item item06" id="example06">
@@ -168,11 +188,17 @@
               <div class="text-box">
                 <h3 class="title">引越・物流</h3>
                 <ul class="list"> 
-                  <li class="list-item">荷物の配達日時の連絡</li>
-                  <li class="list-item">作業日事前連絡</li>
-                  <li class="list-item">調査・アンケート</li>
+                  <li class="list-item">配達日時の連絡</li>
+                  <li class="list-item">作業日のリマインド</li>
+                  <li class="list-item">作業員の対応品質調査</li>
                 </ul>
-                <p class="text">お客様宛の荷物の配達日時を事前に連絡したり、引越などの作業日をリマインドできます。またSMS宛てにお客様満足度調査をお送りすることも可能です。</p>
+                <p class="text">お客様宛の荷物の配達日時を事前に連絡したり、引越などの作業日をリマインドできます。また、お客様満足度調査をお送りすることも可能です。</p>
+                <div class="relatedsolution">
+                  <p class="relatedsolution-title">関連ソリューション：</p>
+                  <ul class="relatedsolution-list">
+                    <li class="relatedsolution-list-item"> <a class="relatedsolution-list-item-link" href="">SMSアンケートソリューション</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="item item07" id="example07">
@@ -185,9 +211,9 @@
                 <ul class="list"> 
                   <li class="list-item">予約完了連絡</li>
                   <li class="list-item">予約日時のリマインド</li>
-                  <li class="list-item">販促・キャンペーン</li>
+                  <li class="list-item">キャンペーン・特典案内</li>
                 </ul>
-                <p class="text">お客様がWebサイトや電話で予約いただいた後、予約日時をリマインドとして連絡したり、お得なキャンペーン情報をお送りすることができます。</p>
+                <p class="text">お客様がWebサイトや電話で予約いただいた後、予約日時をリマインドとして連絡したり、お得なキャンペーンや特典案内をお送りすることができます。</p>
               </div>
             </div>
             <div class="item item08" id="example08">
@@ -198,11 +224,16 @@
               <div class="text-box">
                 <h3 class="title">派遣/人材紹介・採用</h3>
                 <ul class="list"> 
-                  <li class="list-item">面接日の連絡</li>
                   <li class="list-item">面接前後の各種連絡</li>
-                  <li class="list-item">お仕事状況アンケート</li>
+                  <li class="list-item">就業状況確認</li>
                 </ul>
-                <p class="text">人材派遣・紹介業界において候補者との面接日程や面接場所、必要な書類などの連絡に活用できます。</p>
+                <p class="text">人材派遣・紹介業界において候補者との面接日程や面接場所、必要な書類などの連絡に活用できます。また、候補者の現在の就業状況確認アンケートにも活用いただけます。</p>
+                <div class="relatedsolution">
+                  <p class="relatedsolution-title">関連ソリューション：</p>
+                  <ul class="relatedsolution-list">
+                    <li class="relatedsolution-list-item"> <a class="relatedsolution-list-item-link" href="">SMSアンケートソリューション</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="item item09" id="example09">
@@ -213,9 +244,9 @@
               <div class="text-box">
                 <h3 class="title">鉄道・船舶・航空</h3>
                 <ul class="list"> 
-                  <li class="list-item">欠航連絡</li>
-                  <li class="list-item">チェックイン締切時刻連絡</li>
                   <li class="list-item">チケット購入完了連絡</li>
+                  <li class="list-item">チェックイン締切時刻連絡</li>
+                  <li class="list-item">欠航連絡</li>
                 </ul>
                 <p class="text">チケットを購入されたお客様に対して、購入完了連絡や、チェックイン時間の連絡、欠航などの連絡に活用いただけます。</p>
               </div>
@@ -228,10 +259,10 @@
               <div class="text-box">
                 <h3 class="title">コールセンター</h3>
                 <ul class="list"> 
-                  <li class="list-item">時間外問い合わせのWebサイト誘導</li>
-                  <li class="list-item">オペレーターの応対品質アンケート</li>
+                  <li class="list-item">電話問い合わせ時のWebサイト誘導</li>
+                  <li class="list-item">オペレーターの対応品質調査</li>
                 </ul>
-                <p class="text">時間外の問い合わせやあふれ呼対策として、音声ガイダンス(IVR)によりお客様のニーズや問い合わせ内容にあったSMSを送信できます。またコールセンターの品質アンケートにも送付できます。</p>
+                <p class="text">時間外の問い合わせやあふれ呼対策として、音声ガイダンス(IVR)によりお客様のニーズや問い合わせ内容にあったSMSを送信できます。またコールセンターの品質調査にも活用できます。</p>
                 <div class="relatedsolution">
                   <p class="relatedsolution-title">関連ソリューション：</p>
                   <ul class="relatedsolution-list">
@@ -249,14 +280,17 @@
               <div class="text-box">
                 <h3 class="title">自治体</h3>
                 <ul class="list"> 
-                  <li class="list-item">住民への各種連絡</li>
-                  <li class="list-item">税金の督促連絡</li>
+                  <li class="list-item">住民への特定検診の連絡</li>
+                  <li class="list-item">予防接種等の予約サイト誘導</li>
+                  <li class="list-item">税金の支払い状況通知</li>
+                  <li class="list-item">各種連絡</li>
                 </ul>
-                <p class="text">各都道府県・市区町村から住民への情報発信に活用いただけます。</p>
+                <p class="text">各都道府県・市区町村から住民への情報発信に活用いただけます。また、予防接種等の予約サイト誘導にも活用できます。</p>
                 <div class="relatedsolution">
                   <p class="relatedsolution-title">関連ソリューション：</p>
                   <ul class="relatedsolution-list">
                     <li class="relatedsolution-list-item"> <a class="relatedsolution-list-item-link" href="">空電プッシュ for LGWAN</a></li>
+                    <li class="relatedsolution-list-item"> <a class="relatedsolution-list-item-link" href="">IVRと連携したSMS送信</a></li>
                   </ul>
                 </div>
               </div>

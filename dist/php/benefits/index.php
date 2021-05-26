@@ -74,7 +74,7 @@
             <div class="item">
               <div class="text-box">
                 <h3 class="title">ずっと繋がる</h3>
-                <p class="text">お客様が携帯電話の買い替えをきっかけに<br class="pc">キャリアを変更したとしても、電話番号はそのまま移行することができるた<br class="pc">め、お客様との接点を継続できます。</p>
+                <p class="text">お客様が携帯電話の買い替えをきっかけにキャリアを変更したとしても、電話番号はそのまま移行することができるた<br class="pc">め、お客様との接点を継続できます。</p>
                 <div class="text-comment">メールアドレスなどと比較し携帯電話番号は<br class="pc">変更されることが少ない</div>
               </div>
               <picture class="img">
@@ -86,7 +86,7 @@
               <div class="text-box">
                 <h3 class="title">コスト削減効果が高い</h3>
                 <p class="text">電話をかける稼働の削減や、通話代、DMにかかる郵便代などの通信コストを<br class="pc">削減可能です。</p>
-                <!--.text-comment -->
+                <!--text-comment -->
               </div>
               <picture class="img">
                 <source srcset="../assets/img/merit-list-img05.png" media="(min-width: 769px)">
@@ -177,7 +177,7 @@
           <div class="about-sms-block"> 
             <picture class="img">
               <source srcset="../assets/img/about-sms-img01.png" media="(min-width: 769px)">
-              <source srcset="../assets/img/about-sms-img-sp01.png" media="(max-width: 768px)"><img src="../assets/img/about-sms-img01.png" alt="ミックITレポート2020年11月号">
+              <source srcset="../assets/img/about-sms-img-sp01.png" media="(max-width: 768px)"><img src="../assets/img/about-sms-img01.png" alt="国内のSMS配信数・増加率">
             </picture>
           </div>
         </div>

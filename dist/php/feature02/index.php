@@ -19,7 +19,7 @@
             <li class="breadcrumb-item"><span>特長</span></li>
           </ul>
           <h1 class="page-heading page-heading--withbtn">特長</h1>
-          <p class="page-text--withbtn">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p class="page-text--withbtn">国内SMS送信市場 5年連続シェアNo.1</p>
           <div class="c-btn c-btn--mainvisual pcmt30 spmt30">SMSについて詳しく知る</div>
         </div>
       </section>
@@ -57,7 +57,7 @@
           <div class="customers-voice-block"><img src="../assets/img/customers-voice-img02.png" alt="保険見直し本舗">
             <div class="text-box"> 
               <div class="title">お客様の声</div>
-              <div class="name"> <span class="logo logo-honpo"><img src="../assets/img/honpo-logo.png" alt="保険見直し本舗"></span>保険見直し<br class="sp">本舗様</div>
+              <div class="name"> <span class="logo logo-honpo"><img src="../assets/img/honpo-logo.png" alt="保険見直し本舗"></span>株式会社ウェブ<br class="sp">クルー様</div>
               <div class="text">海外のSMS送信サービスの場合、着信率が80％未満となるサービスもあるとの説明がありました。（途中省略）国内直収接続であればほぼ確実に高水準で着信すると。体感値ではありますが、着信率はかなり上がりました。</div>
             </div>
           </div>

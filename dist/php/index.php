@@ -44,9 +44,11 @@
             </div>
           </div>
         </div>
-        <div class="company-block"> 
-          <div class="item"> <img src="assets/img/company-img04.png" alt="日本生命"></div>
+        <div class="company-block">
+          <div class="item"> <img src="assets/img/company-img01.png" alt="三井住友銀行"></div>
+          <div class="item"> <img src="assets/img/company-img02.png" alt="JCB"></div>
           <div class="item"> <img src="assets/img/company-img03.png" alt="東京海上日動"></div>
+          <div class="item"> <img src="assets/img/company-img04.png" alt="日本生命"></div>
           <div class="item"> <img src="assets/img/company-img07.png" alt="大東建託"></div>
           <div class="item"> <img src="assets/img/company-img06.png" alt="TOYOTA"></div>
           <div class="item"> <img src="assets/img/company-img05.png" alt="Panasonic"></div>
@@ -97,7 +99,7 @@
             <div class="item"> 
               <h3 class="title">高い送信性能と<br class="pc">圧倒的な到達率</h3>
               <div class="text-box"> 
-                <p class="text">国内最大規模の送信性能により大規模案件でも遅延なく送信できます。<br>また携帯キャリアとの直接接続で99.9％の到達率（自社調べ）と<br class="pc">通信品質に圧倒的な差があります。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature02">送信性能の詳細はこちら</a>
+                <p class="text">国内最大規模の送信性能により大規模案件でも遅延なく送信できます。<br>また携帯キャリアとの直接接続で99％の到達率（自社調べ）と<br class="pc">通信品質に圧倒的な差があります。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature02">送信性能の詳細はこちら</a>
               </div>
             </div>
             <div class="item"> 
@@ -540,7 +542,7 @@
               <div class="answer">
                 <div class="text-answer-wrap"><span>A</span>
                   <p class="text text-answer">
-                    ドコモ、au、ソフトバンク回線を利用しているMVNOの携帯電話には、SMS送信可能です。ただし、SMS受信可能な端末でかつSMS契約を締結している携帯電話端末のみになります。</p>
+                  国内向けに送信する場合には、利用いただけません。お客様所有の通話可能な電話番号のみ指定できます。</p>
                 </div>
               </div>
             </div>
@@ -551,7 +553,7 @@
               <div class="answer">
                 <div class="text-answer-wrap"><span>A</span>
                   <p class="text text-answer">
-                    ドコモ、au、ソフトバンク回線を利用しているMVNOの携帯電話には、SMS送信可能です。ただし、SMS受信可能な端末でかつSMS契約を締結している携帯電話端末のみになります。</p>
+                  ドコモ、au、楽天は指定可能です。ソフトバンクはサービス共通番号※となります。 ※オプションにより6桁のお客様専用番号をご提供いたします。</p>
                 </div>
               </div>
             </div>
@@ -562,7 +564,7 @@
               <div class="answer">
                 <div class="text-answer-wrap"><span>A</span>
                   <p class="text text-answer">
-                    ドコモ、au、ソフトバンク回線を利用しているMVNOの携帯電話には、SMS送信可能です。ただし、SMS受信可能な端末でかつSMS契約を締結している携帯電話端末のみになります。</p>
+                  ドコモ：660文字、au：140バイト（近日中に670文字へ文字数拡張予定）、ソフトバンク：670文字、楽天モバイル：670文字を送信可能です。</p>
                 </div>
               </div>
             </div>
