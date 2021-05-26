@@ -1,9 +1,9 @@
-<?php $title = "SMSのメリット | SMS送信サービス「空電プッシュ」";?>
-<?php $description = "SMS「ショートメッセージサービス」とは携帯電話番号を宛先にして短い文字数のメッセージを送受信できるサービスです。SMSは顧客とのコミュニケーションの課題を解決します。";?>
+<?php $title = "SMS送信サービス 空電プッシュ（法人向け） 5年連続シェアNo.1 | NTTコム オンライン";?>
+<?php $description = "「空電プッシュ」はNTTコムオンラインが提供する、国内最大級のSMS送信サービスです。携帯電話やスマートフォンのSMS（ショートメッセージ）機能を使い、電話やEメール以上に、簡単・確実にお客様とのコンタクトを実現します。";?>
 <?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
 <?php $path = "../";?>
 <?php include('../_inc/head.php'); ?>
-  <body id="merit">
+  <body id="benefits">
     <?php include('../_inc/body-top.php'); ?>
     <!-- Google Tag Manager (noscript)-->
     <noscript>

@@ -1,5 +1,5 @@
-<?php $title = "料金 | SMS送信サービス「空電プッシュ」";?>
-<?php $description = "空電プッシュについて、料金体系やサポート、導入までの流れを記載しています";?>
+<?php $title = "料金｜SMS送信サービス 「空電プッシュ」 | NTTコム オンライン";?>
+<?php $description = "SMS送信サービス「空電プッシュ」の料金ページです。";?>
 <?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
 <?php $path = "../";?>
 <?php include('../_inc/head.php'); ?>

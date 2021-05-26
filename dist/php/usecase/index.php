@@ -1,9 +1,9 @@
-<?php $title = "活用シーン | SMS送信サービス「空電プッシュ」";?>
-<?php $description = "業務効率化、コスト削減、お客様への到達率向上など、様々な効果を上げているSMSサービスの利用事例。電話やダイレクトメール（DM）、Eメールに代わる、スマホだけではなくすべての携帯電話に直接届くSMSサービスのメリットをご覧ください";?>
+<?php $title = "活用シーン｜SMS送信サービス 「空電プッシュ」 | NTTコム オンライン";?>
+<?php $description = "SMS送信サービス「空電プッシュ」の活用シーンページです。さまざまな業種や業務で活用いただけます。";?>
 <?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
 <?php $path = "../";?>
 <?php include('../_inc/head.php'); ?>
-  <body id="scene">
+  <body id="usecase">
     <?php include('../_inc/body-top.php'); ?>
     <!-- Google Tag Manager (noscript)-->
     <noscript>

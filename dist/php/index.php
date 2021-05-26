@@ -81,7 +81,7 @@
             <source srcset="assets/img/top-merit-img.png" media="(min-width: 769px)">
             <source srcset="assets/img/top-merit-img-sp.png" media="(max-width: 768px)"><img src="assets/img/top-merit-img.png" alt="SMSのメリット">
           </picture>
-        </div><a class="c-btn c-btn--splarge pcmt0" href="merit/">SMSのメリットを詳しく見る</a>
+        </div><a class="c-btn c-btn--splarge pcmt0" href="benefits/">SMSのメリットを詳しく見る</a>
       </section>
       <section class="section section-feature" id="feature">
         <div class="inner">

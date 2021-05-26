@@ -6,7 +6,7 @@
     <div class="global-nav-wrap">
       <ul class="global-nav-list">
         <li class="global-nav-list-item global-nav-list-item01"><a class="global-nav-list-item-link" href="<?=$path?>feature01/">特長</a></li>
-        <li class="global-nav-list-item global-nav-list-item02"><a class="global-nav-list-item-link" href="<?=$path?>scene/">活用シーン</a></li>
+        <li class="global-nav-list-item global-nav-list-item02"><a class="global-nav-list-item-link" href="<?=$path?>usecase/">活用シーン</a></li>
         <li class="global-nav-list-item global-nav-list-item03"><a class="global-nav-list-item-link" href="<?=$path?>function/">機能</a></li>
         <li class="global-nav-list-item global-nav-list-item04"><a class="global-nav-list-item-link" href="<?=$path?>price/">料金</a></li>
         <li class="global-nav-list-item global-nav-list-item05"><a class="global-nav-list-item-link" href="">事例</a></li>

@@ -4,11 +4,11 @@
     <div class="footer-nav-block">
       <div class="footer-nav"><a class="footer-logo-karaden" href="<?=$path?>"><img src="<?=$path?>assets/img/footer-logo.png" alt="空電プッシュ"></a>
         <ul class="footer-nav-list">
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>merit/">SMSのメリット</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>benefits/">SMSのメリット</a></li>
           <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>price/">料金</a></li>
           <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>feature01/">特長</a></li>
           <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="">事例</a></li>
-          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>scene/">活用シーン</a></li>
+          <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>usecase/">活用シーン</a></li>
           <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>faq/">よくある質問</a></li>
           <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="<?=$path?>function/">機能</a></li>
           <li class="footer-nav-list-item"><a class="footer-nav-list-item-link" href="">お役立ち情報</a></li>
