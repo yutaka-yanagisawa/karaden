@@ -67,7 +67,7 @@
               <div class="text">長いURLを22文字へ短縮することに加え、URLクリック数の確認が可能です。本機能によって疑似的にSMSの開封状況を確認できます。</div>
               <!-- <a class="c-btn c-btn--list">詳しく見る</a> -->
             </div>
-            <div class="item"> 
+            <div class="item item-with-btn"> 
               <div class="title">双方向SMS<img class="img" src="../assets/img/function-icon-img05.png" alt="双方向SMS"></div>
               <div class="text">SMSを送信するだけでなく、SMSで受信することができる機能です。設定により自動応答することも可能です。</div>
               <a class="c-btn c-btn--list">詳しく見る</a>
@@ -92,7 +92,7 @@
               <div class="text">電源がOFFになっているなど圏外でSMSが届かなかった場合に再送することができます。</div>
               <!-- <a class="c-btn c-btn--list">詳しく見る</a> -->
             </div>
-            <div class="item"> 
+            <div class="item item-with-btn"> 
               <div class="title">LINE連携送信<img class="img" src="../assets/img/function-icon-img10.png" alt="LINE連携送信"></div>
               <div class="text">友達登録せずに携帯電話番号だけで、LINEを通じてお客様に連絡をすることが可能です。従来のSMSと比べ、よりリッチなメッセージを送信することができます。</div>
               <a class="c-btn c-btn--list">詳しく見る</a>

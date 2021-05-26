@@ -57,7 +57,7 @@
           <div class="customers-voice-block"><img src="../assets/img/customers-voice-img02.png" alt="保険見直し本舗">
             <div class="text-box"> 
               <div class="title">お客様の声</div>
-              <div class="name"> <span class="logo logo-honpo"><img src="../assets/img/honpo-logo.png" alt="保険見直し本舗"></span>株式会社ウェブ<br class="sp">クルー様</div>
+              <div class="name"> <span class="logo logo-honpo"><img src="../assets/img/honpo-logo.png" alt="保険見直し本舗"></span>株式会社<br class="sp">ウェブ<br class="sp">クルー様</div>
               <div class="text">海外のSMS送信サービスの場合、着信率が80％未満となるサービスもあるとの説明がありました。（途中省略）国内直収接続であればほぼ確実に高水準で着信すると。体感値ではありますが、着信率はかなり上がりました。</div>
             </div>
           </div>

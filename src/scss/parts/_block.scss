@@ -171,7 +171,7 @@
     }
     @include max{
       height: spvw(74);
-      /* width: spvw(187); */
+      width: spvw(187);
       /* width: 33.3%; */
     }
   }
@@ -2907,11 +2907,20 @@
     }
     @include max{
       width: 100%;
-      min-height: spvw(428);
-      padding: spvw(48) spvw(35) spvw(168) spvw(40);
+      /* min-height: spvw(428); */
+      padding: spvw(48) spvw(35) spvw(48) spvw(40);
       border-radius: spvw(24);
       box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78, 150, 0.16);
       margin-top: spvw(80);
+    }
+    &.item-with-btn{
+      @include min {
+        height: 324px;
+      }
+      @include max{
+        padding: spvw(48) spvw(35) spvw(168) spvw(40);
+        min-height: spvw(428);
+      }
     }
     &:nth-child(odd){
       @include min {
