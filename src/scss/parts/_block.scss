@@ -170,9 +170,9 @@
       margin: 0 19px;
     }
     @include max{
-      /* height: spvw(75);
-      width: spvw(187); */
-      width: 33.3%;
+      height: spvw(74);
+      /* width: spvw(187); */
+      /* width: 33.3%; */
     }
   }
 }
@@ -1706,7 +1706,7 @@
       box-shadow: 6px 6px 16px 0px rgba(33, 78,150,0.16);
     }
     @include max{
-      height: spvw(120);
+      min-height: spvw(120);
       border-radius: spvw(64) spvw(64) spvw(64) spvw(4);
       padding: spvw(18) spvw(99) spvw(21) spvw(108);
       /* box-shadow */
@@ -2214,7 +2214,7 @@
         padding: spvw(10) spvw(15) spvw(9);
         border-radius: spvw(16) spvw(16) spvw(16) spvw(4);
         font-size: spvw(20);
-        width: spvw(130);
+        /* width: spvw(130); */
         height: spvw(48);
       }
     }
