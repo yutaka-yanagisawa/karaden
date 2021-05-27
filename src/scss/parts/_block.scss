@@ -3563,8 +3563,8 @@
     @include min {
       z-index: 1;
       width: 774px;
-      height: 348px;
-      padding: 48px 71px 48px 48px;
+      min-height: 348px;
+      padding: 48px 48px 48px 48px;
       border-radius: 4px 40px 40px 40px;
       margin-left: -86px;
       /* 

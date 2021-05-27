@@ -74,7 +74,7 @@
             <div class="item">
               <div class="text-box">
                 <h3 class="title">ずっと繋がる</h3>
-                <p class="text">お客様が携帯電話の買い替えをきっかけにキャリアを変更したとしても、電話番号はそのまま移行することができるた<br class="pc">め、お客様との接点を継続できます。</p>
+                <p class="text">お客様が携帯電話の買い替えをきっかけにキャリアを変更したとしても、電話番号はそのまま移行することができるため、お客様との接点を継続できます。</p>
                 <div class="text-comment">メールアドレスなどと比較し携帯電話番号は<br class="pc">変更されることが少ない</div>
               </div>
               <picture class="img">

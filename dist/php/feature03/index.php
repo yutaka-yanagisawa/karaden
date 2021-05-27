@@ -20,7 +20,7 @@
           </ul>
           <h1 class="page-heading page-heading--withbtn">特長</h1>
           <p class="page-text--withbtn">国内SMS送信市場 5年連続シェアNo.1</p>
-          <div class="c-btn c-btn--mainvisual pcmt30 spmt30">SMSについて詳しく知る</div>
+          <a class="c-btn c-btn--mainvisual pcmt30 spmt30">SMSについて詳しく知る</a>
         </div>
       </section>
       <section class="feature-page-nav-block"> 

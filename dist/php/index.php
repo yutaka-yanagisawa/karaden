@@ -93,19 +93,19 @@
             <div class="item">
               <h3 class="title">高いセキュリティで<br>お客様情報をしっかり守る</h3>
               <div class="text-box"> 
-                <p class="text">お客様の情報を守るために、携帯キャリアとの直接接続や送信元<br class="pc">番号指定などさまざまなセキュリティ対策を実施。安心してご利用い<br class="pc">ただけます。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature01.html">セキュリティの詳細はこちら</a>
+                <p class="text">お客様の情報を守るために、携帯キャリアとの直接接続や送信元<br class="pc">番号指定などさまざまなセキュリティ対策を実施。安心してご利用い<br class="pc">ただけます。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature01/">セキュリティの詳細はこちら</a>
               </div>
             </div>
             <div class="item"> 
               <h3 class="title">高い送信性能と<br class="pc">圧倒的な到達率</h3>
               <div class="text-box"> 
-                <p class="text">国内最大規模の送信性能により大規模案件でも遅延なく送信できます。<br>また携帯キャリアとの直接接続で99％の到達率（自社調べ）と<br class="pc">通信品質に圧倒的な差があります。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature02">送信性能の詳細はこちら</a>
+                <p class="text">国内最大規模の送信性能により大規模案件でも遅延なく送信できます。<br>また携帯キャリアとの直接接続で99％の到達率（自社調べ）と<br class="pc">通信品質に圧倒的な差があります。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature02/">送信性能の詳細はこちら</a>
               </div>
             </div>
             <div class="item"> 
               <h3 class="title">スピード導入と<br class="pc">充実のサポート</h3>
               <div class="text-box"> 
-                <p class="text">申し込み後、最短3営業日でご利用いただけます。導入前も導入後も<br class="pc">専任担当者がきめ細やかにサポート。24時間365日電話での故障問い<br class="pc">合わせ窓口など、お客様のサービスをしっかり支えます。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature03">導入・サポートの詳細はこちら</a>
+                <p class="text">申し込み後、最短3営業日でご利用いただけます。導入前も導入後も<br class="pc">専任担当者がきめ細やかにサポート。24時間365日電話での故障問い<br class="pc">合わせ窓口など、お客様のサービスをしっかり支えます。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature03/">導入・サポートの詳細はこちら</a>
               </div>
             </div>
           </div>
