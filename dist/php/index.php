@@ -417,7 +417,7 @@
             <!-- 前ページボタン-->
             <div class="swiper-button-prev swiper-button-prev-scene"></div>
             <!-- 次ページボタン-->
-            <div class="swiper-button-next swiper-button-next-scene"></div><a class="c-btn pcmt0" href="scene">活用シーン一覧</a>
+            <div class="swiper-button-next swiper-button-next-scene"></div><a class="c-btn pcmt0" href="usecase/">活用シーン一覧</a>
           </div>
         </div>
       </section>
@@ -502,7 +502,7 @@
           <div class="swiper-button-prev swiper-button-prev-example"></div>
           <!-- 次ページボタン-->
           <div class="swiper-button-next swiper-button-next-example"></div>
-          <div class="swiper-pagination-example"></div><a class="c-btn pcmt80" href="scene">導入事例一覧</a>
+          <div class="swiper-pagination-example"></div><a class="c-btn pcmt80" href="">導入事例一覧</a>
         </div>
       </section>
       <section class="section section-usefulcontents" id="usefulcontents">
