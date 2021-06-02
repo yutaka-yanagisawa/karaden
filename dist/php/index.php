@@ -470,19 +470,19 @@
               </div>
               <div class="swiper-slide swiper-slide-example swiper-slide-example02">
                 <picture class="swiper-slide-example-img">
-                  <source srcset="assets/img/example-img01.png" media="(min-width: 769px)">
-                  <source srcset="assets/img/example-img-sp01.png" media="(max-width: 768px)"><img src="assets/img/example-img01.png" alt="">
+                  <source srcset="assets/img/example-img02.png" media="(min-width: 769px)">
+                  <source srcset="assets/img/example-img-sp02.png" media="(max-width: 768px)"><img src="assets/img/example-img02.png" alt="">
                 </picture>
-                <div class="title"></div>
-                <div class="text">オリコ</div>
+                <div class="title">連絡時のタイムロスを減らし、<br class="pc">業務効率や顧客満足度の向上を目指す</div>
+                <div class="text">株式会社オリエントコーポレーション様</div>
               </div>
               <div class="swiper-slide swiper-slide-example swiper-slide-example03">
                 <picture class="swiper-slide-example-img">
-                  <source srcset="assets/img/example-img01.png" media="(min-width: 769px)">
-                  <source srcset="assets/img/example-img-sp01.png" media="(max-width: 768px)"><img src="assets/img/example-img01.png" alt="">
+                  <source srcset="assets/img/example-img03.png" media="(min-width: 769px)">
+                  <source srcset="assets/img/example-img-sp03.png" media="(max-width: 768px)"><img src="assets/img/example-img03.png" alt="">
                 </picture>
-                <div class="title"></div>
-                <div class="text">伊丹市</div>
+                <div class="title">SMS導入で、電話や文書の催告では反応が<br class="pc">鈍かった層からもレスポンスが得られるように</div>
+                <div class="text">兵庫県伊丹市様</div>
               </div>
               <!-- <div class="swiper-slide swiper-slide-example swiper-slide-example04">
                 <picture class="swiper-slide-example-img">
