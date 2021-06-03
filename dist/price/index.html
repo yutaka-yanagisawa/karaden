@@ -2,15 +2,13 @@
 <?php $description = "SMS送信サービス「空電プッシュ」の料金ページです。";?>
 <?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
 <?php $ogimg = "https://www.nttcoms.com/common/images/ogp2020.jpg";?>
-<?php $path = "../";?>
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
 <?php include('../_inc/head.php'); ?>
+</head>
   <body id="price">
     <?php include('../_inc/body-top.php'); ?>
-    <!-- Google Tag Manager (noscript)-->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript)-->
     <div class="wrapper">
       <?php include('../_inc/header.php'); ?>
       <section class="section section-mainvisual" id="mainvisual">
@@ -98,13 +96,7 @@
           </div>
         </div>
       </div>
-      <section class="section section-contact" id="contact"> 
-        <div class="inner">
-          <h2 class="section-heading font-white">お問合せ</h2>
-          <p class="section-lead section-lead--contact font-white">空電プッシュは、国内シェアNo.1の<br class="sp">法人向けSMS送信サービスです。<br>ご不明な点はお気軽にお問い合わせください。<br>利用用途や配信数に応じて最適なご提案をいたします。</p>
-          <div class="contact-block"><a class="contact-btn pcmt70" href="">資料請求・お問合せ</a><a class="agency-btn" href="">代理店募集</a></div>
-        </div>
-      </section>
+      <?php include('../_inc/contact.php'); ?>
       <?php include('../_inc/footer.php'); ?>
     </div>
     <?php include('../_inc/body-bottom.php'); ?>

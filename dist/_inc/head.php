@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
@@ -13,6 +11,7 @@
   <meta property="og:site_name" content="">
   <meta property="og:image" content="<?=$ogimg?>">
   <title><?=$title?> | SMS送信サービス「空電プッシュ」</title>
+  <link rel="canonical" href="https://www.karaden.jp/">
   <link href="/assets/css/style.css" rel="stylesheet">
   <script src="/assets/js/jquery-3.6.0.min.js"></script>
   <script src="/assets/js/swiper.min.js"></script>
@@ -122,4 +121,3 @@
   src="https://www.facebook.com/tr?id=1099833673807339&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
-</head>
