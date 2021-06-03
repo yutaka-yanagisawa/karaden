@@ -4,13 +4,13 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="keywords" content="<?=$keywords?>">
   <meta name="description" content="<?=$description?>">
-  <meta property="og:url" content="">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="<?=$title?> | SMS送信サービス「空電プッシュ」">
+  <meta property="og:url" content="<?=$ogimg?>">
+  <meta property="og:type" content="<?=$ogtype?>">
+  <meta property="og:title" content="<?=$title?>">
   <meta property="og:description" content="<?=$description?>">
-  <meta property="og:site_name" content="">
+  <meta property="og:site_name" content="SMS送信サービス 空電プッシュ（法人向け） 5年連続シェアNo.1 | NTTコム オンライン">
   <meta property="og:image" content="<?=$ogimg?>">
-  <title><?=$title?> | SMS送信サービス「空電プッシュ」</title>
+  <title><?=$title?></title>
   <link rel="canonical" href="https://www.karaden.jp/">
   <link href="/assets/css/style.css" rel="stylesheet">
   <script src="/assets/js/jquery-3.6.0.min.js"></script>
