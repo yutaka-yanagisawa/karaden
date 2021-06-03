@@ -1257,28 +1257,36 @@
   .swiper-slide-example{
     position: relative;
     text-align: center;
+    a{
+      display: block;
+      position: relative;
+      @include min{
+        padding: 350px 40px 40px;
+      }
+      @include max{
+        padding: spvw(375) spvw(30) spvw(40);
+      }
+      >.swiper-slide-example-img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        width: 100%;
+      }
+    }
     @include min{
       width: 100%;
       border-radius: 8px 40px 40px 40px;
       /* box-shadow */
       /* box-shadow: 8px 8px 20px 0px rgba(33, 78,150,0.16); */
       height: 600px;
-      padding: 350px 40px 40px;
     }
     @include max{
       border-radius: spvw(8) spvw(40) spvw(40) spvw(40);
       /* box-shadow */
       /* box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78,150,0.16); */
       height: spvw(600);
-      padding: spvw(375) spvw(30) spvw(40);
-    }
-    >.swiper-slide-example-img{
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: -1;
-      width: 100%;
     }
   }
   .swiper-button-prev-example,
@@ -1517,7 +1525,7 @@
   }
 }
 .results-company-block{
-  margin: 0 spvw(40);
+  margin: 0 auto;
   background: #FFFFFF;
   @include min {
     display: flex;
@@ -1534,6 +1542,7 @@
     box-shadow: 8px 8px 20px 0px rgba(33, 78,150,0.24);
   }
   @include max{
+    margin: 0 spvw(40);
     padding: spvw(48) spvw(20) spvw(94);
     width: 90%;
     border-radius: spvw(40);
