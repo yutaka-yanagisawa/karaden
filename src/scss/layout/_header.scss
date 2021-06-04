@@ -42,7 +42,7 @@
   display: inline-block;
   position: absolute;
   @include min {
-    background: url(../img/header-logo.png)no-repeat center center;
+    background: url(/assets/img/header-logo.png)no-repeat center center;
     background-size: contain;
     width: 211.34px;
     height: 51px;
@@ -52,7 +52,7 @@
     top: 32px;
   }
   @include max {
-    background: url(../img/header-logo-sp.png)no-repeat center center;
+    background: url(/assets/img/header-logo-sp.png)no-repeat center center;
     background-size: contain;
     width: spvw(212);
     height: spvw(51);
@@ -69,7 +69,7 @@
     }
   }
   .header-fixed > & {
-    background: url(../img/header-logo-fixed.png)no-repeat center center;
+    background: url(/assets/img/header-logo-fixed.png)no-repeat center center;
     background-size: contain;
     transition: all .3s;
     @include min {

@@ -33,7 +33,7 @@
   &::before{
     position: absolute;
     content: "";
-    background: url(../img/c-btn-arrow.png)no-repeat center center;
+    background: url(/assets/img/c-btn-arrow.png)no-repeat center center;
     background-size: contain;
     top: 50%;
     transform: translateY(-50%);
@@ -128,7 +128,7 @@
     font-size: spvw(28);
   }
   &::before{
-    background: url(../img/c-btn-arrow.png)no-repeat center center;
+    background: url(/assets/img/c-btn-arrow.png)no-repeat center center;
     background-size: contain;
     @include min {
       width: 12px;
@@ -187,7 +187,7 @@
   &::before{
     position: absolute;
     content: "";
-    background: url(../img/c-btn-download.png)no-repeat center center;
+    background: url(/assets/img/c-btn-download.png)no-repeat center center;
     background-size: contain;
     @include min {
       width: 14px;
@@ -228,7 +228,7 @@
     bottom: spvw(48);
   }
   &::before{
-    background: url(../img/c-btn-arrow.png)no-repeat center center;
+    background: url(/assets/img/c-btn-arrow.png)no-repeat center center;
     background-size: contain;
     @include min {
       width: 12px;
@@ -273,7 +273,7 @@
   &::before{
     position: absolute;
     content: "";
-    background: url(../img/c-btn-arrow.png)no-repeat center center;
+    background: url(/assets/img/c-btn-arrow.png)no-repeat center center;
     background-size: contain;
     top: 50%;
     transform: translateY(-50%);
@@ -342,7 +342,7 @@
   &::before{
     position: absolute;
     content: "";
-    background: url(../img/c-btn-arrow.png)no-repeat center center;
+    background: url(/assets/img/c-btn-arrow.png)no-repeat center center;
     background-size: contain;
     top: 50%;
     transform: translateY(-50%);

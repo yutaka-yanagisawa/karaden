@@ -1,11 +1,11 @@
 .mainvisual-block{
   width: 100%;
   @include min {
-    background: url(../img/mainvisual-bg.png)no-repeat center center;
+    background: url(/assets/img/mainvisual-bg.png)no-repeat center center;
     background-size: cover;
   }
   @include max{
-    background: url(../img/mainvisual-bg-sp.png)no-repeat center center;
+    background: url(/assets/img/mainvisual-bg-sp.png)no-repeat center center;
     background-size: cover;
   }
 }
@@ -16,7 +16,7 @@
   @include max{
     position: relative;
     padding: spvw(178) spvw(40) spvw(173);
-    background: url(../img/mainvisual-bg-lower-sp.png)no-repeat center center;
+    background: url(/assets/img/mainvisual-bg-lower-sp.png)no-repeat center center;
     background-size: cover;
   }
 }
@@ -117,7 +117,7 @@
   }
   .mainvisual-img-smartphone{
     position: absolute;
-    background: url(../img/mainvisual-img-bg.png)no-repeat center center;
+    background: url(/assets/img/mainvisual-img-bg.png)no-repeat center center;
     background-size: cover;
     @include min {
       width: 362px;
@@ -318,7 +318,7 @@
       @include max{
       }
       &::before{
-        background: url(../img/top-feature-img01.png)no-repeat center center;
+        background: url(/assets/img/top-feature-img01.png)no-repeat center center;
         background-size: contain;
         @include min {
           right: 0;
@@ -352,7 +352,7 @@
       @include max{
       }
       &::before{
-        background: url(../img/top-feature-img02.png)no-repeat center center;
+        background: url(/assets/img/top-feature-img02.png)no-repeat center center;
         background-size: contain;
         @include min {
           left: 0;
@@ -392,7 +392,7 @@
       @include max{
       }
       &::before{
-        background: url(../img/top-feature-img03.png)no-repeat center center;
+        background: url(/assets/img/top-feature-img03.png)no-repeat center center;
         background-size: contain;
         @include min {
           right: 0;
@@ -828,7 +828,7 @@
   .swiper-container-rtl .swiper-button-next:after {
     /* content: "prev"; */
     content: "";
-    background: url(../img/swiper-arrow-prev.png)no-repeat center center;
+    background: url(/assets/img/swiper-arrow-prev.png)no-repeat center center;
     background-size: contain;
     @include min{
       width: 24px;
@@ -853,7 +853,7 @@
   .swiper-container-rtl .swiper-button-prev:after {
     /* content: "next"; */
     content: "";
-    background: url(../img/swiper-arrow-next.png)no-repeat center center;
+    background: url(/assets/img/swiper-arrow-next.png)no-repeat center center;
     background-size: contain;
     @include min{
       width: 24px;
@@ -1329,7 +1329,7 @@
   .swiper-container-rtl .swiper-button-next:after {
     /* content: "prev"; */
     content: "";
-    background: url(../img/swiper-arrow-prev.png)no-repeat center center;
+    background: url(/assets/img/swiper-arrow-prev.png)no-repeat center center;
     background-size: contain;
     @include min{
       /* left: -32px; */
@@ -1355,7 +1355,7 @@
   .swiper-container-rtl .swiper-button-prev:after {
     /* content: "next"; */
     content: "";
-    background: url(../img/swiper-arrow-next.png)no-repeat center center;
+    background: url(/assets/img/swiper-arrow-next.png)no-repeat center center;
     background-size: contain;
     @include min{
       width: 24px;
@@ -1482,7 +1482,7 @@
     &::before{
       content: "";
       position: absolute;
-      background: url(../img/result-arrow-img.png)no-repeat center center;
+      background: url(/assets/img/result-arrow-img.png)no-repeat center center;
       background-size: contain;
       right: 0;
       top: 50%;
@@ -2606,7 +2606,7 @@
       &::before{
         content: "";
         position: absolute;
-        background: url(../img/about-sms-checkbox.png)no-repeat center center;
+        background: url(/assets/img/about-sms-checkbox.png)no-repeat center center;
         background-size: contain;
         left: 0;
         top: 50%;
@@ -2623,6 +2623,7 @@
     }
   }
   >.img{
+    backface-visibility: hidden;
     @include min {
       width: 750px;
     }
@@ -2679,7 +2680,7 @@
         @include max{
           content: "";
           position: absolute;
-          background: url(../img/trouble-solution-img-sp01.png)no-repeat center center;
+          background: url(/assets/img/trouble-solution-img-sp01.png)no-repeat center center;
           background-size: contain;
           left: 0;
           top: spvw(10);
@@ -3388,7 +3389,7 @@
       &::after{
         @include min {
           position: absolute;
-          background: url(../img/scene-example-link-nav-img.png)no-repeat center center;
+          background: url(/assets/img/scene-example-link-nav-img.png)no-repeat center center;
           background-size: contain;
           content: "";
           width: 14px;
