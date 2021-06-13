@@ -16,6 +16,7 @@
   <script src="/assets/js/jquery-3.6.0.min.js"></script>
   <script src="/assets/js/swiper.min.js"></script>
   <script src="/assets/js/script.js"></script>
+  <link rel="icon" href="/favicon.ico"> 
   <script>
     if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
     document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0">');
