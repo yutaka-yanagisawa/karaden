@@ -2,16 +2,17 @@
 <?php $description = "SMS送信サービス「空電プッシュ」の活用シーンページです。さまざまな業種や業務で活用いただけます。";?>
 <?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
 <?php $ogimg = "https://www.nttcoms.com/common/images/ogp2020.jpg";?>
+<?php $ogurl = "https://www.karaden.jp/usecase/";?>
 <?php $ogtype = "article";?>
 <!DOCTYPE html>
 <html lang="ja">
 <head prefix="og: http://ogp.me/ns#">
-<?php include('../_inc/head.php'); ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/head.php"; ?>
 </head>
   <body id="usecase">
-    <?php include('../_inc/body-top.php'); ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/body-top.php"; ?>
     <div class="wrapper">
-      <?php include('../_inc/header.php'); ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/header.php"; ?>
       <section class="section section-mainvisual" id="mainvisual">
         <div class="mainvisual-block mainvisual-block--lower">
           <ul class="breadcrumb">
@@ -298,7 +299,7 @@
           </div>
         </div>
       </section>
-      <?php include('../_inc/contact.php'); ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/contact.php"; ?>
       <section class="section-grey">
         <div class="inner">
           <h2 class="section-heading">お役立ちコンテンツ</h2>
@@ -318,8 +319,8 @@
           </div><a class="c-btn pcmt80" href="/download/">お役立ちコンテンツ一覧</a>
         </div>
       </section>
-      <?php include('../_inc/footer.php'); ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/footer.php"; ?>
     </div>
-    <?php include('../_inc/body-bottom.php'); ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/body-bottom.php"; ?>
   </body>
 </html>

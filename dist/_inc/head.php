@@ -1,17 +1,17 @@
-
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
   <meta name="keywords" content="<?=$keywords?>">
   <meta name="description" content="<?=$description?>">
-  <meta property="og:url" content="<?=$ogimg?>">
+  <meta property="og:url" content="<?=$ogurl?>">
   <meta property="og:type" content="<?=$ogtype?>">
   <meta property="og:title" content="<?=$title?>">
   <meta property="og:description" content="<?=$description?>">
   <meta property="og:site_name" content="SMS送信サービス 空電プッシュ（法人向け） 5年連続シェアNo.1 | NTTコム オンライン">
-  <meta property="og:image" content="<?=$ogimg?>">
+  <?php if (!empty($ogimg)) : ?><meta property="og:image" content="<?php echo $ogimg; ?>"><?php else : ?><meta property="og:image" content="https://www.nttcoms.com/common/images/ogp2020.jpg"><?php endif; ?>
+
   <title><?=$title?></title>
-  <link rel="canonical" href="https://www.karaden.jp/">
+  <link rel="canonical" href="<?=$ogurl?>">
   <link href="/assets/css/style.css" rel="stylesheet">
   <script src="/assets/js/jquery-3.6.0.min.js"></script>
   <script src="/assets/js/swiper.min.js"></script>

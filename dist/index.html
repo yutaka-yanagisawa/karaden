@@ -2,18 +2,19 @@
 <?php $description = "「空電プッシュ」はNTTコムオンラインが提供する、国内最大級のSMS送信サービスです。携帯電話やスマートフォンのSMS（ショートメッセージ）機能を使い、電話やEメール以上に、簡単・確実にお客様とのコンタクトを実現します。";?>
 <?php $keywords = "NTT,SMS,SMS配信,SMS送信,空電プッシュ,空電,からでん,NTTメディアクロス";?>
 <?php $ogimg = "https://www.nttcoms.com/common/images/ogp2020.jpg";?>
+<?php $ogurl = "https://www.karaden.jp/";?>
 <?php $ogtype = "website";?>
 <!DOCTYPE html>
 <html lang="ja">
 
 <head prefix="og: http://ogp.me/ns#">
-  <?php include('./_inc/head.php'); ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/head.php"; ?>
 </head>
 
 <body id="top">
-  <?php include('./_inc/body-top.php'); ?>
+  <?php include dirname(__FILE__) . '/_inc/body-top.php'; ?>
   <div class="wrapper">
-    <?php include('./_inc/header.php'); ?>
+    <?php include dirname(__FILE__) . '/_inc/header.php'; ?>
     <section class="section section-mainvisual" id="mainvisual">
       <div class="mainvisual-block mainvisual-block--top">
         <div class="inner">
@@ -96,7 +97,7 @@
           <source srcset="/assets/img/top-merit-img-sp.png" media="(max-width: 768px)"><img
             src="/assets/img/top-merit-img.png" alt="SMSのメリット">
         </picture>
-      </div><a class="c-btn c-btn--splarge pcmt0" href="benefits/">SMSのメリットを詳しく見る</a>
+      </div><a class="c-btn c-btn--splarge pcmt0" href="/benefits/">SMSのメリットを詳しく見る</a>
     </section>
     <section class="section section-feature" id="feature">
       <div class="inner">
@@ -107,7 +108,7 @@
             <h3 class="title">高いセキュリティで<br>お客様情報をしっかり守る</h3>
             <div class="text-box">
               <p class="text">お客様の情報を守るために、携帯キャリアとの直接接続や送信元<br class="pc">番号指定などさまざまなセキュリティ対策を実施。安心してご利用い<br
-                  class="pc">ただけます。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="feature01/">セキュリティの詳細はこちら</a>
+                  class="pc">ただけます。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20" href="/feature01/">セキュリティの詳細はこちら</a>
             </div>
           </div>
           <div class="item">
@@ -115,7 +116,7 @@
             <div class="text-box">
               <p class="text">国内最大規模の送信性能により大規模案件でも遅延なく送信できます。<br>また携帯キャリアとの直接接続で99％の到達率（自社調べ）と<br
                   class="pc">通信品質に圧倒的な差があります。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20"
-                href="feature02/">送信性能の詳細はこちら</a>
+                href="/feature02/">送信性能の詳細はこちら</a>
             </div>
           </div>
           <div class="item">
@@ -123,7 +124,7 @@
             <div class="text-box">
               <p class="text">申し込み後、最短3営業日でご利用いただけます。導入前も導入後も<br class="pc">専任担当者がきめ細やかにサポート。24時間365日電話での故障問い<br
                   class="pc">合わせ窓口など、お客様のサービスをしっかり支えます。</p><a class="c-btn c-btn--spsmall pcmt30 spmt20"
-                href="feature03/">導入・サポートの詳細はこちら</a>
+                href="/feature03/">導入・サポートの詳細はこちら</a>
             </div>
           </div>
         </div>
@@ -214,7 +215,7 @@
             </div>
             <div class="text">双方向SMS</div>
           </div>
-        </div><a class="c-btn pcmt80" href="function">詳細はこちら</a>
+        </div><a class="c-btn pcmt80" href="/function/">詳細はこちら</a>
       </div>
     </section>
     <section class="section section-scene" id="scene">
@@ -474,7 +475,7 @@
           <div class="swiper-button-prev swiper-button-prev-scene"></div>
           <!-- 次ページボタン-->
           <div class="swiper-button-next swiper-button-next-scene"></div><a class="c-btn pcmt0"
-            href="usecase/">活用シーン一覧</a>
+            href="/usecase/">活用シーン一覧</a>
         </div>
       </div>
     </section>
@@ -636,13 +637,13 @@
               </div>
             </div>
           </div>
-        </div><a class="c-btn pcmt80" href="faq">よくある質問一覧</a>
+        </div><a class="c-btn pcmt80" href="/faq/">よくある質問一覧</a>
       </div>
     </section>
-    <?php include('./_inc/contact.php'); ?>
-    <?php include('./_inc/footer.php'); ?>
+    <?php include dirname(__FILE__) . '/_inc/contact.php'; ?>
+    <?php include dirname(__FILE__) . '/_inc/footer.php'; ?>
   </div>
-  <?php include('./_inc/body-bottom.php'); ?>
+  <?php include dirname(__FILE__) . '/_inc/body-bottom.php'; ?>
 </body>
 
 </html>

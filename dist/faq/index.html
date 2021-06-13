@@ -2,16 +2,17 @@
 <?php $description = "SMS送信サービス「空電プッシュ」のよくある質問ページです。";?>
 <?php $keywords = "SMS,空電プッシュについて,空電プッシュとは,FAQ,仕様,機能,端末,利用条件";?>
 <?php $ogimg = "https://www.nttcoms.com/common/images/ogp2020.jpg";?>
+<?php $ogurl = "https://www.karaden.jp/faq/";?>
 <?php $ogtype = "article";?>
 <!DOCTYPE html>
 <html lang="ja">
 <head prefix="og: http://ogp.me/ns#">
-<?php include('../_inc/head.php'); ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/head.php"; ?>
 </head>
   <body id="faq">
-    <?php include('../_inc/body-top.php'); ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/body-top.php"; ?>
     <div class="wrapper">
-      <?php include('../_inc/header.php'); ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/header.php"; ?>
       <section class="section section-mainvisual" id="mainvisual">
         <div class="mainvisual-block mainvisual-block--lower mainvisual-block--faq">
           <ul class="breadcrumb">
@@ -253,9 +254,9 @@
           </div>
         </div>
       </section>
-      <?php include('../_inc/contact.php'); ?>
-      <?php include('../_inc/footer.php'); ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/contact.php"; ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/footer.php"; ?>
     </div>
-    <?php include('../_inc/body-bottom.php'); ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/_inc/body-bottom.php"; ?>
   </body>
 </html>
