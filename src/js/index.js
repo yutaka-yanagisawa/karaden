@@ -1,5 +1,5 @@
 /* import smoothScroll from "smooth-scroll"; */
-
+import picturefill from "picturefill";
 let mobile = false;
 let startPos = 0;
 
@@ -9,7 +9,7 @@ let startPos = 0;
 //
 ///////////////////////////////////
 function switchByWidth() {
-  if (window.matchMedia("(max-width: 767px)").matches) {
+  if (window.matchMedia("(max-width: 856px)").matches) {
     //スマホ処理
     //メニュー開閉
     document.getElementById("nav-toggle").addEventListener("click", () => {
@@ -21,13 +21,14 @@ function switchByWidth() {
     $(".global-nav-list-item--child").click(function () {
       document.body.classList.remove("open");
   });
-  } else if (window.matchMedia("(min-width:768px)").matches) {
+  } else if (window.matchMedia("(min-width:857px)").matches) {
     //PC処理
     
   }
 }
 
 $(function () {
+  picturefill();
   //Mobile判定
   const ua = navigator.userAgent;
   if (
@@ -144,6 +145,9 @@ function intialSwiper() {
     slidesPerView: 1,
     spaceBetween: 48,
     effect: "fade", //フェードのエフェクト
+    fadeEffect: {
+      crossFade: true,
+    },
     /* fadeEffect: {
       crossFade: true
     }, */
@@ -199,6 +203,9 @@ function intialSwiper() {
     slidesPerView: 1,
     spaceBetween: 64,
     effect: "fade", //フェードのエフェクト
+    fadeEffect: {
+      crossFade: true,
+    },
     pagination: {
       el: ".swiper-pagination-example",
       type: "bullets",
@@ -213,6 +220,9 @@ function intialSwiper() {
         slidesPerView: 1,
         spaceBetween: 40,
         effect: "fade", //フェードのエフェクト
+        fadeEffect: {
+          crossFade: true,
+        },
       },
     },
     onSlideChangeEnd: function (e) {
@@ -220,23 +230,6 @@ function intialSwiper() {
     },
   });
 }
-
-//FOUT対応
-window.WebFontConfig = {
-  google: { families: ["urw-din-condensed"] },
-  active: function () {
-    sessionStorage.fonts = true;
-  },
-};
-
-$(window).on("load", function () {
-  var wf = document.createElement("script");
-  wf.src = "https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";
-  wf.type = "text/javascript";
-  wf.async = "true";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(wf, s);
-});
 
 /**
  * mv

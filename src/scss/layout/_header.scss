@@ -25,6 +25,7 @@
   background: #ffffff;
   @include min {
     padding: 14px 40px 15px;
+    min-width: 1240px;
   }
   @include max {
     display: none;
@@ -399,6 +400,12 @@
 }
 
 .global-nav-wrap {
+  @include min {
+    @media screen and (min-width: 856px) and (max-width: 1340px){
+      margin-left: -100px;
+    }
+
+  }
   @include max {
     -webkit-overflow-scrolling: touch;
     /* position: absolute;

@@ -69,6 +69,9 @@
   }
   >.inner{
     position: relative;
+    @include max{
+      padding-right: 0;
+    }
   }
   .lead{
     font-weight: bold;
@@ -163,6 +166,14 @@
     justify-content: space-between;
     /* justify-content: center; */
   }
+  &:after {
+    @include max{
+      content: "";
+      display: block;
+      width: spvw(187);  /* .boxに指定したwidthと同じ幅を指定する */
+      height: 0;
+    }
+  }
   >.item{
     @include min {
       height: 74px;
@@ -188,7 +199,7 @@
   >.title{
     color: $theme-color;
     font-family: $urw-din-font;
-    font-weight: 500;
+    font-weight: 300;
     @include min {
       font-size: 32px;
       margin-right: 80px;
@@ -273,7 +284,8 @@
   }
   @include max{
     max-width:spvw(732);
-    height: spvw(780);
+    //height: spvw(780);
+    height: auto;
     text-align: left;
     margin: spvw(70) auto 0 0;
   }
@@ -1028,7 +1040,7 @@
     justify-content: center;
     align-items: center;
     font-family: $urw-din-font;
-    font-weight: 500;
+    font-weight: 300;
     color: #fff;
     letter-spacing: 0.1em;
     left: 0;
@@ -1264,7 +1276,7 @@
         padding: 350px 40px 40px;
       }
       @include max{
-        padding: spvw(375) spvw(30) spvw(40);
+        padding: spvw(320) spvw(30) spvw(40);
       }
       >.swiper-slide-example-img{
         position: absolute;
@@ -1280,13 +1292,13 @@
       border-radius: 8px 40px 40px 40px;
       /* box-shadow */
       /* box-shadow: 8px 8px 20px 0px rgba(33, 78,150,0.16); */
-      height: 600px;
+      //height: 600px;
     }
     @include max{
       border-radius: spvw(8) spvw(40) spvw(40) spvw(40);
       /* box-shadow */
       /* box-shadow: spvw(8) spvw(8) spvw(20) 0 rgba(33, 78,150,0.16); */
-      height: spvw(600);
+      //height: spvw(600);
     }
   }
   .swiper-button-prev-example,
@@ -1310,7 +1322,7 @@
     @include max{
       width: spvw(88);
       height: spvw(88);
-      margin-top: spvw(-132);
+      margin-top: spvw(-170);
       /* box-shadow */
       box-shadow: spvw(6) spvw(6) spvw(16) 0px rgba(0,53,129,0.32);
     }
@@ -2177,6 +2189,7 @@
     @include min {
       width: 360px;
       height: 390px;
+      flex-shrink: 0;
     }
     @include max{
       width: spvw(290);

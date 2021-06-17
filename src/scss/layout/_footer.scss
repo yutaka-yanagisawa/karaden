@@ -196,6 +196,9 @@
     @include max{
     }
   }
+  img{
+    backface-visibility: hidden;
+  }
 }
 .footer-btn{
   display: inline-flex;
