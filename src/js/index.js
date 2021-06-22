@@ -8,24 +8,6 @@ let startPos = 0;
 // ドキュメント読み込み時の処理
 //
 ///////////////////////////////////
-function switchByWidth() {
-  if (window.matchMedia("(max-width: 856px)").matches) {
-    //スマホ処理
-    //メニュー開閉
-    document.getElementById("nav-toggle").addEventListener("click", () => {
-      document.body.classList.toggle("open");
-    });
-    document.getElementById("global-nav-close-btn").addEventListener("click", () => {
-      document.body.classList.remove("open");
-    });
-    $(".global-nav-list-item--child").click(function () {
-      document.body.classList.remove("open");
-  });
-  } else if (window.matchMedia("(min-width:857px)").matches) {
-    //PC処理
-    
-  }
-}
 
 $(function () {
   picturefill();
@@ -38,8 +20,19 @@ $(function () {
     (ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0)
   ) {
     mobile = true;
-  }
-  else{
+    //メニュー開閉
+    document.getElementById("nav-toggle").addEventListener("click", () => {
+      document.body.classList.toggle("open");
+    });
+    document
+      .getElementById("global-nav-close-btn")
+      .addEventListener("click", () => {
+        document.body.classList.remove("open");
+      });
+    $(".global-nav-list-item--child").click(function () {
+      document.body.classList.remove("open");
+    });
+  } else {
     $(function () {
       var $win = $(window),
         $cloneNav = $("header")
@@ -59,33 +52,41 @@ $(function () {
     });
   }
 
-  //アコーディオン  
-  $(".question").click(function(){
+  //アコーディオン
+  $(".question").click(function () {
     $(this).next().slideToggle();
     $(this).next().toggleClass("active");
     $(this).toggleClass("active");
   });
 
   //スムーススクロール
-  $('.scene-example-link-nav-block a[href^="#"]').click(function() {
-    let speed = 400; 
+  $('.scene-example-link-nav-block a[href^="#"]').click(function () {
+    let speed = 400;
     let href = $(this).attr("href");
-    let target = $(href == "#" || href == "" ? 'html' : href);
+    let target = $(href == "#" || href == "" ? "html" : href);
     let position = target.offset().top;
-    $('body,html').animate({
-      scrollTop: position - 100
-    }, speed, 'swing');
+    $("body,html").animate(
+      {
+        scrollTop: position - 100,
+      },
+      speed,
+      "swing"
+    );
     return false;
   });
 
-  $('.pagetop a[href^="#"]').click(function() {
-    let speed = 400; 
+  $('.pagetop a[href^="#"]').click(function () {
+    let speed = 400;
     let href = $(this).attr("href");
-    let target = $(href == "#" || href == "" ? 'html' : href);
+    let target = $(href == "#" || href == "" ? "html" : href);
     let position = target.offset().top;
-    $('body,html').animate({
-      scrollTop: position - 100
-    }, speed, 'swing');
+    $("body,html").animate(
+      {
+        scrollTop: position - 100,
+      },
+      speed,
+      "swing"
+    );
     return false;
   });
 });
@@ -98,7 +99,6 @@ $(function () {
 $(window).on("load", function () {
   playMv();
   if ($(".swiper-container").length) intialSwiper();
-  switchByWidth();
 });
 
 ///////////////////////////////////
@@ -107,7 +107,6 @@ $(window).on("load", function () {
 //
 ///////////////////////////////////
 $(window).on("resize", function () {
-  switchByWidth();
 });
 
 ///////////////////////////////////
@@ -236,10 +235,7 @@ function intialSwiper() {
  */
 
 function playMv() {
-  display1()
-    .then(cursol)
-    .then(none)
-    .then(display2);
+  display1().then(cursol).then(none).then(display2);
 }
 
 function display1() {
@@ -319,4 +315,3 @@ function none() {
     );
   return d.promise();
 }
-
